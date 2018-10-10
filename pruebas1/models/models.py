@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+
+from odoo import models, fields, api
+
+class pruebas1(models.Model):
+	_name = 'pruebas1.pruebas1'
+	name = fields.Char()
+	value = fields.Integer()
+	value2 = fields.Float(compute="_value_pc", store=True)
+	description = fields.Text()
+
+	@api.depends('value')
+	def _value_pc(self):
+		self.value2 = float(self.value) / 100
+
+class coches(models.Model):
+	_name = 'pruebas1.coches'
+	nombre = fields.Char()
+	model = fields.Text()
+	description = fields.Text()
+	codclient = fields.Many2one('pruebas1.client','modelcar')
+
+class client(models.Model):
+	_name='pruebas1.client'
+	codclient = fields.Integer()
+	nombre = fields.Text()
+	subname = fields.Text()
+	modelcar = fields.One2many('pruebas1.coches','codclient')
+
+class concessionario(models.Model):
+	_name='pruebas1.concessionario'
+	codconfessionario = fields.Integer()
+	nameconfessionario = fields.Text()
+	model = fields.Many2many('pruebas1.coches')
