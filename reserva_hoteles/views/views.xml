@@ -68,19 +68,18 @@
     
     <menuitem name="Menu 1" id="reserva_hoteles.menu_1" parent="reserva_hoteles.menu_root"/>
     <menuitem name="Menu 2" id="reserva_hoteles.menu_2" parent="reserva_hoteles.menu_root"/>
-    
+    <menuitem name="Hotels Reseve" id="reserva_hoteles.menu_1_list" parent="reserva_hoteles.menu_root"/>
     <!-- actions -->
     
-    <menuitem name="List" id="reserva_hoteles.menu_1_list" parent="reserva_hoteles.menu_1"
-              action="reserva_hoteles.action_window"/>
-     <menuitem name="Ciudades" id="reserva_hoteles.menu_1_list" parent="reserva_hoteles.menu_1"
+    
+     <menuitem name="Ciudades" id="reserva_hoteles.menu_1_citys_list" parent="reserva_hoteles.menu_1_list"
               action="reserva_hoteles.action_citys_window"/>
-     <menuitem name="Hoteles" id="reserva_hoteles.menu_1_list" parent="reserva_hoteles.menu_1"
+     <menuitem name="Hoteles" id="reserva_hoteles.menu_2_hotels_list" parent="reserva_hoteles.menu_1_list"
               action="reserva_hoteles.action_hotels_window"/>
-     <menuitem name="Habitaciones" id="reserva_hoteles.menu_1_list" parent="reserva_hoteles.menu_1"
-              action="reserva_hoteles.actionrooms_roooms_window"/>
-    <menuitem name="Reservas" id="reserva_hoteles.menu_1_list" parent="reserva_hoteles.menu_1"
-              action="reserva_hoteles.actionrooms_reserve_window"/>
+     <menuitem name="Habitaciones" id="reserva_hoteles.menu_3_rooms_list" parent="reserva_hoteles.menu_1_list"
+              action="reserva_hoteles.action_rooms_window"/>
+    <menuitem name="Reservas" id="reserva_hoteles.menu_4_reserves_list" parent="reserva_hoteles.menu_1_list"
+              action="reserva_hoteles.action_reserve_window"/>
     <!--<menuitem name="Server to list" id="reserva_hoteles" parent="reserva_hoteles.menu_2"
               action="reserva_hoteles.action_server"/>
     -->

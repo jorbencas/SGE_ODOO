@@ -16,36 +16,40 @@ class reserva_hoteles(models.Model):
 
 class citys(models.Model):
 	_name = 'reserva_hoteles.citys'
-	name_city = fields.Text()
+	name = fields.Text()
 	description = fields.Text()
 	location = fields.Text()
-	countrys = fields.Text()
-	list_hotels = fields.Many2one('reserva_hoteles.hotels')
+	countrys = fields.Many2many('res.country','Pais')
+	listHotels = fields.Many2one('reserva_hoteles.hotels')
 
 class hotels (models.Model):
     _name = 'reserva_hoteles.hotels'
-    name_hotel = fields.Text()
-    photo_gallery = fields.Binary()
+    name = fields.Text()
+    photoGallery = fields.One2many('reserva_hoteles.photogallery','photo')
     descripcio = fields.Text()
-    list_rooms = fields.Many2one('reserva_hoteles.rooms')
+    listRooms = fields.Many2one('reserva_hoteles.rooms')
     valorations = fields.Integer()
-    list_service = fields.Text()
-    city = fields.One2many('reserva_hoteles.citys')
+    listServices = fields.Many2many('reserva_hoteles.reserve')
+    city = fields.One2many('reserva_hoteles.citys','name')
 
-class rooms(models.Model):
+class rooms (models.Model):
     _name = 'reserva_hoteles.rooms'
     name = fields.Integer()
-    beds_distribution = fields.Integer()
-    photos = fields.Binary()
+    beds = fields.Integer()
+    photos = fields.Many2many('reserva_hoteles.photogallery')
     price = fields.Float()
     description = fields.Text()
-    hotel = fields.One2many('reserva_hoteles.hotels',name_hotel)
-    reserve = fields.Integer('reserva_hoteles.reserve',reserve)
+    hotel = fields.One2many('reserva_hoteles.hotels','name')
+    services = fields.Many2one('reserva_hoteles.reserve')
     
 class reserve (models.Model):
     _name = 'reserva_hoteles.reserve'    
-    reserve = fields.Integer()
-    date_reserve_start = fields.Date()
-    date_reserve_end = fields.Date()
+    name = fields.Integer()
+    datestart = fields.Date()
+    dateend = fields.Date()
     hotel = fields.Many2one('reserva_hoteles.hotels')
     room = fields.Many2one('reserva_hoteles.rooms')
+
+class photoGallery (models.Model):
+    _name = 'reserva_hoteles.photogallery'
+    photo = fields.Binary()
