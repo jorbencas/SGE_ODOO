@@ -25,17 +25,9 @@ class client(models.Model):
 	codclient = fields.Integer()
 	nombre = fields.Text()
 	subname = fields.Text()
-	country = fields.Many2one('res.country')
 	currency = fields.Char(related='country.currency_id.symbol',store=False,readonly=True)
-	a = fields.Integer(default='0')
-	b = fields.Integer(default='0')
-	ab = fields.Integer(compute='_get_ab')
-	modelcar = fields.One2many('pruebas1.coches','codclient')
-
-	@api.depends('a','b')
-	def _get_ab(self):
-		for r in self:
-			r.ab = r.a+r.b
+	aleatori = fields.Char(compute='_currency_aleatori')
+	modelcar = fields.One2many('pruebas1.coches','co
 
 class concessionario(models.Model):
 	_name='pruebas1.concessionario'
