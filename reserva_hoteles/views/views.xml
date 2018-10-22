@@ -1,0 +1,87 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    
+    <record model="ir.ui.view" id="reserva_hoteles.list">
+      <field name="name">reserva_hoteles list</field>
+      <field name="model">reserva_hoteles.reserva_hoteles</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    
+
+    <!-- actions opening views on models -->
+    
+    <record model="ir.actions.act_window" id="reserva_hoteles.action_window">
+      <field name="name">reserva_hoteles window</field>
+      <field name="res_model">reserva_hoteles.reserva_hoteles</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="reserva_hoteles.action_citys_window">
+      <field name="name">reserva_hoteles window</field>
+      <field name="res_model">reserva_hoteles.citys</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="reserva_hoteles.action_hotels_window">
+      <field name="name">reserva_hoteles window</field>
+      <field name="res_model">reserva_hoteles.hotels</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="reserva_hoteles.action_rooms_window">
+      <field name="name">reserva_hoteles window</field>
+      <field name="res_model">reserva_hoteles.rooms</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="reserva_hoteles.action_reserve_window">
+      <field name="name">reserva_hoteles window</field>
+      <field name="res_model">reserva_hoteles.reserve</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="reserva_hoteles.action_server">
+      <field name="name">reserva_hoteles server</field>
+      <field name="model_id" ref="model_reserva_hoteles_reserva_hoteles"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    
+    <menuitem name="reserva_hoteles" id="reserva_hoteles.menu_root"/>
+    
+    <!-- menu categories -->
+    
+    <menuitem name="Menu 1" id="reserva_hoteles.menu_1" parent="reserva_hoteles.menu_root"/>
+    <menuitem name="Menu 2" id="reserva_hoteles.menu_2" parent="reserva_hoteles.menu_root"/>
+    <menuitem name="Hotels Reseve" id="reserva_hoteles.menu_1_list" parent="reserva_hoteles.menu_root"/>
+    <!-- actions -->
+    
+    
+     <menuitem name="Ciudades" id="reserva_hoteles.menu_1_citys_list" parent="reserva_hoteles.menu_1_list"
+              action="reserva_hoteles.action_citys_window"/>
+     <menuitem name="Hoteles" id="reserva_hoteles.menu_2_hotels_list" parent="reserva_hoteles.menu_1_list"
+              action="reserva_hoteles.action_hotels_window"/>
+     <menuitem name="Habitaciones" id="reserva_hoteles.menu_3_rooms_list" parent="reserva_hoteles.menu_1_list"
+              action="reserva_hoteles.action_rooms_window"/>
+    <menuitem name="Reservas" id="reserva_hoteles.menu_4_reserves_list" parent="reserva_hoteles.menu_1_list"
+              action="reserva_hoteles.action_reserve_window"/>
+    <!--<menuitem name="Server to list" id="reserva_hoteles" parent="reserva_hoteles.menu_2"
+              action="reserva_hoteles.action_server"/>
+    -->
+  </data>
+</odoo>
