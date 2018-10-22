@@ -35,21 +35,22 @@ class hotels (models.Model):
 class rooms (models.Model):
     _name = 'reserva_hoteles.rooms'
     name = fields.Integer()
-    beds = fields.Integer()
+    beds = fields.Selection([('1','One bed'),('2','Two beds'),('3','double bed')],'Type', default='1')
     photos = fields.Many2many('reserva_hoteles.photogallery')
     price = fields.Float()
     description = fields.Text()
     hotel = fields.One2many('reserva_hoteles.hotels','name')
     services = fields.Many2one('reserva_hoteles.reserve')
     
-class reserve (models.Model):
+class reserve (models.Model)
     _name = 'reserva_hoteles.reserve'    
     name = fields.Integer()
     datestart = fields.Date()
     dateend = fields.Date()
-    hotel = fields.Many2one('reserva_hoteles.hotels')
+    client = fields.Many2many('res.partner')
     room = fields.Many2one('reserva_hoteles.rooms')
 
 class photoGallery (models.Model):
     _name = 'reserva_hoteles.photogallery'
+    name = fields.Text()
     photo = fields.Binary()
