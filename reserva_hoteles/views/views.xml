@@ -2,8 +2,8 @@
   <data>
     <!-- explicit list view definition -->
     
-    <record model="ir.ui.view" id="reserva_hoteles.list">
-      <field name="name">reserva_hoteles list</field>
+   <!-- <record model="ir.ui.view" id="reserva_hoteles.list">
+      <field name="name">Hotels Reserve</field>
       <field name="model">reserva_hoteles.reserva_hoteles</field>
       <field name="arch" type="xml">
         <tree>
@@ -12,37 +12,54 @@
           <field name="value2"/>
         </tree>
       </field>
-    </record>
+    </record>-->
     
 
     <!-- actions opening views on models -->
     
-    <record model="ir.actions.act_window" id="reserva_hoteles.action_window">
+   <!-- <record model="ir.actions.act_window" id="reserva_hoteles.action_window">
       <field name="name">reserva_hoteles window</field>
       <field name="res_model">reserva_hoteles.reserva_hoteles</field>
       <field name="view_mode">tree,form</field>
-    </record>
+    </record>-->
     <record model="ir.actions.act_window" id="reserva_hoteles.action_citys_window">
-      <field name="name">reserva_hoteles window</field>
+      <field name="name">Ciudades</field>
       <field name="res_model">reserva_hoteles.citys</field>
       <field name="view_mode">tree,form</field>
     </record>
     <record model="ir.actions.act_window" id="reserva_hoteles.action_hotels_window">
-      <field name="name">reserva_hoteles window</field>
+      <field name="name">Hoteles</field>
       <field name="res_model">reserva_hoteles.hotels</field>
       <field name="view_mode">tree,form</field>
     </record>
     <record model="ir.actions.act_window" id="reserva_hoteles.action_rooms_window">
-      <field name="name">reserva_hoteles window</field>
+      <field name="name">Habitaciones</field>
       <field name="res_model">reserva_hoteles.rooms</field>
       <field name="view_mode">tree,form</field>
     </record>
 
+    <record model="ir.actions.act_window" id="reserva_hoteles.action_service_window">
+      <field name="name">Servicios</field>
+      <field name="res_model">reserva_hoteles.service</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
     <record model="ir.actions.act_window" id="reserva_hoteles.action_reserve_window">
-      <field name="name">reserva_hoteles window</field>
+      <field name="name">Reservas</field>
       <field name="res_model">reserva_hoteles.reserve</field>
       <field name="view_mode">tree,form</field>
     </record>
+
+    <!--<record model="ir.ui.view" id="reserva_hoteles.action_photogallery_window">
+      <field name="name">Galleria de fotos</field>
+      <field name="res_model">reserva_hoteles.photogallery</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="photo" widget="image" class="oe_left oe_avatar"/>
+        </tree>
+      </field>
+    </record>-->
 
     <!-- server action to the one above -->
     <!--
@@ -79,6 +96,8 @@
               action="reserva_hoteles.action_rooms_window"/>
     <menuitem name="Reservas" id="reserva_hoteles.menu_4_reserves_list" parent="reserva_hoteles.menu_1_list"
               action="reserva_hoteles.action_reserve_window"/>
+    <menuitem name="Fotos" id="reserva_hoteles.menu_5_reserves_list" parent="reserva_hoteles.menu_1_list"
+              action="reserva_hoteles.action_service_window"/>
     <!--<menuitem name="Server to list" id="reserva_hoteles" parent="reserva_hoteles.menu_2"
               action="reserva_hoteles.action_server"/>
     -->

@@ -19,18 +19,19 @@ class citys(models.Model):
 	name = fields.Text()
 	description = fields.Text()
 	location = fields.Text()
-	countrys = fields.Many2many('res.country','Pais')
+	countrys = fields.Many2one('res.country','Pais')
 	listHotels = fields.Many2one('reserva_hoteles.hotels')
 
 class hotels (models.Model):
     _name = 'reserva_hoteles.hotels'
     name = fields.Text()
     photoGallery = fields.One2many('reserva_hoteles.photogallery','photo')
-    descripcio = fields.Text()
+    description = fields.Text()
     listRooms = fields.Many2one('reserva_hoteles.rooms')
-    valorations = fields.Integer()
-    listServices = fields.Many2many('reserva_hoteles.reserve')
-    city = fields.One2many('reserva_hoteles.citys','name')
+    valorations = fields.Selection([('1', '⭐'), ('2', '⭐⭐'), ('3', '⭐⭐⭐'), ('4', '⭐⭐⭐⭐'), ('5', '⭐⭐⭐⭐⭐')])
+    listServices = fields.Many2many('reserva_hoteles.service')
+    city = fields.Many2one('reserva_hoteles.citys','name')
+    comments = fields.Many2many('reserva_hoteles.comments')
 
 class rooms (models.Model):
     _name = 'reserva_hoteles.rooms'
@@ -40,9 +41,8 @@ class rooms (models.Model):
     price = fields.Float()
     description = fields.Text()
     hotel = fields.One2many('reserva_hoteles.hotels','name')
-    services = fields.Many2one('reserva_hoteles.reserve')
     
-class reserve (models.Model)
+class reserve (models.Model):
     _name = 'reserva_hoteles.reserve'    
     name = fields.Integer()
     datestart = fields.Date()
@@ -54,3 +54,15 @@ class photoGallery (models.Model):
     _name = 'reserva_hoteles.photogallery'
     name = fields.Text()
     photo = fields.Binary()
+
+class services (models.Model):
+    _name = 'reserva_hoteles.service'
+    name = fields.Selection([("1","Parking"),("2","Roomservice"),("3","Sauna")],'Type', default='2')
+    photo = fields.Binary()
+    hotel = fields.One2many('reserva_hoteles.hotels','name')
+
+class comments (models.Model):
+    _name = 'reserva_hoteles.comments'
+    name = fields.Text()
+    description = fields.Text()
+    hotel = fields.One2many('reserva_hoteles.hotels','name')
