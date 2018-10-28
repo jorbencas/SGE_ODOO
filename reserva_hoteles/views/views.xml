@@ -1,41 +1,85 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    
-   <!-- <record model="ir.ui.view" id="reserva_hoteles.list">
-      <field name="name">Hotels Reserve</field>
-      <field name="model">reserva_hoteles.reserva_hoteles</field>
+
+    <!--Citys-->
+    <record model="ir.ui.view" id="reserva_hoteles.citys">
+      <field name="name">Ciudades</field>
+      <field name="model">reserva_hoteles.citys</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="description"/>
+          <field name="location"/>
+          <field name="countrys"/>
+          <field name="listHotels"/>
         </tree>
       </field>
-    </record>-->
-    
+    </record>
 
-    <!-- actions opening views on models -->
-    
-   <!-- <record model="ir.actions.act_window" id="reserva_hoteles.action_window">
-      <field name="name">reserva_hoteles window</field>
-      <field name="res_model">reserva_hoteles.reserva_hoteles</field>
-      <field name="view_mode">tree,form</field>
-    </record>-->
     <record model="ir.actions.act_window" id="reserva_hoteles.action_citys_window">
       <field name="name">Ciudades</field>
       <field name="res_model">reserva_hoteles.citys</field>
       <field name="view_mode">tree,form</field>
     </record>
+
+    <!--Hoteles-->
+        <record model="ir.ui.view" id="reserva_hoteles.hotels">
+      <field name="name">Ciudades</field>
+      <field name="model">reserva_hoteles.hotels</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="photoGallery"/>
+          <field name="description"/>
+          <field name="listRooms"/>
+          <field name="valorations"/>
+          <field name="listServices"/>
+          <field name="city"/>
+          <field name="comments"/>
+        </tree>
+      </field>
+    </record>
+
     <record model="ir.actions.act_window" id="reserva_hoteles.action_hotels_window">
       <field name="name">Hoteles</field>
       <field name="res_model">reserva_hoteles.hotels</field>
       <field name="view_mode">tree,form</field>
     </record>
+
+    <!--Habitaciones-->
+    <record model="ir.ui.view" id="reserva_hoteles.rooms">
+      <field name="name">Habitaciones</field>
+      <field name="model">reserva_hoteles.rooms</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="beds"/>
+          <field name="price"/>
+          <field name="photos" widget="image" class="oe_left oe_avatar"/>
+          <field name="description"/>
+          <field name="hotel"/>
+        </tree>
+      </field>
+    </record>
+
     <record model="ir.actions.act_window" id="reserva_hoteles.action_rooms_window">
       <field name="name">Habitaciones</field>
       <field name="res_model">reserva_hoteles.rooms</field>
       <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--Servicios-->
+     <record model="ir.ui.view" id="reserva_hoteles.service">
+      <field name="name">Servicios</field>
+      <field name="model">reserva_hoteles.service</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="photo" widget="image" class="oe_left oe_avatar"/>
+          <field name="hotel"/>
+        </tree>
+      </field>
     </record>
 
     <record model="ir.actions.act_window" id="reserva_hoteles.action_service_window">
@@ -44,38 +88,44 @@
       <field name="view_mode">tree,form</field>
     </record>
 
+    <!--Rservas-->
+    <record model="ir.ui.view" id="reserva_hoteles.reserve">
+      <field name="name">Reservas</field>
+      <field name="model">reserva_hoteles.reserve</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="datestart"/>
+          <field name="dateend"/>
+          <field name="client"/>
+          <field name="room"/>
+        </tree>
+      </field>
+    </record>
+
     <record model="ir.actions.act_window" id="reserva_hoteles.action_reserve_window">
       <field name="name">Reservas</field>
       <field name="res_model">reserva_hoteles.reserve</field>
       <field name="view_mode">tree,form</field>
     </record>
 
-    <!--<record model="ir.ui.view" id="reserva_hoteles.action_photogallery_window">
+    <!--Galleria de Fotos-->
+    <record model="ir.ui.view" id="reserva_hoteles.photogallery">
       <field name="name">Galleria de fotos</field>
-      <field name="res_model">reserva_hoteles.photogallery</field>
+      <field name="model">reserva_hoteles.photogallery</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
           <field name="photo" widget="image" class="oe_left oe_avatar"/>
         </tree>
       </field>
-    </record>-->
-
-    <!-- server action to the one above -->
-    <!--
-    <record model="ir.actions.server" id="reserva_hoteles.action_server">
-      <field name="name">reserva_hoteles server</field>
-      <field name="model_id" ref="model_reserva_hoteles_reserva_hoteles"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": self._name,
-        }
-      </field>
     </record>
-    -->
+
+     <record model="ir.actions.act_window" id="reserva_hoteles.action_photogallery_window">
+      <field name="name">Galleria de fotos</field>
+      <field name="res_model">reserva_hoteles.photogallery</field>
+      <field name="view_mode">tree,form</field>
+    </record>
 
     <!-- Top menu item -->
     
@@ -96,8 +146,10 @@
               action="reserva_hoteles.action_rooms_window"/>
     <menuitem name="Reservas" id="reserva_hoteles.menu_4_reserves_list" parent="reserva_hoteles.menu_1_list"
               action="reserva_hoteles.action_reserve_window"/>
-    <menuitem name="Fotos" id="reserva_hoteles.menu_5_reserves_list" parent="reserva_hoteles.menu_1_list"
+    <menuitem name="Servicios" id="reserva_hoteles.menu_5_reserves_list" parent="reserva_hoteles.menu_1_list"
               action="reserva_hoteles.action_service_window"/>
+    <menuitem name="Galeria de Fotos" id="reserva_hoteles.menu_6_reserves_list" parent="reserva_hoteles.menu_1_list"
+              action="reserva_hoteles.action_photogallery_window"/>
     <!--<menuitem name="Server to list" id="reserva_hoteles" parent="reserva_hoteles.menu_2"
               action="reserva_hoteles.action_server"/>
     -->

@@ -36,11 +36,11 @@ class hotels (models.Model):
 class rooms (models.Model):
     _name = 'reserva_hoteles.rooms'
     name = fields.Integer()
-    beds = fields.Selection([('1','One bed'),('2','Two beds'),('3','double bed')],'Type', default='1')
+    beds = fields.Selection([('1','Una Cama'),('2','Dos Camas'),('3','Cama de Matrimonio'),('4','Cama de matromonio mas cama infantil') ],'Type', default='1')
     photos = fields.Many2many('reserva_hoteles.photogallery')
-    price = fields.Float()
-    description = fields.Text()
-    hotel = fields.One2many('reserva_hoteles.hotels','name')
+    price = fields.Float(default=1)
+    description = fields.Text(default="Habitación grande, espaciosa y con gran luminosidad.")
+    hotel = fields.Many2one('reserva_hoteles.hotels','name')
     
 class reserve (models.Model):
     _name = 'reserva_hoteles.reserve'    
@@ -65,4 +65,4 @@ class comments (models.Model):
     _name = 'reserva_hoteles.comments'
     name = fields.Text()
     description = fields.Text()
-    hotel = fields.One2many('reserva_hoteles.hotels','name')
+    hotel = fields.Many2many('reserva_hoteles.hotels','name')
