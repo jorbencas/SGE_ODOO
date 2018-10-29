@@ -12,7 +12,7 @@
           <field name="description"/>
           <field name="location"/>
           <field name="countrys"/>
-          <field name="listHotels"/>
+          <!--<field name="listHotels"/>-->
         </tree>
       </field>
     </record>
@@ -30,13 +30,13 @@
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="photoGallery"/>
+          <!--<field name="photoGallery" widget="image" class="oe_left oe_avatar" reserva_hoteles.hotelgallery />-->
           <field name="description"/>
-          <field name="listRooms"/>
+          <!--<field name="listRooms"/>-->
           <field name="valorations"/>
-          <field name="listServices"/>
+          <!--<field name="listServices"/>-->
           <field name="city"/>
-          <field name="comments"/>
+          <!--<field name="comments"/>-->
         </tree>
       </field>
     </record>
@@ -56,7 +56,7 @@
           <field name="name"/>
           <field name="beds"/>
           <field name="price"/>
-          <field name="photos" widget="image" class="oe_left oe_avatar"/>
+          <!--<field name="photos" widget="image" class="oe_left oe_avatar"/>-->
           <field name="description"/>
           <field name="hotel"/>
         </tree>
@@ -76,8 +76,8 @@
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="photo" widget="image" class="oe_left oe_avatar"/>
-          <field name="hotel"/>
+          <!--<field name="photo" widget="image" class="oe_left oe_avatar"/>-->
+          <!--<field name="hotel"/>-->
         </tree>
       </field>
     </record>
@@ -99,6 +99,8 @@
           <field name="dateend"/>
           <field name="client"/>
           <field name="room"/>
+          <field name="hotel"/>
+          <field name="city"/>
         </tree>
       </field>
     </record>
@@ -116,7 +118,7 @@
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="photo" widget="image" class="oe_left oe_avatar"/>
+          <!--<field name="photo" widget="image" class="oe_left oe_avatar"/>-->
         </tree>
       </field>
     </record>
