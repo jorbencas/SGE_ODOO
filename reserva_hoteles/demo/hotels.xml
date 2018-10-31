@@ -1,0 +1,6 @@
+<odoo>
+    <record model="{reserva_hoteles}" id="{reserva_hoteles.model_reserva_hoteles_hotels}">
+        <field name="name">Royald Resort</field>
+        <field name="photoGallery" eval="[]">
+    </record>
+</odoo>

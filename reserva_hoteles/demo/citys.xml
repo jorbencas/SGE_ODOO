@@ -1,0 +1,9 @@
+<odoo>
+    <record model="{reserva_hoteles}" id="{reserva_hoteles.model_reserva_hoteles_citys}">
+        <field name="name">Ontinyent </field>
+        <field name="description">Es una ciutat increiblement lluminosa</field>
+        <field name="location">Comunidad Valenciana</field>
+        <field name="countrys">España</field>
+        <field name="listHotels" eval="[(6,0,ref('reserva_hoteles.hotel'))]">
+    </record>
+</odoo>
