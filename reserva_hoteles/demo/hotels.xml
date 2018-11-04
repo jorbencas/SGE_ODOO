@@ -1,6 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record model="{reserva_hoteles}" id="{reserva_hoteles.model_reserva_hoteles_hotels}">
-        <field name="name">Royald Resort</field>
-        <field name="photoGallery" eval="[]">
-    </record>
+    <data>
+        <record model="{reserva_hoteles.hotels}" id="hotel1">
+            <!--{reserva_hoteles.model_reserva_hoteles_hotels}"-->
+            <field name="name">Royald Resort</field>
+            <field name="description"></field>
+            <field name="valorations">2</field>
+        </record>
+    </data>
 </odoo>

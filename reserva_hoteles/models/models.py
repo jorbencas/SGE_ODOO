@@ -57,12 +57,13 @@ class photoHotel (models.Model):
     _name='reserva_hoteles.hotelgallery'
     name = fields.Text()
     photo = fields.Binary()
-    hotel = fields.Many2one('reserva_hoteles.hotels'related='')
+    hotel = fields.Many2one('reserva_hoteles.hotels')
 
 class photoGallery (models.Model):
     _name = 'reserva_hoteles.photogallery'
     name = fields.Text()
     photo = fields.Binary()
+    room = fields.Many2one('')
 
 class services (models.Model):
     _name = 'reserva_hoteles.service'
