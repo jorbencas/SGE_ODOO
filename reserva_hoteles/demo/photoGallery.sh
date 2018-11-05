@@ -6,10 +6,10 @@ echo '<?xml version="1.0" encoding="utf-8"?>
     while [ $i -le 4 ] ; 
     do
         echo ' 
-        <record model="{reserva_hoteles.photoHotel}" id="hotel'$1'">
+        <record model="{reserva_hoteles.photoGallery}" id="hotel1">
             <field name="name">img_hotel'$i'</field>
-            <field name="photo">`base64 ./img/Hotel'$i'.jpg`</field>
-            <fields name="hotel"></field>
+            <field name="photo">'`base64 ./img/Hotel$i.jpg` '</field>
+            <field name="room" ref=('"'reserva_hoteles.room$i'"') />
         </record>'
        i=$(( $i + 1 ))
     done
