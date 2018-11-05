@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record name="" id="">
+            <field name="name"></field>
+            <field name="room" eval='{}'>
+        </record>
+    </data>
+</odoo>

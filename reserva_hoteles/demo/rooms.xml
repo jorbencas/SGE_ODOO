@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="{reserva_hoteles.rooms}" id="">
+            <field name=""></field>
+            <field name=""></field>
+            <field name=""></field>
+            <field name=""></field>
+            <field name=""></field>
+            <field name=""></field>
+            <field name=""></field>
+        </record>
+    </data>
+</odoo>
