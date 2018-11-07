@@ -2,10 +2,9 @@
 <odoo>
     <data>
         <record model="{reserva_hoteles.hotels}" id="hotel1">
-            <!--{reserva_hoteles.model_reserva_hoteles_hotels}"-->
             <field name="name">Royald Resort</field>
-            <field name="description"></field>
-            <field name="listRooms"></field>
+            <field name="description">Hotel grande, bonito y muy bien decorado</field>
+            <field name="listRooms" eval="()"></field>
             <field name="valorations">2</field>
             <field name="listServices"></field>
             <field name="city"></field>

@@ -27,11 +27,11 @@ class hotels (models.Model):
     name = fields.Text()
     photoGallery = fields.One2many('reserva_hoteles.hotelgallery','photo')
     description = fields.Text()
-    listRooms = fields.One2many('reserva_hoteles.rooms')
+    listRooms = fields.One2many('reserva_hoteles.rooms','name')
     valorations = fields.Selection([('1', '⭐'), ('2', '⭐⭐'), ('3', '⭐⭐⭐'), ('4', '⭐⭐⭐⭐'), ('5', '⭐⭐⭐⭐⭐')])
     listServices = fields.Many2many('reserva_hoteles.service')
     city = fields.Many2one('reserva_hoteles.citys','name')
-    comments = fields.One2many('reserva_hoteles.comments')
+    comments = fields.One2many('reserva_hoteles.comments','name')
 
 class rooms (models.Model):
     _name = 'reserva_hoteles.rooms'
@@ -49,7 +49,7 @@ class reserve (models.Model):
     datestart = fields.Date()
     dateend = fields.Date()
     client = fields.Many2many('res.partner')
-    room = fields.Many2one('reserva_hoteles.rooms')
+    room = fields.Many2one('reserva_hoteles.rooms','name')
     hotel = fields.Many2one('reserva_hoteles.hotels', related='room.hotel', readonly=True)
     city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readonly=True)
 
@@ -57,22 +57,22 @@ class photoHotel (models.Model):
     _name='reserva_hoteles.hotelgallery'
     name = fields.Text()
     photo = fields.Binary()
-    hotel = fields.Many2one('reserva_hoteles.hotels')
+    hotel = fields.Many2one('reserva_hoteles.hotels','name')
 
 class photoGallery (models.Model):
     _name = 'reserva_hoteles.photogallery'
     name = fields.Text()
     photo = fields.Binary()
-    room = fields.Many2one('')
+    room = fields.Many2one('reserva_hoteles.rooms','name')
 
 class services (models.Model):
     _name = 'reserva_hoteles.service'
     name = fields.Selection([("1","Parking"),("2","Roomservice"),("3","Sauna")],'Type', default='2')
     photo = fields.Binary()
-    hotel = fields.Many2many('reserva_hoteles.hotels','name')
+    hotel = fields.One2many('reserva_hoteles.hotels','name')
 
 class comments (models.Model):
     _name = 'reserva_hoteles.comments'
     name = fields.Text()
     description = fields.Text()
-    hotel = fields.Many2many('reserva_hoteles.hotels','name')
+    hotel = fields.Many2one('reserva_hoteles.hotels','name')

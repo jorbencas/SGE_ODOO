@@ -33,7 +33,7 @@
           <!--<field name="photoGallery" widget="image" class="oe_left oe_avatar" reserva_hoteles.hotelgallery />-->
           <field name="description"/>
           <!--<field name="listRooms"/>-->
-          <field name="valorations"/>
+          <field name="valorations" widget="priority"/>
           <!--<field name="listServices"/>-->
           <field name="city"/>
           <!--<field name="comments"/>-->
