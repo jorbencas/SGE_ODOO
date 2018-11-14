@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record model="{reserva_hoteles}" id="city1">
-        <!-- {reserva_hoteles.model_reserva_hoteles_citys} -->
+        <record model="reserva_hoteles.citys" id="city1">
             <field name="name">Ontinyent</field>
             <field name="description">Es una ciutat increiblement lluminosa</field>
             <field name="location">Comunidad Valenciana</field>
             <field name="countrys" ref="base.es"></field>
         </record>
-        <record model="{reserva_hoteles}" id="city2">
-        <!-- {reserva_hoteles.model_reserva_hoteles_citys} -->
+        <record model="reserva_hoteles.citys" id="city2">
             <field name="name">Xativa</field>
             <field name="description">Es una ciutat increiblement lluminosa</field>
             <field name="location">Comunidad Valenciana</field>
