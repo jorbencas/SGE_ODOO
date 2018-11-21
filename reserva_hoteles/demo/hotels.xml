@@ -5,28 +5,28 @@
             <field name="name">Royald Resort</field>
             <field name="description">Hotel grande, bonito y muy bien decorado</field>
             <field name="valorations">2</field>
-            <field name="listServices" eval="[(6,0[])]"></field>
+            <!--<field name="listServices" eval="[(6,0[ref(reserva_hoteles.service2),ref(reserva_hoteles.service0)])]"/>-->
             <field name="city" ref="reserva_hoteles.city2" ></field>
         </record>
         <record model="reserva_hoteles.hotels" id="hotel2">
             <field name="name">Royald Resort</field>
             <field name="description">Hotel grande, bonito y muy bien decorado</field>
             <field name="valorations">5</field>
-            <field name="listServices" eval="[(6,0[])]"></field>
+            <!--<field name="listServices" eval="[(6,0[ref(reserva_hoteles.service2),ref(reserva_hoteles.service1)])]"/>-->
             <field name="city" ref="reserva_hoteles.city1" ></field>
         </record>
         <record model="reserva_hoteles.hotels" id="hotel3">
             <field name="name">Royald Resort</field>
             <field name="description">Hotel grande, bonito y muy bien decorado</field>
             <field name="valorations">4</field>
-            <field name="listServices" eval="[(6,0[(reserva_hoteles.service2),(reserva_hoteles.service3)])]"></field>
+            <!--<field name="listServices" eval="[(6,0[ref(reserva_hoteles.service1),ref(reserva_hoteles.service0)])]"/>-->
             <field name="city" ref="reserva_hoteles.city2" ></field>
         </record>
         <record model="reserva_hoteles.hotels" id="hotel4">
             <field name="name">Royald Resort</field>
             <field name="description">Hotel grande, bonito y muy bien decorado</field>
             <field name="valorations">1</field>
-            <field name="listServices" eval="[(6,0[(reserva_hoteles.service3),(reserva_hoteles.service1)])]"></field>
+            <!--<field name="listServices" eval="[(6,0[ref(reserva_hoteles.service1),ref(reserva_hoteles.service2)])]"/>-->
             <field name="city" ref="reserva_hoteles.city1" ></field>
         </record>
     </data>

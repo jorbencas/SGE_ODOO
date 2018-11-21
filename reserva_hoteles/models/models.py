@@ -29,7 +29,7 @@ class hotels (models.Model):
     description = fields.Text()
     listRooms = fields.One2many('reserva_hoteles.rooms','name')
     valorations = fields.Selection([('1', '⭐'), ('2', '⭐⭐'), ('3', '⭐⭐⭐'), ('4', '⭐⭐⭐⭐'), ('5', '⭐⭐⭐⭐⭐')])
-    listServices = fields.Many2many('reserva_hoteles.service')
+    listServices = fields.Many2many('reserva_hoteles.services')
     city = fields.Many2one('reserva_hoteles.citys','name')
     comments = fields.One2many('reserva_hoteles.comments','name')
 
@@ -66,7 +66,7 @@ class photoGallery (models.Model):
     room = fields.Many2one('reserva_hoteles.rooms','name')
 
 class services (models.Model):
-    _name = 'reserva_hoteles.service'
+    _name = 'reserva_hoteles.services'
     name = fields.Selection([("0","Parking"),("1","Roomservice"),("2","jacuzzi")],'Type', default='2')
     photo = fields.Binary()
     hotel = fields.One2many('reserva_hoteles.hotels','name')
@@ -75,4 +75,4 @@ class comments (models.Model):
     _name = 'reserva_hoteles.comments'
     name = fields.Text()
     description = fields.Text()
-    hotel = fields.Many2one('reserva_hoteles.hotels','name')
+    hotel = fields.Many2many('reserva_hoteles.hotels')

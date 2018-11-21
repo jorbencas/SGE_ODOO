@@ -70,9 +70,9 @@
     </record>
 
     <!--Servicios-->
-     <record model="ir.ui.view" id="reserva_hoteles.service">
+     <record model="ir.ui.view" id="reserva_hoteles.services">
       <field name="name">Servicios</field>
-      <field name="model">reserva_hoteles.service</field>
+      <field name="model">reserva_hoteles.services</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -84,7 +84,7 @@
 
     <record model="ir.actions.act_window" id="reserva_hoteles.action_service_window">
       <field name="name">Servicios</field>
-      <field name="res_model">reserva_hoteles.service</field>
+      <field name="res_model">reserva_hoteles.services</field>
       <field name="view_mode">tree,form</field>
     </record>
 

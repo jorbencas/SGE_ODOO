@@ -1,0 +1,3596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="reserva_hoteles.rooms" id="room_0">
+            <field name="name">0</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_1">
+            <field name="name">1</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_2">
+            <field name="name">2</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_3">
+            <field name="name">3</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_4">
+            <field name="name">4</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_5">
+            <field name="name">5</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_6">
+            <field name="name">6</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_7">
+            <field name="name">7</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_8">
+            <field name="name">8</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_9">
+            <field name="name">9</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_10">
+            <field name="name">10</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_11">
+            <field name="name">11</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_12">
+            <field name="name">12</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_13">
+            <field name="name">13</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_14">
+            <field name="name">14</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_15">
+            <field name="name">15</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_16">
+            <field name="name">16</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_17">
+            <field name="name">17</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_18">
+            <field name="name">18</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_19">
+            <field name="name">19</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_20">
+            <field name="name">20</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_21">
+            <field name="name">21</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_22">
+            <field name="name">22</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_23">
+            <field name="name">23</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_24">
+            <field name="name">24</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_25">
+            <field name="name">25</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_26">
+            <field name="name">26</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_27">
+            <field name="name">27</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_28">
+            <field name="name">28</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_29">
+            <field name="name">29</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_30">
+            <field name="name">30</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_31">
+            <field name="name">31</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_32">
+            <field name="name">32</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_33">
+            <field name="name">33</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_34">
+            <field name="name">34</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_35">
+            <field name="name">35</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_36">
+            <field name="name">36</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_37">
+            <field name="name">37</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_38">
+            <field name="name">38</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_39">
+            <field name="name">39</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_40">
+            <field name="name">40</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_41">
+            <field name="name">41</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_42">
+            <field name="name">42</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_43">
+            <field name="name">43</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_44">
+            <field name="name">44</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_45">
+            <field name="name">45</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_46">
+            <field name="name">46</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_47">
+            <field name="name">47</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_48">
+            <field name="name">48</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_49">
+            <field name="name">49</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_50">
+            <field name="name">50</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_51">
+            <field name="name">51</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_52">
+            <field name="name">52</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_53">
+            <field name="name">53</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_54">
+            <field name="name">54</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_55">
+            <field name="name">55</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_56">
+            <field name="name">56</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_57">
+            <field name="name">57</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_58">
+            <field name="name">58</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_59">
+            <field name="name">59</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_60">
+            <field name="name">60</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_61">
+            <field name="name">61</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_62">
+            <field name="name">62</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_63">
+            <field name="name">63</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_64">
+            <field name="name">64</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_65">
+            <field name="name">65</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_66">
+            <field name="name">66</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_67">
+            <field name="name">67</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_68">
+            <field name="name">68</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_69">
+            <field name="name">69</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_70">
+            <field name="name">70</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_71">
+            <field name="name">71</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_72">
+            <field name="name">72</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_73">
+            <field name="name">73</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_74">
+            <field name="name">74</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_75">
+            <field name="name">75</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_76">
+            <field name="name">76</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_77">
+            <field name="name">77</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_78">
+            <field name="name">78</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_79">
+            <field name="name">79</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_80">
+            <field name="name">80</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_81">
+            <field name="name">81</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_82">
+            <field name="name">82</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_83">
+            <field name="name">83</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_84">
+            <field name="name">84</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_85">
+            <field name="name">85</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_86">
+            <field name="name">86</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_87">
+            <field name="name">87</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_88">
+            <field name="name">88</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_89">
+            <field name="name">89</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_90">
+            <field name="name">90</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_91">
+            <field name="name">91</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_92">
+            <field name="name">92</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_93">
+            <field name="name">93</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_94">
+            <field name="name">94</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_95">
+            <field name="name">95</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_96">
+            <field name="name">96</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_97">
+            <field name="name">97</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_98">
+            <field name="name">98</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_99">
+            <field name="name">99</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_100">
+            <field name="name">100</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_101">
+            <field name="name">101</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_102">
+            <field name="name">102</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_103">
+            <field name="name">103</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_104">
+            <field name="name">104</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_105">
+            <field name="name">105</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_106">
+            <field name="name">106</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_107">
+            <field name="name">107</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_108">
+            <field name="name">108</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_109">
+            <field name="name">109</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_110">
+            <field name="name">110</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_111">
+            <field name="name">111</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_112">
+            <field name="name">112</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_113">
+            <field name="name">113</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_114">
+            <field name="name">114</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_115">
+            <field name="name">115</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_116">
+            <field name="name">116</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_117">
+            <field name="name">117</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_118">
+            <field name="name">118</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_119">
+            <field name="name">119</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_120">
+            <field name="name">120</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_121">
+            <field name="name">121</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_122">
+            <field name="name">122</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_123">
+            <field name="name">123</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_124">
+            <field name="name">124</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_125">
+            <field name="name">125</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_126">
+            <field name="name">126</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_127">
+            <field name="name">127</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_128">
+            <field name="name">128</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_129">
+            <field name="name">129</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_130">
+            <field name="name">130</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_131">
+            <field name="name">131</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_132">
+            <field name="name">132</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_133">
+            <field name="name">133</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_134">
+            <field name="name">134</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_135">
+            <field name="name">135</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_136">
+            <field name="name">136</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_137">
+            <field name="name">137</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_138">
+            <field name="name">138</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_139">
+            <field name="name">139</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_140">
+            <field name="name">140</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_141">
+            <field name="name">141</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_142">
+            <field name="name">142</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_143">
+            <field name="name">143</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_144">
+            <field name="name">144</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_145">
+            <field name="name">145</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_146">
+            <field name="name">146</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_147">
+            <field name="name">147</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_148">
+            <field name="name">148</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_149">
+            <field name="name">149</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_150">
+            <field name="name">150</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_151">
+            <field name="name">151</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_152">
+            <field name="name">152</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_153">
+            <field name="name">153</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_154">
+            <field name="name">154</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_155">
+            <field name="name">155</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_156">
+            <field name="name">156</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_157">
+            <field name="name">157</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_158">
+            <field name="name">158</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_159">
+            <field name="name">159</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_160">
+            <field name="name">160</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_161">
+            <field name="name">161</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_162">
+            <field name="name">162</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_163">
+            <field name="name">163</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_164">
+            <field name="name">164</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_165">
+            <field name="name">165</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_166">
+            <field name="name">166</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_167">
+            <field name="name">167</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_168">
+            <field name="name">168</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_169">
+            <field name="name">169</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_170">
+            <field name="name">170</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_171">
+            <field name="name">171</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_172">
+            <field name="name">172</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_173">
+            <field name="name">173</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_174">
+            <field name="name">174</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_175">
+            <field name="name">175</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_176">
+            <field name="name">176</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_177">
+            <field name="name">177</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_178">
+            <field name="name">178</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_179">
+            <field name="name">179</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_180">
+            <field name="name">180</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_181">
+            <field name="name">181</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_182">
+            <field name="name">182</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_183">
+            <field name="name">183</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_184">
+            <field name="name">184</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_185">
+            <field name="name">185</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_186">
+            <field name="name">186</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_187">
+            <field name="name">187</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_188">
+            <field name="name">188</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_189">
+            <field name="name">189</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_190">
+            <field name="name">190</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_191">
+            <field name="name">191</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_192">
+            <field name="name">192</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_193">
+            <field name="name">193</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_194">
+            <field name="name">194</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_195">
+            <field name="name">195</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_196">
+            <field name="name">196</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_197">
+            <field name="name">197</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_198">
+            <field name="name">198</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_199">
+            <field name="name">199</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_200">
+            <field name="name">200</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_201">
+            <field name="name">201</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_202">
+            <field name="name">202</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_203">
+            <field name="name">203</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_204">
+            <field name="name">204</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_205">
+            <field name="name">205</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_206">
+            <field name="name">206</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_207">
+            <field name="name">207</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_208">
+            <field name="name">208</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_209">
+            <field name="name">209</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_210">
+            <field name="name">210</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_211">
+            <field name="name">211</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_212">
+            <field name="name">212</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_213">
+            <field name="name">213</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_214">
+            <field name="name">214</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_215">
+            <field name="name">215</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_216">
+            <field name="name">216</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_217">
+            <field name="name">217</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_218">
+            <field name="name">218</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_219">
+            <field name="name">219</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_220">
+            <field name="name">220</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_221">
+            <field name="name">221</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_222">
+            <field name="name">222</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_223">
+            <field name="name">223</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_224">
+            <field name="name">224</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_225">
+            <field name="name">225</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_226">
+            <field name="name">226</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_227">
+            <field name="name">227</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_228">
+            <field name="name">228</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_229">
+            <field name="name">229</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_230">
+            <field name="name">230</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_231">
+            <field name="name">231</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_232">
+            <field name="name">232</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_233">
+            <field name="name">233</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_234">
+            <field name="name">234</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_235">
+            <field name="name">235</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_236">
+            <field name="name">236</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_237">
+            <field name="name">237</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_238">
+            <field name="name">238</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_239">
+            <field name="name">239</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_240">
+            <field name="name">240</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_241">
+            <field name="name">241</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_242">
+            <field name="name">242</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_243">
+            <field name="name">243</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_244">
+            <field name="name">244</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_245">
+            <field name="name">245</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_246">
+            <field name="name">246</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_247">
+            <field name="name">247</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_248">
+            <field name="name">248</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_249">
+            <field name="name">249</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_250">
+            <field name="name">250</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_251">
+            <field name="name">251</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_252">
+            <field name="name">252</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_253">
+            <field name="name">253</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_254">
+            <field name="name">254</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_255">
+            <field name="name">255</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_256">
+            <field name="name">256</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_257">
+            <field name="name">257</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_258">
+            <field name="name">258</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_259">
+            <field name="name">259</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_260">
+            <field name="name">260</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_261">
+            <field name="name">261</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_262">
+            <field name="name">262</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_263">
+            <field name="name">263</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_264">
+            <field name="name">264</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_265">
+            <field name="name">265</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_266">
+            <field name="name">266</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_267">
+            <field name="name">267</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_268">
+            <field name="name">268</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_269">
+            <field name="name">269</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_270">
+            <field name="name">270</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_271">
+            <field name="name">271</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_272">
+            <field name="name">272</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_273">
+            <field name="name">273</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_274">
+            <field name="name">274</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_275">
+            <field name="name">275</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_276">
+            <field name="name">276</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_277">
+            <field name="name">277</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_278">
+            <field name="name">278</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_279">
+            <field name="name">279</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_280">
+            <field name="name">280</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_281">
+            <field name="name">281</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_282">
+            <field name="name">282</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_283">
+            <field name="name">283</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_284">
+            <field name="name">284</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_285">
+            <field name="name">285</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_286">
+            <field name="name">286</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_287">
+            <field name="name">287</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_288">
+            <field name="name">288</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_289">
+            <field name="name">289</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_290">
+            <field name="name">290</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_291">
+            <field name="name">291</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_292">
+            <field name="name">292</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_293">
+            <field name="name">293</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_294">
+            <field name="name">294</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_295">
+            <field name="name">295</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_296">
+            <field name="name">296</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_297">
+            <field name="name">297</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_298">
+            <field name="name">298</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_299">
+            <field name="name">299</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_300">
+            <field name="name">300</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_301">
+            <field name="name">301</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_302">
+            <field name="name">302</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_303">
+            <field name="name">303</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_304">
+            <field name="name">304</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_305">
+            <field name="name">305</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_306">
+            <field name="name">306</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_307">
+            <field name="name">307</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_308">
+            <field name="name">308</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_309">
+            <field name="name">309</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_310">
+            <field name="name">310</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_311">
+            <field name="name">311</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_312">
+            <field name="name">312</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_313">
+            <field name="name">313</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_314">
+            <field name="name">314</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_315">
+            <field name="name">315</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_316">
+            <field name="name">316</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_317">
+            <field name="name">317</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_318">
+            <field name="name">318</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_319">
+            <field name="name">319</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_320">
+            <field name="name">320</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_321">
+            <field name="name">321</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_322">
+            <field name="name">322</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_323">
+            <field name="name">323</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_324">
+            <field name="name">324</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_325">
+            <field name="name">325</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_326">
+            <field name="name">326</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_327">
+            <field name="name">327</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_328">
+            <field name="name">328</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_329">
+            <field name="name">329</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_330">
+            <field name="name">330</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_331">
+            <field name="name">331</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_332">
+            <field name="name">332</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_333">
+            <field name="name">333</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_334">
+            <field name="name">334</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_335">
+            <field name="name">335</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_336">
+            <field name="name">336</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_337">
+            <field name="name">337</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_338">
+            <field name="name">338</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_339">
+            <field name="name">339</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_340">
+            <field name="name">340</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_341">
+            <field name="name">341</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_342">
+            <field name="name">342</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_343">
+            <field name="name">343</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_344">
+            <field name="name">344</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_345">
+            <field name="name">345</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_346">
+            <field name="name">346</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_347">
+            <field name="name">347</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_348">
+            <field name="name">348</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_349">
+            <field name="name">349</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_350">
+            <field name="name">350</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_351">
+            <field name="name">351</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_352">
+            <field name="name">352</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_353">
+            <field name="name">353</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_354">
+            <field name="name">354</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_355">
+            <field name="name">355</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_356">
+            <field name="name">356</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_357">
+            <field name="name">357</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_358">
+            <field name="name">358</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_359">
+            <field name="name">359</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_360">
+            <field name="name">360</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_361">
+            <field name="name">361</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_362">
+            <field name="name">362</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_363">
+            <field name="name">363</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_364">
+            <field name="name">364</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_365">
+            <field name="name">365</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_366">
+            <field name="name">366</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_367">
+            <field name="name">367</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_368">
+            <field name="name">368</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_369">
+            <field name="name">369</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_370">
+            <field name="name">370</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_371">
+            <field name="name">371</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_372">
+            <field name="name">372</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_373">
+            <field name="name">373</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_374">
+            <field name="name">374</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_375">
+            <field name="name">375</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_376">
+            <field name="name">376</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_377">
+            <field name="name">377</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_378">
+            <field name="name">378</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_379">
+            <field name="name">379</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_380">
+            <field name="name">380</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_381">
+            <field name="name">381</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_382">
+            <field name="name">382</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_383">
+            <field name="name">383</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_384">
+            <field name="name">384</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_385">
+            <field name="name">385</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_386">
+            <field name="name">386</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_387">
+            <field name="name">387</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_388">
+            <field name="name">388</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_389">
+            <field name="name">389</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_390">
+            <field name="name">390</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_391">
+            <field name="name">391</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_392">
+            <field name="name">392</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_393">
+            <field name="name">393</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_394">
+            <field name="name">394</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_395">
+            <field name="name">395</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_396">
+            <field name="name">396</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_397">
+            <field name="name">397</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+
+        <record model="reserva_hoteles.rooms" id="room_398">
+            <field name="name">398</field>
+            <field name="beds">2</field>
+            <field name="price">4.52</field>
+            <field name="description">Es un habitación muy bonita</field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="city" ref="reserva_hoteles.city2"></field>
+        </record>
+  </data>
+</odoo>
