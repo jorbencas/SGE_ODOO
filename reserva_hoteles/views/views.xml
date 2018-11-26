@@ -25,12 +25,12 @@
 
     <!--Hoteles-->
         <record model="ir.ui.view" id="reserva_hoteles.hotels">
-      <field name="name">Ciudades</field>
+      <field name="name">Hoteles</field>
       <field name="model">reserva_hoteles.hotels</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <!--<field name="photoGallery" widget="image" class="oe_left oe_avatar" reserva_hoteles.hotelgallery />-->
+          <field name="photoSmall" widget="image" class="oe_left oe_avatar" />
           <field name="description"/>
           <!--<field name="listRooms"/>-->
           <field name="valorations" widget="priority"/>
@@ -112,20 +112,20 @@
     </record>
 
     <!--Galleria de Fotos-->
-    <record model="ir.ui.view" id="reserva_hoteles.photogallery">
+    <record model="ir.ui.view" id="reserva_hoteles.hotelgallery">
       <field name="name">Galleria de fotos</field>
-      <field name="model">reserva_hoteles.photogallery</field>
+      <field name="model">reserva_hoteles.hotelgallery</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <!--<field name="photo" widget="image" class="oe_left oe_avatar"/>-->
+          <field name="photo" widget="image" class="oe_left oe_avatar"/>
         </tree>
       </field>
     </record>
 
      <record model="ir.actions.act_window" id="reserva_hoteles.action_photogallery_window">
       <field name="name">Galleria de fotos</field>
-      <field name="res_model">reserva_hoteles.photogallery</field>
+      <field name="res_model">reserva_hoteles.hotelgallery</field>
       <field name="view_mode">tree,form</field>
     </record>
 

@@ -37,5 +37,6 @@
         'demo/rooms.xml',
         'demo/photoGallery2.xml',
         'demo/photoHotel.xml',
+        #'demo/services.xml',
     ],
 }
