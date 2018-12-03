@@ -17,6 +17,35 @@
       </field>
     </record>
 
+
+      <record model="ir.ui.view" id="reserva_hoteles.citys_form">
+            <field name="name">Ciudades</field>
+      <field name="model">reserva_hoteles.citys</field>
+          <field name="arch" type="xml">
+              <form>
+                  <sheet>
+                      <h1 style="text-align:center;"><field name="name"/></h1>
+                      <group>
+                          <group>
+                              <field name="name"></field>
+                              <field name="description"></field>
+                          </group>
+                          <group>
+                              <field name="location"></field>
+                              <field name="countrys"></field>
+                          </group>
+                      </group>
+                      <notebook >
+                           <page string="Hoteles"><field name="listHotels"></field></page>
+                        </notebook>
+                  </sheet>
+
+              </form>
+
+          </field>
+</record>
+
+
     <record model="ir.actions.act_window" id="reserva_hoteles.action_citys_window">
       <field name="name">Ciudades</field>
       <field name="res_model">reserva_hoteles.citys</field>
@@ -32,12 +61,43 @@
           <field name="name"/>
           <field name="photoSmall" widget="image" class="oe_left oe_avatar" />
           <field name="description"/>
-          <!--<field name="listRooms"/>-->
+          <field name="description"/>
+          <field name="listRooms"/>
           <field name="valorations" widget="priority"/>
           <!--<field name="listServices"/>-->
           <field name="city"/>
           <!--<field name="comments"/>-->
         </tree>
+      </field>
+    </record>
+
+     <record model="ir.ui.view" id="reserva_hoteles.hotels_form">
+      <field name="name">Hoteles</field>
+      <field name="model">reserva_hoteles.hotels</field>
+      <field name="arch" type="xml">
+          <form>
+                  <sheet>
+                  <h1><field name="name"/></h1>
+                  <group>
+                  <group>
+                      <field name="name"/>
+                      <field name="photoGallery" widget="image" class="oe_left oe_avatar" />
+                  </group>
+        
+           <notebook >
+            <page string="Habitaciones"><field name="listRooms"/></page>
+          </notebook>
+          <group>
+            <field name="valorations" widget="priority"/>
+           </group>
+           <notebook>
+              <page string="Servicios"><field name="listServices"/></page>
+            </notebook>
+          <label for="city">Ciudades</label><field name="city"/>
+          <!-- <field name="comments"/> -->
+          </group>
+          </sheet>
+        </form>
       </field>
     </record>
 
@@ -56,10 +116,34 @@
           <field name="name"/>
           <field name="beds"/>
           <field name="price"/>
-          <!--<field name="photos" widget="image" class="oe_left oe_avatar"/>-->
+          <field name="photos" widget="image" class="oe_left oe_avatar"/>
           <field name="description"/>
           <field name="hotel"/>
         </tree>
+      </field>
+    </record>
+
+  <record model="ir.ui.view" id="reserva_hoteles.rooms_form">
+      <field name="name">Habitaciones</field>
+      <field name="model">reserva_hoteles.rooms</field>
+      <field name="arch" type="xml">
+       <form>
+          <sheet>
+            <h1><field name="name"/></h1>
+            <group>
+              <field name="name"/>
+              <field name="description"/>
+            </group>
+            <group>
+              <field name="beds"/>
+            </group>
+            <field name="price"/>
+            <field name="photos" widget="image" class="oe_left oe_avatar"/>
+            <notebook>
+                <page string="Hotel"><field name="hotel"/></page>
+            </notebook>
+          </sheet>
+        </form>
       </field>
     </record>
 
@@ -82,6 +166,23 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="reserva_hoteles.services_form">
+      <field name="name">Servicios</field>
+      <field name="model">reserva_hoteles.services</field>
+      <field name="arch" type="xml">
+         <form>
+          <sheet>
+            <h1><field name="name"/></h1>
+            <group>
+          <field name="name"/>
+          </group>
+          <field name="photo" widget="image" class="oe_left oe_avatar"/>
+          <field name="hotel"/>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
     <record model="ir.actions.act_window" id="reserva_hoteles.action_service_window">
       <field name="name">Servicios</field>
       <field name="res_model">reserva_hoteles.services</field>
@@ -90,6 +191,35 @@
 
     <!--Rservas-->
     <record model="ir.ui.view" id="reserva_hoteles.reserve">
+      <field name="name">Reservas</field>
+      <field name="model">reserva_hoteles.reserve</field>
+      <field name="arch" type="xml">
+         <form>
+          <sheet>
+            <h1><field name="name"/></h1>
+            <group>
+          <field name="name"/>
+          </group>
+          <group>
+          <field name="datestart"/>
+          </group>
+          <group>
+          <field name="dateend"/>
+          </group>
+          <group>
+            <field name="client"/>
+            <field name="room"/>
+            <field name="hotel"/>
+          </group>
+          <notebook>
+          <field name="city"/>
+        </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+  <record model="ir.ui.view" id="reserva_hoteles.reserve">
       <field name="name">Reservas</field>
       <field name="model">reserva_hoteles.reserve</field>
       <field name="arch" type="xml">
@@ -112,19 +242,39 @@
     </record>
 
     <!--Galleria de Fotos-->
-    <record model="ir.ui.view" id="reserva_hoteles.hotelgallery">
+    <record model="ir.ui.view" id="reserva_hoteles.photogallery">
       <field name="name">Galleria de fotos</field>
-      <field name="model">reserva_hoteles.hotelgallery</field>
+      <field name="model">reserva_hoteles.photogallery</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
           <field name="photo" widget="image" class="oe_left oe_avatar"/>
+          <field name="room"/>
         </tree>
       </field>
     </record>
 
      <record model="ir.actions.act_window" id="reserva_hoteles.action_photogallery_window">
       <field name="name">Galleria de fotos</field>
+      <field name="res_model">reserva_hoteles.photogallery</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+     <!--Galleria de Fotos-->
+    <record model="ir.ui.view" id="reserva_hoteles.hotelgallery">
+      <field name="name">Galleria de fotos del hotel</field>
+      <field name="model">reserva_hoteles.hotelgallery</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="photo" widget="image" class="oe_left oe_avatar"/>
+          <field name="hotel"/>
+        </tree>
+      </field>
+    </record>
+
+     <record model="ir.actions.act_window" id="reserva_hoteles.action_hotelgallery_window">
+      <field name="name">Galleria de fotos del hotel</field>
       <field name="res_model">reserva_hoteles.hotelgallery</field>
       <field name="view_mode">tree,form</field>
     </record>
@@ -150,8 +300,10 @@
               action="reserva_hoteles.action_reserve_window"/>
     <menuitem name="Servicios" id="reserva_hoteles.menu_5_reserves_list" parent="reserva_hoteles.menu_1_list"
               action="reserva_hoteles.action_service_window"/>
-    <menuitem name="Galeria de Fotos" id="reserva_hoteles.menu_6_reserves_list" parent="reserva_hoteles.menu_1_list"
+    <menuitem name="Galeria de Fotos de las Habitaciones" id="reserva_hoteles.menu_6_reserves_list" parent="reserva_hoteles.menu_1_list"
               action="reserva_hoteles.action_photogallery_window"/>
+     <menuitem name="Galeria de Fotos del hotel" id="reserva_hoteles.menu_7_reserves_list" parent="reserva_hoteles.menu_1_list"
+              action="reserva_hoteles.action_hotelgallery_window"/>
     <!--<menuitem name="Server to list" id="reserva_hoteles" parent="reserva_hoteles.menu_2"
               action="reserva_hoteles.action_server"/>
     -->

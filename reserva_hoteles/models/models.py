@@ -37,11 +37,11 @@ class hotels (models.Model):
     @api.depends('photoGallery')
     def _get_resized_image_hotel(self):
         for p in self:
-               	if len(p.photoGallery) > 0:
-                    data = tools.image_get_resized_images(p.photoGallery[0].photo)
-                    p.photoSmall = data['image_small']
-                else:
-                    print("Este hotel no tiene fotos...")
+            if len(p.photoGallery) > 0:
+                data = tools.image_get_resized_images(p.photoGallery[0].photo)
+                p.photoSmall = data['image_small']
+            else:
+                print("Este hotel no tiene fotos...")
 
 
 class rooms (models.Model):
@@ -49,17 +49,18 @@ class rooms (models.Model):
     name = fields.Integer()
     beds = fields.Selection([('0','Una Cama'),('1','Dos Camas'),('2','Cama de Matrimonio'),('3','Cama de matromonio mas cama infantil') ],'Type', default='1')
     photos = fields.One2many('reserva_hoteles.photogallery','photo')
-    #photo_small = fields.Binary(compute='_get_resized_image',store=True)
+    # photo_small = fields.Binary(compute='_get_resized_image',store=True)
     price = fields.Float(default=1)
     description = fields.Text(default="Habitación grande, espaciosa y con gran luminosidad.")
     hotel = fields.Many2one('reserva_hoteles.hotels','name')
     city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readonly=True)
    
-    #@api.depends('photos')
-    #def _get_resized_image(self):
+    # @api.depends('photos')
+    # def _get_resized_image(self):
 	#    for p in self:
-	#	    if len(p.photos) > 0:
-    #            p.photo_small = tools.image_get_resized_images(p.photos[0].photo)
+	# 	    if len(p.photos) > 0:
+    #            data = tools.image_get_resized_images(p.photos[0].photo)
+    #            p.photo_small = data['image_small']
     #        else:
     #            print("Este hotel no tiene fotos...")
 
@@ -81,7 +82,6 @@ class photoHotel (models.Model):
     photo = fields.Binary()
     hotel = fields.Many2one('reserva_hoteles.hotels','name')
 
-   
 class photoGallery (models.Model):
     _name = 'reserva_hoteles.photogallery'
     name = fields.Text()

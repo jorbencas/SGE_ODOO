@@ -4,9 +4,8 @@ echo '<?xml version="1.0" encoding="utf-8"?>
     <data>'
    i=0;
     arr=(0 1 2)
-    while [ $i -le 2 ]; 
+    while [ $i -le 2 ];do
     random=$((( RANDOM % 4 ) + 1 ))
-    do
         echo '  
         <record model="reserva_hoteles.services" id="service'$i'">
             <field name="name">'${arr[$i]}'</field>
