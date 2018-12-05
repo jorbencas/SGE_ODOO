@@ -12,7 +12,7 @@
           <field name="description"/>
           <field name="location"/>
           <field name="countrys"/>
-          <!--<field name="listHotels"/>-->
+          <field name="listHotels"/>
         </tree>
       </field>
     </record>
@@ -59,12 +59,12 @@
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="photoSmall" widget="image" class="oe_left oe_avatar" />
+          <!-- <field name="photoGallery" widget="image" class="oe_left oe_avatar" /> -->
           <field name="description"/>
           <field name="description"/>
           <field name="listRooms"/>
           <field name="valorations" widget="priority"/>
-          <!--<field name="listServices"/>-->
+          <field name="listServices"/>
           <field name="city"/>
           <!--<field name="comments"/>-->
         </tree>
@@ -76,26 +76,23 @@
       <field name="model">reserva_hoteles.hotels</field>
       <field name="arch" type="xml">
           <form>
-                  <sheet>
+              <sheet>
                   <h1><field name="name"/></h1>
                   <group>
                   <group>
                       <field name="name"/>
-                      <field name="photoGallery" widget="image" class="oe_left oe_avatar" />
+                      <label for="city">Ciudades</label><field name="city"/>
                   </group>
-        
-           <notebook >
-            <page string="Habitaciones"><field name="listRooms"/></page>
-          </notebook>
-          <group>
-            <field name="valorations" widget="priority"/>
-           </group>
-           <notebook>
-              <page string="Servicios"><field name="listServices"/></page>
-            </notebook>
-          <label for="city">Ciudades</label><field name="city"/>
-          <!-- <field name="comments"/> -->
-          </group>
+                  <group>
+                    <field name="valorations" widget="priority"/>
+                  </group>
+                  <notebook>
+                    <page string="Galeria"><field name="photoGallery" widget="image" /></page>
+                    <page string="Habitaciones"><field name="listRooms"/></page>
+                    <page string="Comentarios"><!-- <field name="comments"/> --></page>
+                    <page string="Servicios"><field name="listServices"/></page>
+                  </notebook>
+              </group>
           </sheet>
         </form>
       </field>
@@ -116,7 +113,7 @@
           <field name="name"/>
           <field name="beds"/>
           <field name="price"/>
-          <field name="photos" widget="image" class="oe_left oe_avatar"/>
+          <!-- <field name="photos" widget="image" class="oe_left oe_avatar"/> -->
           <field name="description"/>
           <field name="hotel"/>
         </tree>
@@ -160,7 +157,7 @@
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <!--<field name="photo" widget="image" class="oe_left oe_avatar"/>-->
+          <field name="photo" widget="image" class="oe_left oe_avatar"/>
           <!--<field name="hotel"/>-->
         </tree>
       </field>
@@ -177,7 +174,7 @@
           <field name="name"/>
           </group>
           <field name="photo" widget="image" class="oe_left oe_avatar"/>
-          <field name="hotel"/>
+          <!-- <field name="hotel"/> -->
           </sheet>
         </form>
       </field>
@@ -249,7 +246,7 @@
         <tree>
           <field name="name"/>
           <field name="photo" widget="image" class="oe_left oe_avatar"/>
-          <field name="room"/>
+          <!-- <field name="room"/> -->
         </tree>
       </field>
     </record>
@@ -268,7 +265,7 @@
         <tree>
           <field name="name"/>
           <field name="photo" widget="image" class="oe_left oe_avatar"/>
-          <field name="hotel"/>
+          <!-- <field name="hotel"/> -->
         </tree>
       </field>
     </record>

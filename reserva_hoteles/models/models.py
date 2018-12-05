@@ -25,8 +25,8 @@ class citys(models.Model):
 class hotels (models.Model):
     _name = 'reserva_hoteles.hotels'
     name = fields.Text()
-    photoGallery = fields.One2many('reserva_hoteles.hotelgallery','photo')
-    photoSmall = fields.Binary(compute='_get_resized_image_hotel',store=True)
+    photoGallery = fields.Many2many('reserva_hoteles.hotelgallery')
+    # photoSmall = fields.Binary(compute='_get_resized_image_hotel',store=True)
     description = fields.Text()
     listRooms = fields.One2many('reserva_hoteles.rooms','name')
     valorations = fields.Selection([('1', '⭐'), ('2', '⭐⭐'), ('3', '⭐⭐⭐'), ('4', '⭐⭐⭐⭐'), ('5', '⭐⭐⭐⭐⭐')])
@@ -34,21 +34,21 @@ class hotels (models.Model):
     city = fields.Many2one('reserva_hoteles.citys','name')
     comments = fields.One2many('reserva_hoteles.comments','name')
 
-    @api.depends('photoGallery')
-    def _get_resized_image_hotel(self):
-        for p in self:
-            if len(p.photoGallery) > 0:
-                data = tools.image_get_resized_images(p.photoGallery[0].photo)
-                p.photoSmall = data['image_small']
-            else:
-                print("Este hotel no tiene fotos...")
+    # @api.depends('photoGallery')
+    # def _get_resized_image_hotel(self):
+    #     for p in self:
+    #         if len(p.photoGallery) > 0:
+    #             data = tools.image_get_resized_images(p.photoGallery[0].photo)
+    #             p.photoSmall = data['image_small']
+    #         else:
+    #             print("Este hotel no tiene fotos...")
 
 
 class rooms (models.Model):
     _name = 'reserva_hoteles.rooms'
     name = fields.Integer()
     beds = fields.Selection([('0','Una Cama'),('1','Dos Camas'),('2','Cama de Matrimonio'),('3','Cama de matromonio mas cama infantil') ],'Type', default='1')
-    photos = fields.One2many('reserva_hoteles.photogallery','photo')
+    photos = fields.Many2many('reserva_hoteles.photogallery')
     # photo_small = fields.Binary(compute='_get_resized_image',store=True)
     price = fields.Float(default=1)
     description = fields.Text(default="Habitación grande, espaciosa y con gran luminosidad.")
@@ -80,20 +80,19 @@ class photoHotel (models.Model):
     _name='reserva_hoteles.hotelgallery'
     name = fields.Text()
     photo = fields.Binary()
-    hotel = fields.Many2one('reserva_hoteles.hotels','name')
+    # hotel = fields.Many2one('reserva_hoteles.hotels','name')
 
 class photoGallery (models.Model):
     _name = 'reserva_hoteles.photogallery'
     name = fields.Text()
     photo = fields.Binary()
-    room = fields.Many2one('reserva_hoteles.rooms','name')
+    # room = fields.Many2one('reserva_hoteles.rooms','name')
 
 class services (models.Model):
     _name = 'reserva_hoteles.services'
     name = fields.Selection([("0","Parking"),("1","Roomservice"),("2","jacuzzi")],'Type', default='2')
     photo = fields.Binary()
-    hotel = fields.Many2many('reserva_hoteles.hotels')
-
+    
 class comments (models.Model):
     _name = 'reserva_hoteles.comments'
     name = fields.Text()
