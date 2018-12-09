@@ -7,8 +7,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_1">
@@ -34,8 +34,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_4">
@@ -43,8 +43,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_5">
@@ -52,8 +52,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_6">
@@ -79,8 +79,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_9">
@@ -97,8 +97,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_11">
@@ -106,8 +106,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_12">
@@ -115,8 +115,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_13">
@@ -142,8 +142,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_16">
@@ -151,8 +151,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_17">
@@ -160,8 +160,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_18">
@@ -169,8 +169,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_19">
@@ -187,8 +187,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_21">
@@ -196,8 +196,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_22">
@@ -205,8 +205,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_23">
@@ -214,8 +214,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_24">
@@ -223,8 +223,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_25">
@@ -232,8 +232,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_26">
@@ -250,8 +250,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_28">
@@ -259,8 +259,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_29">
@@ -268,8 +268,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_30">
@@ -286,8 +286,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_32">
@@ -295,8 +295,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_33">
@@ -304,8 +304,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_34">
@@ -322,8 +322,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_36">
@@ -349,8 +349,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_39">
@@ -358,8 +358,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_40">
@@ -367,8 +367,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_41">
@@ -385,8 +385,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_43">
@@ -394,8 +394,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_44">
@@ -403,8 +403,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_45">
@@ -421,8 +421,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_47">
@@ -430,8 +430,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_48">
@@ -439,8 +439,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_49">
@@ -457,8 +457,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_51">
@@ -466,8 +466,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_52">
@@ -484,8 +484,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_54">
@@ -493,8 +493,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_55">
@@ -502,8 +502,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_56">
@@ -511,8 +511,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_57">
@@ -520,8 +520,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_58">
@@ -529,8 +529,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_59">
@@ -547,8 +547,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_61">
@@ -556,8 +556,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_62">
@@ -574,8 +574,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_64">
@@ -601,8 +601,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_67">
@@ -610,8 +610,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_68">
@@ -619,8 +619,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_69">
@@ -628,8 +628,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_70">
@@ -637,8 +637,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_71">
@@ -646,8 +646,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_72">
@@ -655,8 +655,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_73">
@@ -691,8 +691,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_77">
@@ -700,8 +700,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_78">
@@ -709,8 +709,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_79">
@@ -718,8 +718,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_80">
@@ -727,8 +727,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_81">
@@ -736,8 +736,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_82">
@@ -763,8 +763,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_85">
@@ -772,8 +772,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_86">
@@ -781,8 +781,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_87">
@@ -790,8 +790,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_88">
@@ -808,8 +808,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_90">
@@ -817,8 +817,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_91">
@@ -826,8 +826,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_92">
@@ -844,8 +844,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_94">
@@ -853,8 +853,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_95">
@@ -862,8 +862,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_96">
@@ -871,8 +871,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_97">
@@ -889,8 +889,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_99">
@@ -916,8 +916,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_102">
@@ -925,8 +925,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_103">
@@ -934,8 +934,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_104">
@@ -952,8 +952,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_106">
@@ -961,8 +961,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_107">
@@ -970,8 +970,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_108">
@@ -988,8 +988,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_110">
@@ -997,8 +997,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_111">
@@ -1006,8 +1006,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_112">
@@ -1015,8 +1015,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_113">
@@ -1024,8 +1024,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_114">
@@ -1042,8 +1042,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_116">
@@ -1051,8 +1051,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_117">
@@ -1060,8 +1060,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_118">
@@ -1069,8 +1069,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_119">
@@ -1078,8 +1078,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_120">
@@ -1087,8 +1087,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_121">
@@ -1096,8 +1096,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_122">
@@ -1105,8 +1105,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_123">
@@ -1114,8 +1114,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_124">
@@ -1132,8 +1132,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_126">
@@ -1168,8 +1168,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_130">
@@ -1177,8 +1177,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_131">
@@ -1186,8 +1186,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_132">
@@ -1195,8 +1195,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_133">
@@ -1213,8 +1213,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_135">
@@ -1222,8 +1222,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_136">
@@ -1231,8 +1231,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_137">
@@ -1249,8 +1249,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_139">
@@ -1267,8 +1267,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_141">
@@ -1276,8 +1276,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_142">
@@ -1285,8 +1285,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_143">
@@ -1294,8 +1294,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_144">
@@ -1303,8 +1303,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_145">
@@ -1348,8 +1348,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_150">
@@ -1375,8 +1375,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_153">
@@ -1393,8 +1393,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_155">
@@ -1402,8 +1402,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_156">
@@ -1411,8 +1411,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_157">
@@ -1420,8 +1420,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_158">
@@ -1429,8 +1429,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_159">
@@ -1438,8 +1438,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_160">
@@ -1474,8 +1474,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_164">
@@ -1483,8 +1483,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_165">
@@ -1492,8 +1492,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_166">
@@ -1510,8 +1510,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_168">
@@ -1519,8 +1519,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_169">
@@ -1528,8 +1528,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_170">
@@ -1537,8 +1537,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_171">
@@ -1546,8 +1546,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_172">
@@ -1555,8 +1555,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_173">
@@ -1564,8 +1564,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_174">
@@ -1573,8 +1573,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_175">
@@ -1582,8 +1582,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_176">
@@ -1591,8 +1591,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_177">
@@ -1600,8 +1600,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_178">
@@ -1609,8 +1609,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_179">
@@ -1654,8 +1654,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_184">
@@ -1672,8 +1672,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_186">
@@ -1681,8 +1681,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_187">
@@ -1699,8 +1699,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_189">
@@ -1726,8 +1726,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_192">
@@ -1735,8 +1735,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_193">
@@ -1753,8 +1753,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_195">
@@ -1762,8 +1762,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_196">
@@ -1798,8 +1798,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_200">
@@ -1807,8 +1807,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_201">
@@ -1834,8 +1834,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_204">
@@ -1843,8 +1843,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_205">
@@ -1852,8 +1852,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_206">
@@ -1870,8 +1870,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_208">
@@ -1879,8 +1879,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_209">
@@ -1888,8 +1888,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_210">
@@ -1915,8 +1915,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_213">
@@ -1924,8 +1924,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_214">
@@ -1933,8 +1933,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_215">
@@ -1942,8 +1942,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_216">
@@ -1951,8 +1951,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_217">
@@ -1969,8 +1969,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_219">
@@ -1978,8 +1978,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_220">
@@ -1987,8 +1987,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_221">
@@ -2005,8 +2005,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_223">
@@ -2014,8 +2014,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_224">
@@ -2032,8 +2032,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_226">
@@ -2050,8 +2050,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_228">
@@ -2059,8 +2059,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_229">
@@ -2068,8 +2068,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_230">
@@ -2077,8 +2077,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_231">
@@ -2086,8 +2086,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_232">
@@ -2095,8 +2095,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_233">
@@ -2104,8 +2104,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_234">
@@ -2113,8 +2113,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_235">
@@ -2149,8 +2149,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_239">
@@ -2158,8 +2158,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_240">
@@ -2167,8 +2167,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_241">
@@ -2176,8 +2176,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_242">
@@ -2185,8 +2185,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_243">
@@ -2194,8 +2194,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_244">
@@ -2203,8 +2203,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_245">
@@ -2212,8 +2212,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_246">
@@ -2221,8 +2221,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_247">
@@ -2230,8 +2230,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_248">
@@ -2239,8 +2239,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_249">
@@ -2248,8 +2248,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_250">
@@ -2257,8 +2257,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_251">
@@ -2266,8 +2266,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_252">
@@ -2275,8 +2275,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_253">
@@ -2284,8 +2284,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_254">
@@ -2293,8 +2293,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_255">
@@ -2302,8 +2302,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_256">
@@ -2311,8 +2311,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_257">
@@ -2320,8 +2320,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_258">
@@ -2329,8 +2329,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_259">
@@ -2347,8 +2347,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_261">
@@ -2356,8 +2356,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_262">
@@ -2365,8 +2365,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_263">
@@ -2392,8 +2392,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_266">
@@ -2401,8 +2401,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_267">
@@ -2410,8 +2410,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_268">
@@ -2437,8 +2437,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_271">
@@ -2446,8 +2446,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_272">
@@ -2455,8 +2455,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_273">
@@ -2464,8 +2464,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_274">
@@ -2473,8 +2473,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_275">
@@ -2482,8 +2482,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_276">
@@ -2491,8 +2491,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_277">
@@ -2500,8 +2500,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_278">
@@ -2518,8 +2518,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_280">
@@ -2536,8 +2536,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_282">
@@ -2545,8 +2545,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_283">
@@ -2554,8 +2554,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_284">
@@ -2572,8 +2572,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_286">
@@ -2581,8 +2581,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_287">
@@ -2590,8 +2590,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_288">
@@ -2599,8 +2599,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_289">
@@ -2608,8 +2608,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_290">
@@ -2617,8 +2617,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_291">
@@ -2626,8 +2626,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_292">
@@ -2635,8 +2635,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_293">
@@ -2644,8 +2644,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_294">
@@ -2653,8 +2653,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_295">
@@ -2662,8 +2662,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_296">
@@ -2680,8 +2680,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_298">
@@ -2698,8 +2698,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_300">
@@ -2707,8 +2707,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_301">
@@ -2725,8 +2725,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_303">
@@ -2734,8 +2734,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_304">
@@ -2752,8 +2752,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_306">
@@ -2761,8 +2761,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_307">
@@ -2770,8 +2770,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_308">
@@ -2788,8 +2788,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_310">
@@ -2806,8 +2806,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_312">
@@ -2815,8 +2815,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_313">
@@ -2824,8 +2824,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_314">
@@ -2833,8 +2833,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_315">
@@ -2842,8 +2842,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_316">
@@ -2851,8 +2851,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_317">
@@ -2869,8 +2869,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_319">
@@ -2887,8 +2887,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_321">
@@ -2896,8 +2896,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_322">
@@ -2905,8 +2905,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_323">
@@ -2914,8 +2914,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_324">
@@ -2923,8 +2923,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_325">
@@ -2932,8 +2932,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_326">
@@ -2941,8 +2941,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_327">
@@ -2950,8 +2950,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_328">
@@ -2968,8 +2968,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_330">
@@ -2977,8 +2977,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_331">
@@ -2986,8 +2986,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_332">
@@ -3004,8 +3004,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_334">
@@ -3013,8 +3013,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_335">
@@ -3022,8 +3022,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_336">
@@ -3031,8 +3031,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_337">
@@ -3049,8 +3049,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_339">
@@ -3058,8 +3058,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_340">
@@ -3067,8 +3067,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_341">
@@ -3076,8 +3076,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_342">
@@ -3085,8 +3085,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_343">
@@ -3094,8 +3094,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_344">
@@ -3112,8 +3112,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_346">
@@ -3130,8 +3130,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_348">
@@ -3139,8 +3139,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_349">
@@ -3148,8 +3148,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_350">
@@ -3157,8 +3157,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_351">
@@ -3166,8 +3166,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_352">
@@ -3175,8 +3175,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_353">
@@ -3193,8 +3193,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_355">
@@ -3202,8 +3202,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_356">
@@ -3211,8 +3211,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_357">
@@ -3220,8 +3220,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_358">
@@ -3238,8 +3238,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_360">
@@ -3256,8 +3256,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_362">
@@ -3265,8 +3265,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_363">
@@ -3274,8 +3274,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_364">
@@ -3283,8 +3283,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_365">
@@ -3292,8 +3292,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_366">
@@ -3301,8 +3301,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_367">
@@ -3310,8 +3310,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_368">
@@ -3328,8 +3328,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_370">
@@ -3337,8 +3337,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_371">
@@ -3346,8 +3346,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_372">
@@ -3355,8 +3355,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_373">
@@ -3373,8 +3373,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_375">
@@ -3382,8 +3382,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_376">
@@ -3391,8 +3391,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_377">
@@ -3409,8 +3409,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_379">
@@ -3418,8 +3418,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_380">
@@ -3427,8 +3427,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_381">
@@ -3454,8 +3454,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_384">
@@ -3463,8 +3463,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_385">
@@ -3481,8 +3481,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_387">
@@ -3490,8 +3490,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_388">
@@ -3499,8 +3499,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_389">
@@ -3508,8 +3508,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_390">
@@ -3517,8 +3517,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_391">
@@ -3526,8 +3526,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_392">
@@ -3535,8 +3535,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_393">
@@ -3544,8 +3544,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_394">
@@ -3553,8 +3553,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_395">
@@ -3571,8 +3571,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto2')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_397">
@@ -3580,8 +3580,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto4')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_398">
@@ -3589,8 +3589,8 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
-            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto1')] )]" />
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="photos" eval="[(6,0,[ref('reserva_hoteles.roomfoto3')] )]" />
         </record>
   </data>
 </odoo>

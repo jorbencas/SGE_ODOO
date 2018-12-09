@@ -1,18 +1,7 @@
 # -*- coding: utf-8 -*-
-
-from odoo import models, fields, api
-
-class reserva_hoteles(models.Model):
-     _name = 'reserva_hoteles.reserva_hoteles'
-
-     name = fields.Char()
-     value = fields.Integer()
-     value2 = fields.Float(compute="_value_pc", store=True)
-     description = fields.Text()
-
-     @api.depends('value')
-     def _value_pc(self):
-         self.value2 = float(self.value) / 100
+from odoo import models, fields, api, tools
+from odoo.exceptions import ValidationError
+import datetime
 
 class citys(models.Model):
 	_name = 'reserva_hoteles.citys'
@@ -26,7 +15,7 @@ class hotels (models.Model):
     _name = 'reserva_hoteles.hotels'
     name = fields.Text()
     photoGallery = fields.Many2many('reserva_hoteles.hotelgallery')
-    # photoSmall = fields.Binary(compute='_get_resized_image_hotel',store=True)
+    photomainhotel = fields.Binary(compute='_get_resized_image_hotel',store=True)
     description = fields.Text()
     listRooms = fields.One2many('reserva_hoteles.rooms','name')
     valorations = fields.Selection([('1', '⭐'), ('2', '⭐⭐'), ('3', '⭐⭐⭐'), ('4', '⭐⭐⭐⭐'), ('5', '⭐⭐⭐⭐⭐')])
@@ -34,14 +23,13 @@ class hotels (models.Model):
     city = fields.Many2one('reserva_hoteles.citys','name')
     comments = fields.One2many('reserva_hoteles.comments','name')
 
-    # @api.depends('photoGallery')
-    # def _get_resized_image_hotel(self):
-    #     for p in self:
-    #         if len(p.photoGallery) > 0:
-    #             data = tools.image_get_resized_images(p.photoGallery[0].photo)
-    #             p.photoSmall = data['image_small']
-    #         else:
-    #             print("Este hotel no tiene fotos...")
+    @api.depends('photoGallery')
+    def _get_resized_image_hotel(self):
+        for p in self:
+            if len(p.photoGallery) > 0:
+                 p.photomainhotel = p.photoGallery[0].photo
+            else:
+                 print("Este hotel no tiene fotos...")
 
 
 class rooms (models.Model):
@@ -49,32 +37,57 @@ class rooms (models.Model):
     name = fields.Integer()
     beds = fields.Selection([('0','Una Cama'),('1','Dos Camas'),('2','Cama de Matrimonio'),('3','Cama de matromonio mas cama infantil') ],'Type', default='1')
     photos = fields.Many2many('reserva_hoteles.photogallery')
-    # photo_small = fields.Binary(compute='_get_resized_image',store=True)
+    # photomainroom = fields.Binary(compute='_get_resized_image',store=True)
     price = fields.Float(default=1)
     description = fields.Text(default="Habitación grande, espaciosa y con gran luminosidad.")
     hotel = fields.Many2one('reserva_hoteles.hotels','name')
-    city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readonly=True)
-   
+    city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readOnly=True)
+    reserve = fields.One2many('reserva_hoteles.reserve','name')
+    avaible = fields.Char(string="Estado", compute='_getestado', readOnly=True)
+
     # @api.depends('photos')
     # def _get_resized_image(self):
-	#    for p in self:
-	# 	    if len(p.photos) > 0:
-    #            data = tools.image_get_resized_images(p.photos[0].photo)
-    #            p.photo_small = data['image_small']
-    #        else:
-    #            print("Este hotel no tiene fotos...")
+	#     for record in self:
+	#  	    if len(record.photos) > 0:
+    #             # record.photomainroom = record.photos[0].photo
+    #             print("Este hotel no tiene fotos...")
+    #         else:
+    #             print("Este hotel no tiene fotos...")
 
-
+    @api.depends('reserve')
+    def _getestado(self):
+        for record in self:
+            # print(len(record.reserve))
+            if len(record.reserve) > 0:
+                for valorreserve in record.reserve:
+                    if(valorreserve.dateend < str(datetime.datetime.today())):
+                        record.avaible="Libre"
+                    else:
+                        record.avaible="Ocupado"
+            else:
+                record.avaible="Libre"
 
 class reserve (models.Model):
-    _name = 'reserva_hoteles.reserve'    
-    name = fields.Char()
+    _name = 'reserva_hoteles.reserve'
+    name = fields.Text(string="Nombre de la reserva")
     datestart = fields.Date()
     dateend = fields.Date()
-    client = fields.Many2one('res.partner','name')
-    room = fields.Many2one('reserva_hoteles.rooms','name')
-    hotel = fields.Many2one('reserva_hoteles.hotels', related='room.hotel', readonly=True)
+    client = fields.Many2one('res.partner', 'Nombre del cliente')
+    room = fields.Many2one('reserva_hoteles.rooms','reserve')
+    hotel = fields.Many2one('reserva_hoteles.hotels', related='room.hotel', readonly=True,store=True)
     city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readonly=True)
+
+    @api.constrains('datestart','dateend')
+    def _comprobar_reserva(self):
+        for record in self:
+            variable = self.search_count([('id','!=',record.id),('dateend','>=',record.datestart),('dateend','<=',record.dateend)])
+            variable2 = self.search([('id','!=',record.id),('dateend','>=',record.datestart)('datestart','<=',record.dateend)])
+            for valor in variable2:
+                print(self.name)
+                print(valor.name)
+
+            if variable > 0:
+                raise ValidationError("Se solapan las 2 fechas \n"+ self.name + "com " + valor.name)
 
 class photoHotel (models.Model):
     _name='reserva_hoteles.hotelgallery'
@@ -92,9 +105,13 @@ class services (models.Model):
     _name = 'reserva_hoteles.services'
     name = fields.Selection([("0","Parking"),("1","Roomservice"),("2","jacuzzi")],'Type', default='2')
     photo = fields.Binary()
-    
+
 class comments (models.Model):
     _name = 'reserva_hoteles.comments'
     name = fields.Text()
     description = fields.Text()
-    hotel = fields.Many2many('reserva_hoteles.hotels')
+    clients = fields.Many2one("res.partner", "Nombre del cliente")
+    photoclient = fields.Binary(related='clients.image',store=True)
+    nameclient = fields.Char(related='clients.name')
+    valorations = fields.Selection([('1', '⭐'), ('2', '⭐⭐'), ('3', '⭐⭐⭐'), ('4', '⭐⭐⭐⭐'), ('5', '⭐⭐⭐⭐⭐')],default='5')
+    hotel = fields.Many2one('reserva_hoteles.hotels',"comments")
