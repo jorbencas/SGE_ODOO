@@ -21,6 +21,7 @@ class hotels (models.Model):
     valorations = fields.Selection([('1', '⭐'), ('2', '⭐⭐'), ('3', '⭐⭐⭐'), ('4', '⭐⭐⭐⭐'), ('5', '⭐⭐⭐⭐⭐')])
     listServices = fields.Many2many('reserva_hoteles.services')
     city = fields.Many2one('reserva_hoteles.citys','name')
+    countrys = fields.Char(related='city.countrys.name', store=True, readOnly=True)
     comments = fields.One2many('reserva_hoteles.comments','name')
 
     @api.depends('photoGallery')
@@ -37,7 +38,7 @@ class rooms (models.Model):
     name = fields.Integer()
     beds = fields.Selection([('0','Una Cama'),('1','Dos Camas'),('2','Cama de Matrimonio'),('3','Cama de matromonio mas cama infantil') ],'Type', default='1')
     photos = fields.Many2many('reserva_hoteles.photogallery')
-    # photomainroom = fields.Binary(compute='_get_resized_image',store=True)
+    photomainroom = fields.Binary(compute='_get_resized_image',store=True)
     price = fields.Float(default=1)
     description = fields.Text(default="Habitación grande, espaciosa y con gran luminosidad.")
     hotel = fields.Many2one('reserva_hoteles.hotels','name')
@@ -45,19 +46,18 @@ class rooms (models.Model):
     reserve = fields.One2many('reserva_hoteles.reserve','name')
     avaible = fields.Char(string="Estado", compute='_getestado', readOnly=True)
 
-    # @api.depends('photos')
-    # def _get_resized_image(self):
-	#     for record in self:
-	#  	    if len(record.photos) > 0:
-    #             # record.photomainroom = record.photos[0].photo
-    #             print("Este hotel no tiene fotos...")
-    #         else:
-    #             print("Este hotel no tiene fotos...")
+    @api.depends('photos')
+    def _get_resized_image(self):
+        for record in self:
+            # print(len(record.photos))
+            if len(record.photos) > 0:
+                record.photomainroom = record.photos[0].photo
+            else:
+                print("Este hotel no tiene fotos...")
 
     @api.depends('reserve')
     def _getestado(self):
         for record in self:
-            # print(len(record.reserve))
             if len(record.reserve) > 0:
                 for valorreserve in record.reserve:
                     if(valorreserve.dateend < str(datetime.datetime.today())):
@@ -69,7 +69,7 @@ class rooms (models.Model):
 
 class reserve (models.Model):
     _name = 'reserva_hoteles.reserve'
-    name = fields.Text(string="Nombre de la reserva")
+    name = fields.Char(string="Nombre de la reserva",compute='_generar_nombre',readonly=True)
     datestart = fields.Date()
     dateend = fields.Date()
     client = fields.Many2one('res.partner', 'Nombre del cliente')
@@ -77,11 +77,43 @@ class reserve (models.Model):
     hotel = fields.Many2one('reserva_hoteles.hotels', related='room.hotel', readonly=True,store=True)
     city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readonly=True)
 
+    @api.multi
+    @api.depends('room','datestart','dateend','client')
+    def _generar_nombre(self):
+        for record in self:
+            if record.room and record.datestart and record.dateend and record.client:
+                record.name=record.room.name+' '+record.client.name+' '+record.datestart+' '+record.dateend
+
+
+    @api.onchange('datestart','dateend')
+    def _manyana(self):
+        for record in self:
+            if record.dateend and record.datestart:
+
+                fmt='%Y-%m-%d'
+                datestart=datetime.datetime.strptime(str(record.datestart),fmt)
+                dateend=datetime.datetime.strptime(str(record.dateend),fmt)
+                if dateend < datestart:
+                    record.dateeend = datestart + datetime.timedelta(days=1)
+                    print(record.fechaFinal)
+                    return {
+                        'warning': {
+                            'title': "Algo ha ocurrido mal",
+                            'message': "No puedes insertar un dia antes de la fecha de inicio",
+                        }
+                    }
+                else:
+                    print(" No hay error!")
+            elif record.datestart:
+                fmt = '%Y-%m-%d'
+                data = datetime.datetime.strptime(str(record.datestart), fmt)
+                record.dateend = data + datetime.timedelta(days=1)
+
     @api.constrains('datestart','dateend')
     def _comprobar_reserva(self):
         for record in self:
             variable = self.search_count([('id','!=',record.id),('dateend','>=',record.datestart),('dateend','<=',record.dateend)])
-            variable2 = self.search([('id','!=',record.id),('dateend','>=',record.datestart)('datestart','<=',record.dateend)])
+            variable2 = self.search([('id','!=',record.id),('dateend','>=',record.datestart),('datestart','<=',record.dateend)])
             for valor in variable2:
                 print(self.name)
                 print(valor.name)

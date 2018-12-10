@@ -12,7 +12,6 @@ echo '<?xml version="1.0" encoding="utf-8"?>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
             <field name="hotel" ref="reserva_hoteles.hotel'$random'"></field>
-            <field name="photos" eval="[(6,0,[ref('"'reserva_hoteles.roomfoto$random'"')] )]" />
         </record>'
         i=$(( $i + 1 ))
     done

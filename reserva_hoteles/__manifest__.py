@@ -33,7 +33,6 @@
     'demo': [
         'demo/demo.xml',
         'demo/hotelGallery.xml',
-        'demo/roomsGallery.xml',
         'demo/services.xml',
         'demo/citys.xml',
         'demo/hotels.xml',

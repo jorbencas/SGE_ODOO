@@ -106,7 +106,6 @@
           <field name="name"/>
           <!-- <field name="photoGallery" widget="image" class="oe_left oe_avatar" /> -->
           <field name="description"/>
-          <!-- <field name="description"/> -->
           <!-- <field name="listRooms"/> -->
           <field name="valorations" widget="priority"/>
           <!-- <field name="listServices"/> -->
@@ -148,7 +147,11 @@
                       <kanban>
                         <templates>
                             <t t-name="kanban-box">
+                            <div class="oe_product_vignette" style="border:none;flex:0;width:auto">
+                                                        <a type="open">
                               <field name="photo" widget="image" />
+                              </a>
+                                                    </div>
                             </t>
                           </templates>
                         </kanban>
@@ -163,15 +166,15 @@
                                             <t t-name="kanban-box">
                                                     <div class="oe_product_vignette">
                                                         <a type="open">
-                                                           <!-- <field name="photoclient" widget="image" class="oe_left oe_avatar"/> -->
+                                                           <field name="photoclient" widget="image" class="oe_left oe_avatar"/>
                                                         </a>
                                                         <group>
                                                             <h4>Nombre cliente: </h4>
-                                                            <!-- <field name="nameclient" widget="char"></field> -->
+                                                            <field name="nameclient" widget="char"></field>
                                                             <h4>Descripcion: </h4>
                                                             <field name="description" widget="char"></field>
                                                             <h4>Valoracion: </h4>
-                                                            <!-- <field name="valorations" widget="selection"></field> -->
+                                                            <field name="valorations" widget="selection"></field>
                                                         </group>
                                                     </div>
                                                 </t>
@@ -207,10 +210,10 @@
         <field name="arch" type="xml">
            <search string="Hotels">
                 <field name="city"></field>
-                <!-- <field name="countrys"></field> -->
+                <field name="countrys"></field>
                 <field name="valorations"></field>
                 <group string="Agrupar por">
-                  <!-- <filter name="countrys" string="Pais" context="{'group_by':'countrys'}"></filter> -->
+                  <filter name="countrys" string="Pais" context="{'group_by':'countrys'}"></filter>
                   <filter name="city" string="Ciudad" context="{'group_by':'city'}"></filter>
                 </group>
            </search>
@@ -221,7 +224,7 @@
     <record model="ir.actions.act_window" id="reserva_hoteles.action_hotels_window">
       <field name="name">Hoteles</field>
       <field name="res_model">reserva_hoteles.hotels</field>
-      <field name="view_mode">tree,form, kanban</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
 
     <!--Habitaciones-->
@@ -233,7 +236,7 @@
           <field name="name"/>
           <field name="beds"/>
           <field name="price"/>
-          <field name="photos" widget="image" class="oe_left oe_avatar"/>
+          <!-- <field name="photos" widget="image" class="oe_left oe_avatar"/> -->
           <field name="description"/>
           <field name="hotel"/>
         </tree>
@@ -255,7 +258,7 @@
               <field name="beds"/>
             </group>
             <field name="price"/>
-            <field name="photos" widget="image" class="oe_left oe_avatar"/>
+            <!-- <field name="photos" widget="image" class="oe_left oe_avatar"/> -->
             <notebook>
                 <page string="Hotel"><field name="hotel"/></page>
             </notebook>
