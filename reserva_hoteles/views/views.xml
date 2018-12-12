@@ -98,19 +98,57 @@
     </record>
 
     <!--Hoteles-->
+     <record model="ir.ui.view" id="reserva_hoteles.hotels_kanban">
+            <field name="name"> Hotel Kanban</field>
+            <field name="model">reserva_hoteles.hotels</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <!--list of field to be loaded -->
+                    <field name="name" />
+                    <field name="photomainhotel" />
+                    <field name="city" />
+                    <field name="countrys" />
+                    <field name="photoGallery"/>
+                    <field name="description"/>
+                    <field name="listRooms"/>
+                    <field name="valorations"/>
+                    <field name="listServices"/>
+                    <templates>
+                    <t t-name="kanban-box">
+                            <div class="oe_product_vignette">
+                                <a type="open">
+                                <field name="photomainhotel" style="border:1px solid gray;border-radius:1px;" widget="image"/>
+                                    <img class="oe_kanban_image" t-att-src="kanban_image('photomainhotel')" style="height:128px;width:100%"/>
+                                </a>
+                                <div class="oe_product_desc">
+                                    <h4>
+                                        <a type="edit">
+                                            <field name="name"></field>
+                                        </a>
+                                    </h4>
+                                    <ul>
+                                        <li>Valoracion Media: <field name="valorations"></field></li>
+                                        <li>Ciudad: <field name="city"></field></li>
+                                        <li>Descripcion: <field name="description"></field></li>
+                                    </ul>
+                                </div>
+                            </div>
+                      
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+</record>
+
         <record model="ir.ui.view" id="reserva_hoteles.hotels">
       <field name="name">Hoteles</field>
       <field name="model">reserva_hoteles.hotels</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <!-- <field name="photoGallery" widget="image" class="oe_left oe_avatar" /> -->
           <field name="description"/>
-          <!-- <field name="listRooms"/> -->
           <field name="valorations" widget="priority"/>
-          <!-- <field name="listServices"/> -->
           <field name="city"/>
-          <!--<field name="comments"/>-->
         </tree>
       </field>
     </record>
@@ -147,20 +185,54 @@
                       <kanban>
                         <templates>
                             <t t-name="kanban-box">
-                            <div class="oe_product_vignette" style="border:none;flex:0;width:auto">
-                                                        <a type="open">
-                              <field name="photo" widget="image" />
-                              </a>
-                                                    </div>
+                              <div class="oe_product_vignette" style="border:none;flex:0;width:auto">
+                                <a type="open">
+                                  <field name="photo" widget="image" />
+                                </a>
+                              </div>
                             </t>
                           </templates>
                         </kanban>
                     </field>
                     </page>
-                    <page string="Habitaciones"><field name="listRooms"/></page>
+                    <page string="Habitaciones">
+                      <div class="oe_product_vignette" style="border:none;flex:0;width:auto">
+                        <a type="open">
+                          <field name="listRooms">
+                             <kanban>
+                              <!--list of field to be loaded -->
+                              <field name="name" />
+                              <field name="beds"/>
+                              <field name="price"/>
+                              <field name="description"/>
+                              <templates>
+                              <t t-name="kanban-box">
+                                <div class="oe_product_vignette">
+                                  <a type="open">
+                                    <field name="photomainroom" style="border:1px solid gray;border-radius:1px;" widget="image"/>
+                                  </a>
+                                  <div class="oe_product_desc">
+                                    <h4>
+                                        <a type="edit">
+                                            <field name="name"></field>
+                                        </a>
+                                    </h4>
+                                    <ul>
+                                        <li>cAMAS: <field name="beds"></field></li>
+                                        <li>Ciudad: <field name="city"></field></li>
+                                        <li>Descripcion: <field name="description"></field></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </t>
+                              </templates>
+                            </kanban>
+                          </field>
+                        </a>
+                      </div>
+                    </page>
                     <page string="Comentarios">
                       <field name="comments">
-
                                    <kanban>
                                        <templates>
                                             <t t-name="kanban-box">
@@ -258,8 +330,23 @@
               <field name="beds"/>
             </group>
             <field name="price"/>
-            <!-- <field name="photos" widget="image" class="oe_left oe_avatar"/> -->
+            
             <notebook>
+                <page string="Galleria de fotos">
+                  <field name="photos" widget="image" class="oe_left oe_avatar">
+                    <kanban>
+                        <templates>
+                            <t t-name="kanban-box">
+                              <div class="oe_product_vignette" style="border:none;flex:0;width:auto">
+                                <a type="open">
+                                  <field name="photo" widget="image" />
+                                </a>
+                              </div>
+                            </t>
+                          </templates>
+                        </kanban>
+                  </field>
+                </page>
                 <page string="Hotel"><field name="hotel"/></page>
             </notebook>
           </sheet>
@@ -426,6 +513,57 @@
       <field name="view_mode">tree,form</field>
     </record>
 
+  <record model="ir.ui.view" id="reserva_hoteles.comments">
+      <field name="name">Commentarios</field>
+      <field name="model">reserva_hoteles.comments</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="description"/>
+          <field name="clients"/>
+          <field name="photoclient"/>
+          <field name="nameclient"/> 
+          <field name="valorations"/>
+          <field name="hotel"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="reserva_hoteles.comments_form">
+      <field name="name">Commentarios</field>
+      <field name="model">reserva_hoteles.comments</field>
+      <field name="arch" type="xml">
+      <form>
+          <sheet>
+            <h1><field name="name"/></h1>
+            <group>
+              <field name="name"/>
+              <field name="description"/>
+            </group>
+            <group>
+              <field name="clients"/>
+            </group>
+            <group>
+              <field name="photoclient"/>
+           </group>
+           <group>
+              <field name="nameclient"/> 
+           </group>
+           <group>
+              <field name="valorations"/> 
+              <field name="hotel"/>
+           </group>
+          </sheet>
+      </form>
+      </field>
+    </record>
+
+     <record model="ir.actions.act_window" id="reserva_hoteles.action_comments_window">
+      <field name="name">Commentarios</field>
+      <field name="res_model">reserva_hoteles.comments</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
     <!-- Top menu item -->
     
     <menuitem name="reserva_hoteles" id="reserva_hoteles.menu_root"/>
@@ -451,6 +589,8 @@
               action="reserva_hoteles.action_photogallery_window"/>
      <menuitem name="Galeria de Fotos del hotel" id="reserva_hoteles.menu_7_reserves_list" parent="reserva_hoteles.menu_1_list"
               action="reserva_hoteles.action_hotelgallery_window"/>
+    <menuitem name="Commentarios" id="reserva_hoteles.menu_8_reserves_list" parent="reserva_hoteles.menu_1_list"
+              action="reserva_hoteles.action_comments_window"/>
     <!--<menuitem name="Server to list" id="reserva_hoteles" parent="reserva_hoteles.menu_2"
               action="reserva_hoteles.action_server"/>
     -->

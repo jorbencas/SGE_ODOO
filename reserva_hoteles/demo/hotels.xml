@@ -7,31 +7,31 @@
             <field name="valorations">2</field>
             <field name="photoGallery" eval="[(6,0,[ref('reserva_hoteles.photohotel1')] )]"/>
             <field name="listServices" eval="[(6,0,[ref('reserva_hoteles.service2'),ref('reserva_hoteles.service0')])]"/>
-            <field name="city" ref="reserva_hoteles.city2" ></field>
+            <field name="city" ref="reserva_hoteles.city1" ></field>
         </record>
         <record model="reserva_hoteles.hotels" id="hotel2">
             <field name="name">Imperial</field>
             <field name="description">Hotel grande, bonito y muy bien decorado</field>
             <field name="valorations">5</field>
-            <field name="photoGallery" eval="[(6,0,[ref('reserva_hoteles.photohotel1')])]"/>
+            <field name="photoGallery" eval="[(6,0,[ref('reserva_hoteles.photohotel7'),ref('reserva_hoteles.photohotel5')])]"/>
             <field name="listServices" eval="[(6,0,[ref('reserva_hoteles.service2'),ref('reserva_hoteles.service1')])]"/>
-            <field name="city" ref="reserva_hoteles.city1" ></field>
+            <field name="city" ref="reserva_hoteles.city2" ></field>
         </record>
         <record model="reserva_hoteles.hotels" id="hotel3">
             <field name="name">Marina Resolt</field>
             <field name="description">Hotel grande, bonito y muy bien decorado</field>
             <field name="valorations">4</field>
-            <field name="photoGallery" eval="[(6,0,[ref('reserva_hoteles.photohotel2')])]"/>
+            <field name="photoGallery" eval="[(6,0,[ref('reserva_hoteles.photohotel2'),ref('reserva_hoteles.photohotel3')])]"/>
             <field name="listServices" eval="[(6,0,[ref('reserva_hoteles.service1'),ref('reserva_hoteles.service0')])]"/>
-            <field name="city" ref="reserva_hoteles.city2" ></field>
+            <field name="city" ref="reserva_hoteles.city1" ></field>
         </record>
         <record model="reserva_hoteles.hotels" id="hotel4">
             <field name="name">Cinco estrellas plateadas</field>
             <field name="description">Hotel grande, bonito y muy bien decorado</field>
             <field name="valorations">1</field>
-            <field name="photoGallery" eval="[(6,0,[ref('reserva_hoteles.photohotel3')])]"/>
+            <field name="photoGallery" eval="[(6,0,[ref('reserva_hoteles.photohotel4'),ref('reserva_hoteles.photohotel8')])]"/>
             <field name="listServices" eval="[(6,0,[ref('reserva_hoteles.service1'),ref('reserva_hoteles.service2')])]"/>
-            <field name="city" ref="reserva_hoteles.city1" ></field>
+            <field name="city" ref="reserva_hoteles.city2" ></field>
         </record>
     </data>
 </odoo>

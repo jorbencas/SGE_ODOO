@@ -9,7 +9,7 @@ class citys(models.Model):
 	description = fields.Text()
 	location = fields.Text()
 	countrys = fields.Many2one('res.country','Pais')
-	listHotels = fields.One2many('reserva_hoteles.hotels', 'name')
+	listHotels = fields.One2many('reserva_hoteles.hotels', 'city')
 
 class hotels (models.Model):
     _name = 'reserva_hoteles.hotels'
@@ -27,11 +27,11 @@ class hotels (models.Model):
     @api.depends('photoGallery')
     def _get_resized_image_hotel(self):
         for p in self:
+            print(p.city.name)
             if len(p.photoGallery) > 0:
                  p.photomainhotel = p.photoGallery[0].photo
             else:
                  print("Este hotel no tiene fotos...")
-
 
 class rooms (models.Model):
     _name = 'reserva_hoteles.rooms'
@@ -41,7 +41,7 @@ class rooms (models.Model):
     photomainroom = fields.Binary(compute='_get_resized_image',store=True)
     price = fields.Float(default=1)
     description = fields.Text(default="Habitación grande, espaciosa y con gran luminosidad.")
-    hotel = fields.Many2one('reserva_hoteles.hotels','name')
+    hotel = fields.Many2one('reserva_hoteles.hotels','listRooms')
     city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readOnly=True)
     reserve = fields.One2many('reserva_hoteles.reserve','name')
     avaible = fields.Char(string="Estado", compute='_getestado', readOnly=True)
@@ -49,7 +49,7 @@ class rooms (models.Model):
     @api.depends('photos')
     def _get_resized_image(self):
         for record in self:
-            # print(len(record.photos))
+            print(len(record.photos))
             if len(record.photos) > 0:
                 record.photomainroom = record.photos[0].photo
             else:
@@ -69,21 +69,13 @@ class rooms (models.Model):
 
 class reserve (models.Model):
     _name = 'reserva_hoteles.reserve'
-    name = fields.Char(string="Nombre de la reserva",compute='_generar_nombre',readonly=True)
+    name = fields.Text(string="Nombre de la reserva")
     datestart = fields.Date()
     dateend = fields.Date()
     client = fields.Many2one('res.partner', 'Nombre del cliente')
     room = fields.Many2one('reserva_hoteles.rooms','reserve')
     hotel = fields.Many2one('reserva_hoteles.hotels', related='room.hotel', readonly=True,store=True)
     city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readonly=True)
-
-    @api.multi
-    @api.depends('room','datestart','dateend','client')
-    def _generar_nombre(self):
-        for record in self:
-            if record.room and record.datestart and record.dateend and record.client:
-                record.name=record.room.name+' '+record.client.name+' '+record.datestart+' '+record.dateend
-
 
     @api.onchange('datestart','dateend')
     def _manyana(self):
@@ -112,8 +104,9 @@ class reserve (models.Model):
     @api.constrains('datestart','dateend')
     def _comprobar_reserva(self):
         for record in self:
-            variable = self.search_count([('id','!=',record.id),('dateend','>=',record.datestart),('dateend','<=',record.dateend)])
-            variable2 = self.search([('id','!=',record.id),('dateend','>=',record.datestart),('datestart','<=',record.dateend)])
+            variable = self.search_count([('id', '!=', record.id),('room.id', '=', record.room.id) ,('dateend', '>=', record.datestart), ('datestart','<=', record.dateend)])
+            variable2 = self.search([('id', '!=', record.id),('room.id', '=', record.room.id), ('dateend', '>=', record.datestart), ('datestart','<=', record.dateend)])
+
             for valor in variable2:
                 print(self.name)
                 print(valor.name)

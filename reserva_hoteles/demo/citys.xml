@@ -6,12 +6,14 @@
             <field name="description">Es una ciutat increiblement lluminosa</field>
             <field name="location">Comunidad Valenciana</field>
             <field name="countrys" ref="base.es"></field>
+             <!-- <field name="listHotels" eval="[(6,0,ref('reserva_hoteles.hotel1'),ref('reserva_hoteles.hotel3'))]"/> -->
         </record>
         <record model="reserva_hoteles.citys" id="city2">
             <field name="name">Xativa</field>
             <field name="description">Es una ciutat increiblement lluminosa</field>
             <field name="location">Comunidad Valenciana</field>
             <field name="countrys" ref="base.es"></field>
+             <!-- <field name="listHotels" eval="[(6,0,ref('reserva_hoteles.hotel2'),ref('reserva_hoteles.hotel4'))]"/> -->
         </record>
     </data>
 </odoo>

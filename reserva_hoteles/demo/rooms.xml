@@ -7,7 +7,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_1">
@@ -15,7 +15,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_2">
@@ -23,7 +23,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_3">
@@ -39,7 +39,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_5">
@@ -47,7 +47,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_6">
@@ -55,7 +55,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_7">
@@ -63,7 +63,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_8">
@@ -79,7 +79,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_10">
@@ -95,7 +95,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_12">
@@ -103,7 +103,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_13">
@@ -111,7 +111,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_14">
@@ -119,7 +119,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_15">
@@ -127,7 +127,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_16">
@@ -135,7 +135,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_17">
@@ -143,7 +143,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_18">
@@ -151,7 +151,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_19">
@@ -159,7 +159,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_20">
@@ -167,7 +167,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_21">
@@ -175,7 +175,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_22">
@@ -183,7 +183,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_23">
@@ -191,7 +191,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_24">
@@ -199,7 +199,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_25">
@@ -215,7 +215,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_27">
@@ -223,7 +223,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_28">
@@ -231,7 +231,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_29">
@@ -247,7 +247,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_31">
@@ -255,7 +255,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_32">
@@ -263,7 +263,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_33">
@@ -271,7 +271,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_34">
@@ -295,7 +295,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_37">
@@ -303,7 +303,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_38">
@@ -311,7 +311,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_39">
@@ -319,7 +319,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_40">
@@ -327,7 +327,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_41">
@@ -343,7 +343,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_43">
@@ -359,7 +359,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_45">
@@ -367,7 +367,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_46">
@@ -399,7 +399,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_50">
@@ -423,7 +423,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_53">
@@ -431,7 +431,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_54">
@@ -447,7 +447,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_56">
@@ -455,7 +455,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_57">
@@ -463,7 +463,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_58">
@@ -471,7 +471,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_59">
@@ -479,7 +479,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_60">
@@ -495,7 +495,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_62">
@@ -503,7 +503,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_63">
@@ -511,7 +511,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_64">
@@ -519,7 +519,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_65">
@@ -527,7 +527,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_66">
@@ -535,7 +535,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_67">
@@ -551,7 +551,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_69">
@@ -559,7 +559,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_70">
@@ -567,7 +567,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_71">
@@ -575,7 +575,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_72">
@@ -583,7 +583,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_73">
@@ -591,7 +591,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_74">
@@ -599,7 +599,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_75">
@@ -607,7 +607,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_76">
@@ -615,7 +615,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_77">
@@ -631,7 +631,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_79">
@@ -639,7 +639,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_80">
@@ -647,7 +647,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_81">
@@ -655,7 +655,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_82">
@@ -663,7 +663,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_83">
@@ -671,7 +671,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_84">
@@ -679,7 +679,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_85">
@@ -687,7 +687,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_86">
@@ -695,7 +695,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_87">
@@ -703,7 +703,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_88">
@@ -711,7 +711,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_89">
@@ -727,7 +727,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_91">
@@ -735,7 +735,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_92">
@@ -743,7 +743,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_93">
@@ -751,7 +751,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_94">
@@ -759,7 +759,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_95">
@@ -767,7 +767,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_96">
@@ -775,7 +775,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_97">
@@ -783,7 +783,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_98">
@@ -791,7 +791,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_99">
@@ -799,7 +799,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_100">
@@ -807,7 +807,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_101">
@@ -815,7 +815,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_102">
@@ -823,7 +823,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_103">
@@ -831,7 +831,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_104">
@@ -839,7 +839,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_105">
@@ -847,7 +847,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_106">
@@ -855,7 +855,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_107">
@@ -863,7 +863,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_108">
@@ -871,7 +871,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_109">
@@ -887,7 +887,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_111">
@@ -895,7 +895,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_112">
@@ -919,7 +919,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_115">
@@ -927,7 +927,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_116">
@@ -935,7 +935,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_117">
@@ -943,7 +943,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_118">
@@ -959,7 +959,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_120">
@@ -975,7 +975,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_122">
@@ -983,7 +983,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_123">
@@ -991,7 +991,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_124">
@@ -999,7 +999,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_125">
@@ -1007,7 +1007,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_126">
@@ -1015,7 +1015,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_127">
@@ -1023,7 +1023,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_128">
@@ -1047,7 +1047,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_131">
@@ -1063,7 +1063,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_133">
@@ -1071,7 +1071,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_134">
@@ -1079,7 +1079,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_135">
@@ -1103,7 +1103,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_138">
@@ -1111,7 +1111,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_139">
@@ -1119,7 +1119,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_140">
@@ -1127,7 +1127,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_141">
@@ -1135,7 +1135,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_142">
@@ -1159,7 +1159,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_145">
@@ -1167,7 +1167,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_146">
@@ -1175,7 +1175,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_147">
@@ -1183,7 +1183,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_148">
@@ -1191,7 +1191,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_149">
@@ -1207,7 +1207,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_151">
@@ -1215,7 +1215,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_152">
@@ -1223,7 +1223,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_153">
@@ -1231,7 +1231,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_154">
@@ -1255,7 +1255,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_157">
@@ -1263,7 +1263,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_158">
@@ -1271,7 +1271,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_159">
@@ -1279,7 +1279,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_160">
@@ -1303,7 +1303,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_163">
@@ -1319,7 +1319,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_165">
@@ -1327,7 +1327,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_166">
@@ -1335,7 +1335,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_167">
@@ -1351,7 +1351,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_169">
@@ -1359,7 +1359,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_170">
@@ -1367,7 +1367,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_171">
@@ -1375,7 +1375,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_172">
@@ -1391,7 +1391,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_174">
@@ -1399,7 +1399,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_175">
@@ -1407,7 +1407,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_176">
@@ -1415,7 +1415,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_177">
@@ -1423,7 +1423,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_178">
@@ -1431,7 +1431,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_179">
@@ -1439,7 +1439,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_180">
@@ -1455,7 +1455,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_182">
@@ -1463,7 +1463,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_183">
@@ -1471,7 +1471,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_184">
@@ -1479,7 +1479,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_185">
@@ -1487,7 +1487,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_186">
@@ -1495,7 +1495,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_187">
@@ -1503,7 +1503,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_188">
@@ -1511,7 +1511,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_189">
@@ -1519,7 +1519,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_190">
@@ -1527,7 +1527,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_191">
@@ -1543,7 +1543,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_193">
@@ -1551,7 +1551,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_194">
@@ -1559,7 +1559,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_195">
@@ -1567,7 +1567,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_196">
@@ -1575,7 +1575,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_197">
@@ -1591,7 +1591,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_199">
@@ -1599,7 +1599,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_200">
@@ -1607,7 +1607,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_201">
@@ -1615,7 +1615,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_202">
@@ -1623,7 +1623,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_203">
@@ -1639,7 +1639,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_205">
@@ -1647,7 +1647,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_206">
@@ -1663,7 +1663,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_208">
@@ -1679,7 +1679,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_210">
@@ -1687,7 +1687,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_211">
@@ -1695,7 +1695,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_212">
@@ -1711,7 +1711,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_214">
@@ -1735,7 +1735,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_217">
@@ -1743,7 +1743,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_218">
@@ -1751,7 +1751,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_219">
@@ -1759,7 +1759,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_220">
@@ -1767,7 +1767,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_221">
@@ -1775,7 +1775,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_222">
@@ -1783,7 +1783,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_223">
@@ -1791,7 +1791,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_224">
@@ -1807,7 +1807,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_226">
@@ -1815,7 +1815,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_227">
@@ -1823,7 +1823,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_228">
@@ -1839,7 +1839,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_230">
@@ -1847,7 +1847,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_231">
@@ -1855,7 +1855,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_232">
@@ -1863,7 +1863,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_233">
@@ -1871,7 +1871,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_234">
@@ -1887,7 +1887,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_236">
@@ -1895,7 +1895,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_237">
@@ -1911,7 +1911,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_239">
@@ -1919,7 +1919,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_240">
@@ -1927,7 +1927,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_241">
@@ -1935,7 +1935,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_242">
@@ -1959,7 +1959,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_245">
@@ -1967,7 +1967,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_246">
@@ -1975,7 +1975,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_247">
@@ -1999,7 +1999,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_250">
@@ -2007,7 +2007,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_251">
@@ -2015,7 +2015,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_252">
@@ -2023,7 +2023,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_253">
@@ -2031,7 +2031,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_254">
@@ -2039,7 +2039,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_255">
@@ -2047,7 +2047,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_256">
@@ -2055,7 +2055,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_257">
@@ -2063,7 +2063,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_258">
@@ -2071,7 +2071,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_259">
@@ -2079,7 +2079,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_260">
@@ -2087,7 +2087,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_261">
@@ -2095,7 +2095,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_262">
@@ -2103,7 +2103,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_263">
@@ -2111,7 +2111,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_264">
@@ -2119,7 +2119,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_265">
@@ -2127,7 +2127,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_266">
@@ -2143,7 +2143,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_268">
@@ -2151,7 +2151,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_269">
@@ -2159,7 +2159,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_270">
@@ -2167,7 +2167,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_271">
@@ -2175,7 +2175,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_272">
@@ -2183,7 +2183,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_273">
@@ -2191,7 +2191,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_274">
@@ -2199,7 +2199,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_275">
@@ -2223,7 +2223,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_278">
@@ -2239,7 +2239,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_280">
@@ -2255,7 +2255,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_282">
@@ -2263,7 +2263,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_283">
@@ -2271,7 +2271,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_284">
@@ -2287,7 +2287,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_286">
@@ -2303,7 +2303,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_288">
@@ -2311,7 +2311,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_289">
@@ -2319,7 +2319,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_290">
@@ -2343,7 +2343,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_293">
@@ -2351,7 +2351,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_294">
@@ -2367,7 +2367,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_296">
@@ -2375,7 +2375,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_297">
@@ -2383,7 +2383,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_298">
@@ -2391,7 +2391,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_299">
@@ -2399,7 +2399,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_300">
@@ -2415,7 +2415,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_302">
@@ -2423,7 +2423,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_303">
@@ -2431,7 +2431,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_304">
@@ -2455,7 +2455,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_307">
@@ -2463,7 +2463,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_308">
@@ -2471,7 +2471,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_309">
@@ -2479,7 +2479,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_310">
@@ -2487,7 +2487,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_311">
@@ -2495,7 +2495,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_312">
@@ -2503,7 +2503,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_313">
@@ -2511,7 +2511,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_314">
@@ -2519,7 +2519,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_315">
@@ -2527,7 +2527,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_316">
@@ -2535,7 +2535,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_317">
@@ -2543,7 +2543,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_318">
@@ -2551,7 +2551,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_319">
@@ -2567,7 +2567,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_321">
@@ -2575,7 +2575,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_322">
@@ -2583,7 +2583,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_323">
@@ -2591,7 +2591,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_324">
@@ -2607,7 +2607,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_326">
@@ -2623,7 +2623,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_328">
@@ -2631,7 +2631,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_329">
@@ -2639,7 +2639,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_330">
@@ -2647,7 +2647,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_331">
@@ -2655,7 +2655,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_332">
@@ -2671,7 +2671,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_334">
@@ -2679,7 +2679,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_335">
@@ -2687,7 +2687,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_336">
@@ -2695,7 +2695,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_337">
@@ -2719,7 +2719,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_340">
@@ -2727,7 +2727,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_341">
@@ -2751,7 +2751,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_344">
@@ -2759,7 +2759,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_345">
@@ -2767,7 +2767,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_346">
@@ -2783,7 +2783,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_348">
@@ -2791,7 +2791,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_349">
@@ -2799,7 +2799,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_350">
@@ -2815,7 +2815,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_352">
@@ -2823,7 +2823,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_353">
@@ -2831,7 +2831,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_354">
@@ -2839,7 +2839,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_355">
@@ -2847,7 +2847,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_356">
@@ -2871,7 +2871,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_359">
@@ -2879,7 +2879,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_360">
@@ -2887,7 +2887,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_361">
@@ -2895,7 +2895,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_362">
@@ -2911,7 +2911,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_364">
@@ -2919,7 +2919,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_365">
@@ -2927,7 +2927,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_366">
@@ -2935,7 +2935,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_367">
@@ -2951,7 +2951,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_369">
@@ -2975,7 +2975,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_372">
@@ -2991,7 +2991,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_374">
@@ -3007,7 +3007,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_376">
@@ -3015,7 +3015,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_377">
@@ -3023,7 +3023,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_378">
@@ -3031,7 +3031,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_379">
@@ -3039,7 +3039,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_380">
@@ -3055,7 +3055,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_382">
@@ -3063,7 +3063,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_383">
@@ -3071,7 +3071,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_384">
@@ -3087,7 +3087,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_386">
@@ -3103,7 +3103,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_388">
@@ -3111,7 +3111,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_389">
@@ -3119,7 +3119,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_390">
@@ -3127,7 +3127,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_391">
@@ -3135,7 +3135,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_392">
@@ -3151,7 +3151,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_394">
@@ -3159,7 +3159,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel4"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_395">
@@ -3167,7 +3167,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel3"></field>
         </record>
 
         <record model="reserva_hoteles.rooms" id="room_396">
@@ -3191,7 +3191,7 @@
             <field name="beds">2</field>
             <field name="price">4.52</field>
             <field name="description">Es un habitación muy bonita</field>
-            <field name="hotel" ref="reserva_hoteles.hotel1"></field>
+            <field name="hotel" ref="reserva_hoteles.hotel2"></field>
         </record>
   </data>
 </odoo>

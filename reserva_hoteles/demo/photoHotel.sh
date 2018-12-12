@@ -3,7 +3,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>'
     i=1;
-    while [ $i -le 4 ] ; 
+    while [ $i -le 8 ] ; 
     do
         random=$((( RANDOM % 4 ) + 1 ))
         echo '  
