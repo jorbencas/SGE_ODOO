@@ -1,598 +1,829 @@
 <odoo>
-  <data>
-    <!--Citys-->
-
-    <record model="ir.ui.view" id="reserva_hoteles.city_kanban">
-	<field name="name">Ciudades</field>
-  <field name="model">reserva_hoteles.citys</field>
-  <field name="arch" type="xml">
-    <kanban>
-      <field name="name" />
-      <field name="description"/>
-      <field name="location"/>
-      <field name="countrys"/>
-      <field name="listHotels"/>
-      <templates>
-        <t t-name="kanban-box">
-          <div class="oe_product_vignette">
-            <a type="open">
-              <h4><field name="name"></field></h4>
-            </a>
-            <div class="oe_product_desc">
-                                    <ul>
-                                       <li>Descripcion: <field name="description"></field></li>
-                                        <li>Ubicación : <field name="location"></field></li>
-                                        <li>Pais : <field name="countrys"></field></li>
-                                        <li>Numero hoteles : <field name="listHotels"></field></li>
-                                    </ul>
-                                </div>
-          </div>
-        </t>
-      </templates>
-    </kanban>
-	</field>
-</record>
-
-    <record model="ir.ui.view" id="reserva_hoteles.citys">
-      <field name="name">Ciudades</field>
-      <field name="model">reserva_hoteles.citys</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="description"/>
-          <field name="location"/>
-          <field name="countrys"/>
-          <field name="listHotels"/>
-        </tree>
-      </field>
-    </record>
-
-
-      <record model="ir.ui.view" id="reserva_hoteles.citys_form">
-            <field name="name">Ciudades</field>
-      <field name="model">reserva_hoteles.citys</field>
-          <field name="arch" type="xml">
-              <form>
-                  <sheet>
-                      <h1 style="text-align:center;"><field name="name"/></h1>
-                      <group>
-                          <group>
-                              <field name="name"></field>
-                              <field name="description"></field>
-                          </group>
-                          <group>
-                              <field name="location"></field>
-                              <field name="countrys"></field>
-                          </group>
-                      </group>
-                      <notebook >
-                           <page string="Hoteles"><field name="listHotels"></field></page>
-                        </notebook>
-                  </sheet>
-
-              </form>
-
-          </field>
-</record>
-
-   <record model="ir.ui.view" id="reserva_hoteles.citys_search">
-        <field name="name">Search</field>
-        <field name="model">reserva_hoteles.citys</field>
-        <field name="arch" type="xml">
-           <search string="Ciudades">
-                <field name="name"></field>
-                <field name="description"></field>
-                <group string="Agrupar por">
-                  <filter name="countrys" string="Pais" context="{'group_by':'countrys'}"></filter>
-                </group>
-           </search>
-
-        </field>
-    </record>
-
-
-    <record model="ir.actions.act_window" id="reserva_hoteles.action_citys_window">
-      <field name="name">Ciudades</field>
-      <field name="res_model">reserva_hoteles.citys</field>
-      <field name="view_mode">tree,form,kanban</field>
-    </record>
-
-    <!--Hoteles-->
-     <record model="ir.ui.view" id="reserva_hoteles.hotels_kanban">
-            <field name="name"> Hotel Kanban</field>
-            <field name="model">reserva_hoteles.hotels</field>
-            <field name="arch" type="xml">
-                <kanban>
-                    <!--list of field to be loaded -->
-                    <field name="name" />
-                    <field name="photomainhotel" />
-                    <field name="city" />
-                    <field name="countrys" />
-                    <field name="photoGallery"/>
-                    <field name="description"/>
-                    <field name="listRooms"/>
-                    <field name="valorations"/>
-                    <field name="listServices"/>
-                    <templates>
-                    <t t-name="kanban-box">
-                            <div class="oe_product_vignette">
-                                <a type="open">
-                                <field name="photomainhotel" style="border:1px solid gray;border-radius:1px;" widget="image"/>
-                                    <img class="oe_kanban_image" t-att-src="kanban_image('photomainhotel')" style="height:128px;width:100%"/>
-                                </a>
-                                <div class="oe_product_desc">
-                                    <h4>
-                                        <a type="edit">
-                                            <field name="name"></field>
-                                        </a>
-                                    </h4>
-                                    <ul>
-                                        <li>Valoracion Media: <field name="valorations"></field></li>
-                                        <li>Ciudad: <field name="city"></field></li>
-                                        <li>Descripcion: <field name="description"></field></li>
-                                    </ul>
-                                </div>
-                            </div>
-                      
-                        </t>
-                    </templates>
-                </kanban>
-            </field>
-</record>
-
-        <record model="ir.ui.view" id="reserva_hoteles.hotels">
-      <field name="name">Hoteles</field>
-      <field name="model">reserva_hoteles.hotels</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="description"/>
-          <field name="valorations" widget="priority"/>
-          <field name="city"/>
-        </tree>
-      </field>
-    </record>
-
-     <record model="ir.ui.view" id="reserva_hoteles.hotels_form">
-      <field name="name">Hoteles</field>
-      <field name="model">reserva_hoteles.hotels</field>
-      <field name="arch" type="xml">
-          <form>
-              <sheet>
-                  <h1><field name="name"/></h1>
-                  <group>
-                  <group>
-                      <field name="name"/>
-                      <label for="city">Ciudades</label><field name="city"/>
-                  </group>
-                  <group>
-                    <h4>Valoraciones</h4><hr/>
-                    <field name="valorations" widget="priority"/>
-                  </group>
-                    <group>
-                           <h4>Imagen principal</h4><hr/>
-                              <kanban>
-                                       <templates>
-                                            <t t-name="kanban-box">
-                                                <field name="photomainhotel" style="border:1px solid gray;border-radius:1px;" widget="image"/>
-                                            </t>
-                                       </templates>
-                              </kanban>
-                      </group>
-                  <notebook>
-                    <page string="Galeria">
-                    <field name="photoGallery">
-                      <kanban>
-                        <templates>
-                            <t t-name="kanban-box">
-                              <div class="oe_product_vignette" style="border:none;flex:0;width:auto">
-                                <a type="open">
-                                  <field name="photo" widget="image" />
-                                </a>
-                              </div>
-                            </t>
-                          </templates>
-                        </kanban>
-                    </field>
-                    </page>
-                    <page string="Habitaciones">
-                      <div class="oe_product_vignette" style="border:none;flex:0;width:auto">
-                        <a type="open">
-                          <field name="listRooms">
-                             <kanban>
-                              <!--list of field to be loaded -->
-                              <field name="name" />
-                              <field name="beds"/>
-                              <field name="price"/>
-                              <field name="description"/>
-                              <templates>
-                              <t t-name="kanban-box">
-                                <div class="oe_product_vignette">
-                                  <a type="open">
-                                    <field name="photomainroom" style="border:1px solid gray;border-radius:1px;" widget="image"/>
-                                  </a>
-                                  <div class="oe_product_desc">
-                                    <h4>
-                                        <a type="edit">
-                                            <field name="name"></field>
-                                        </a>
-                                    </h4>
-                                    <ul>
-                                        <li>cAMAS: <field name="beds"></field></li>
-                                        <li>Ciudad: <field name="city"></field></li>
-                                        <li>Descripcion: <field name="description"></field></li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </t>
-                              </templates>
-                            </kanban>
-                          </field>
-                        </a>
-                      </div>
-                    </page>
-                    <page string="Comentarios">
-                      <field name="comments">
-                                   <kanban>
-                                       <templates>
-                                            <t t-name="kanban-box">
-                                                    <div class="oe_product_vignette">
-                                                        <a type="open">
-                                                           <field name="photoclient" widget="image" class="oe_left oe_avatar"/>
-                                                        </a>
-                                                        <group>
-                                                            <h4>Nombre cliente: </h4>
-                                                            <field name="nameclient" widget="char"></field>
-                                                            <h4>Descripcion: </h4>
-                                                            <field name="description" widget="char"></field>
-                                                            <h4>Valoracion: </h4>
-                                                            <field name="valorations" widget="selection"></field>
-                                                        </group>
-                                                    </div>
-                                                </t>
-                                            </templates>
-                                   </kanban>
-                              </field>
-                    </page>
-                    <page string="Servicios">
-                      <field name="listServices">
-                        <kanban>
-                                       <templates>
-                                            <t t-name="kanban-box">
-                                                    <div class="oe_product_vignette" style="border:none;flex:0;width:auto">
-                                                        <a type="open">
-                                                           <field name="photo" widget="image"/>
-                                                        </a>
-                                                    </div>
-                                                </t>
-                                            </templates>
-                                   </kanban>
-                      </field>
-                    </page>
-                  </notebook>
-              </group>
-          </sheet>
-        </form>
-      </field>
-    </record>
-
-        <record model="ir.ui.view" id="reserva_hoteles.hotels_search">
-        <field name="name">reserva_hoteles Hotels</field>
-        <field name="model">reserva_hoteles.hotels</field>
-        <field name="arch" type="xml">
-           <search string="Hotels">
-                <field name="city"></field>
-                <field name="countrys"></field>
-                <field name="valorations"></field>
-                <group string="Agrupar por">
-                  <filter name="countrys" string="Pais" context="{'group_by':'countrys'}"></filter>
-                  <filter name="city" string="Ciudad" context="{'group_by':'city'}"></filter>
-                </group>
-           </search>
-
-        </field>
-    </record>
-
-    <record model="ir.actions.act_window" id="reserva_hoteles.action_hotels_window">
-      <field name="name">Hoteles</field>
-      <field name="res_model">reserva_hoteles.hotels</field>
-      <field name="view_mode">tree,form,kanban</field>
-    </record>
-
-    <!--Habitaciones-->
-    <record model="ir.ui.view" id="reserva_hoteles.rooms">
-      <field name="name">Habitaciones</field>
-      <field name="model">reserva_hoteles.rooms</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="beds"/>
-          <field name="price"/>
-          <!-- <field name="photos" widget="image" class="oe_left oe_avatar"/> -->
-          <field name="description"/>
-          <field name="hotel"/>
-        </tree>
-      </field>
-    </record>
-
-  <record model="ir.ui.view" id="reserva_hoteles.rooms_form">
-      <field name="name">Habitaciones</field>
-      <field name="model">reserva_hoteles.rooms</field>
-      <field name="arch" type="xml">
-       <form>
-          <sheet>
-            <h1><field name="name"/></h1>
-            <group>
-              <field name="name"/>
-              <field name="description"/>
-            </group>
-            <group>
-              <field name="beds"/>
-            </group>
-            <field name="price"/>
-            
-            <notebook>
-                <page string="Galleria de fotos">
-                  <field name="photos" widget="image" class="oe_left oe_avatar">
-                    <kanban>
-                        <templates>
-                            <t t-name="kanban-box">
-                              <div class="oe_product_vignette" style="border:none;flex:0;width:auto">
-                                <a type="open">
-                                  <field name="photo" widget="image" />
-                                </a>
-                              </div>
-                            </t>
-                          </templates>
-                        </kanban>
-                  </field>
-                </page>
-                <page string="Hotel"><field name="hotel"/></page>
-            </notebook>
-          </sheet>
-        </form>
-      </field>
-    </record>
-
-<record model="ir.ui.view" id="reserva_hoteles.rooms_search">
-        <field name="name">reserva_hoteles Habitacion</field>
-        <field name="model">reserva_hoteles.rooms</field>
-        <field name="arch" type="xml">
-           <search string="Habitacion">
-                <field name="hotel"></field>
-                <field name="avaible"></field>
-                <group string="Agrupar por">
-                  <filter name="hotel" string="Hotel" context="{'group_by':'hotel'}"></filter>
-                  <filter name="avaible" string="Disponibilidad" context="{'group_by':'avaible'}"></filter>
-                </group>
-           </search>
-        </field>
-    </record>
-
-    <record model="ir.actions.act_window" id="reserva_hoteles.action_rooms_window">
-      <field name="name">Habitaciones</field>
-      <field name="res_model">reserva_hoteles.rooms</field>
-      <field name="view_mode">tree,form, kanban</field>
-    </record>
-
-    <!--Servicios-->
-     <record model="ir.ui.view" id="reserva_hoteles.services">
-      <field name="name">Servicios</field>
-      <field name="model">reserva_hoteles.services</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="photo" widget="image" class="oe_left oe_avatar"/>
-          <!--<field name="hotel"/>-->
-        </tree>
-      </field>
-    </record>
-
-    <record model="ir.ui.view" id="reserva_hoteles.services_form">
-      <field name="name">Servicios</field>
-      <field name="model">reserva_hoteles.services</field>
-      <field name="arch" type="xml">
-         <form>
-          <sheet>
-            <h1><field name="name"/></h1>
-            <group>
-          <field name="name"/>
-          </group>
-          <field name="photo" widget="image" class="oe_left oe_avatar"/>
-          <!-- <field name="hotel"/> -->
-          </sheet>
-        </form>
-      </field>
-    </record>
-
-    <record model="ir.actions.act_window" id="reserva_hoteles.action_service_window">
-      <field name="name">Servicios</field>
-      <field name="res_model">reserva_hoteles.services</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-
-    <!--Rservas-->
-    <record model="ir.ui.view" id="reserva_hoteles.reserve">
-      <field name="name">Reservas</field>
-      <field name="model">reserva_hoteles.reserve</field>
-      <field name="arch" type="xml">
-         <form>
-          <sheet>
-            <h1><field name="name"/></h1>
-            <group>
-          <field name="name"/>
-          </group>
-          <group>
-          <field name="datestart"/>
-          </group>
-          <group>
-          <field name="dateend"/>
-          </group>
-          <group>
-            <field name="client"/>
-            <field name="room"/>
-            <field name="hotel"/>
-          </group>
-          <notebook>
-          <field name="city"/>
-        </notebook>
-          </sheet>
-        </form>
-      </field>
-    </record>
-
-  <record model="ir.ui.view" id="reserva_hoteles.reserve">
-      <field name="name">Reservas</field>
-      <field name="model">reserva_hoteles.reserve</field>
-      <field name="arch" type="xml">
-        <tree decoration-danger="datestart&lt;current_date and dateend&lt;current_date" decoration-bf="datestart&lt;current_date and dateend&gt;current_date" decoration-info="datestart&gt;current_date">
-          <field name="name"/>
-          <field name="datestart"/>
-          <field name="dateend"/>
-          <field name="client"/>
-          <field name="room"/>
-          <field name="hotel"/>
-          <field name="city"/>
-        </tree>
-      </field>
-    </record>
-
-     <record model="ir.ui.view" id="calendar1">
-            <field name="name">reserva hotel Calendar</field>
-            <field name="model">reserva_hoteles.reserve</field>
-            <field name="arch" type="xml">
-                <calendar string="Booking Calendar" date_start="datestart"
-                          date_stop="dateend" color="hotel"
-                          >
-                    <field name="name"/>
-                </calendar>
-            </field>
-        </record>
-
-    <record model="ir.actions.act_window" id="reserva_hoteles.action_reserve_window">
-      <field name="name">Reservas</field>
-      <field name="res_model">reserva_hoteles.reserve</field>
-      <field name="view_mode">tree,form,calendar</field>
-    </record>
-
-    <!--Galleria de Fotos-->
-    <record model="ir.ui.view" id="reserva_hoteles.photogallery">
-      <field name="name">Galleria de fotos</field>
-      <field name="model">reserva_hoteles.photogallery</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="photo" widget="image" class="oe_left oe_avatar"/>
-          <!-- <field name="room"/> -->
-        </tree>
-      </field>
-    </record>
-
-     <record model="ir.actions.act_window" id="reserva_hoteles.action_photogallery_window">
-      <field name="name">Galleria de fotos</field>
-      <field name="res_model">reserva_hoteles.photogallery</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-
-     <!--Galleria de Fotos-->
-    <record model="ir.ui.view" id="reserva_hoteles.hotelgallery">
-      <field name="name">Galleria de fotos del hotel</field>
-      <field name="model">reserva_hoteles.hotelgallery</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="photo" widget="image" class="oe_left oe_avatar"/>
-          <!-- <field name="hotel"/> -->
-        </tree>
-      </field>
-    </record>
-
-     <record model="ir.actions.act_window" id="reserva_hoteles.action_hotelgallery_window">
-      <field name="name">Galleria de fotos del hotel</field>
-      <field name="res_model">reserva_hoteles.hotelgallery</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-
-  <record model="ir.ui.view" id="reserva_hoteles.comments">
-      <field name="name">Commentarios</field>
-      <field name="model">reserva_hoteles.comments</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="description"/>
-          <field name="clients"/>
-          <field name="photoclient"/>
-          <field name="nameclient"/> 
-          <field name="valorations"/>
-          <field name="hotel"/>
-        </tree>
-      </field>
-    </record>
-
-    <record model="ir.ui.view" id="reserva_hoteles.comments_form">
-      <field name="name">Commentarios</field>
-      <field name="model">reserva_hoteles.comments</field>
-      <field name="arch" type="xml">
-      <form>
-          <sheet>
-            <h1><field name="name"/></h1>
-            <group>
-              <field name="name"/>
-              <field name="description"/>
-            </group>
-            <group>
-              <field name="clients"/>
-            </group>
-            <group>
-              <field name="photoclient"/>
-           </group>
-           <group>
-              <field name="nameclient"/> 
-           </group>
-           <group>
-              <field name="valorations"/> 
-              <field name="hotel"/>
-           </group>
-          </sheet>
-      </form>
-      </field>
-    </record>
-
-     <record model="ir.actions.act_window" id="reserva_hoteles.action_comments_window">
-      <field name="name">Commentarios</field>
-      <field name="res_model">reserva_hoteles.comments</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-
-    <!-- Top menu item -->
-    
-    <menuitem name="reserva_hoteles" id="reserva_hoteles.menu_root"/>
-    
-    <!-- menu categories -->
-    
-    <menuitem name="Menu 1" id="reserva_hoteles.menu_1" parent="reserva_hoteles.menu_root"/>
-    <menuitem name="Menu 2" id="reserva_hoteles.menu_2" parent="reserva_hoteles.menu_root"/>
-    <menuitem name="Hotels Reseve" id="reserva_hoteles.menu_1_list" parent="reserva_hoteles.menu_root"/>
-    <!-- actions -->
-    
-     <menuitem name="Ciudades" id="reserva_hoteles.menu_1_citys_list" parent="reserva_hoteles.menu_1_list"
-              action="reserva_hoteles.action_citys_window"/>
-     <menuitem name="Hoteles" id="reserva_hoteles.menu_2_hotels_list" parent="reserva_hoteles.menu_1_list"
-              action="reserva_hoteles.action_hotels_window"/>
-     <menuitem name="Habitaciones" id="reserva_hoteles.menu_3_rooms_list" parent="reserva_hoteles.menu_1_list"
-              action="reserva_hoteles.action_rooms_window"/>
-    <menuitem name="Reservas" id="reserva_hoteles.menu_4_reserves_list" parent="reserva_hoteles.menu_1_list"
-              action="reserva_hoteles.action_reserve_window"/>
-    <menuitem name="Servicios" id="reserva_hoteles.menu_5_reserves_list" parent="reserva_hoteles.menu_1_list"
-              action="reserva_hoteles.action_service_window"/>
-    <menuitem name="Galeria de Fotos de las Habitaciones" id="reserva_hoteles.menu_6_reserves_list" parent="reserva_hoteles.menu_1_list"
-              action="reserva_hoteles.action_photogallery_window"/>
-     <menuitem name="Galeria de Fotos del hotel" id="reserva_hoteles.menu_7_reserves_list" parent="reserva_hoteles.menu_1_list"
-              action="reserva_hoteles.action_hotelgallery_window"/>
-    <menuitem name="Commentarios" id="reserva_hoteles.menu_8_reserves_list" parent="reserva_hoteles.menu_1_list"
-              action="reserva_hoteles.action_comments_window"/>
-    <!--<menuitem name="Server to list" id="reserva_hoteles" parent="reserva_hoteles.menu_2"
-              action="reserva_hoteles.action_server"/>
-    -->
-  </data>
+	<data>
+		<!-- Citys -->
+		<record model="ir.ui.view" id="reserva_hoteles.city_kanban">
+			<field name="name">
+				Ciudades
+			</field>
+			<field name="model">
+				reserva_hoteles.citys
+			</field>
+			<field name="arch" type="xml">
+				<kanban>
+					<field name="name" />
+					<field name="description" />
+					<field name="location" />
+					<field name="countrys" />
+					<field name="listHotels" />
+					<!-- <field name="active_id_hotel"/> -->
+					<templates>
+						<t t-name="kanban-box">
+							<div class="oe_product_vignette">
+								<a type="open">
+									<h4>
+										<field name="name">
+										</field>
+									</h4>
+								</a>
+								<div class="oe_product_desc">
+									<ul>
+										<li>
+											Descripcion:
+											<field name="description">
+											</field>
+										</li>
+										<li>
+											Ubicación :
+											<field name="location">
+											</field>
+										</li>
+										<li>
+											Pais :
+											<field name="countrys">
+											</field>
+										</li>
+										<li>
+											Numero hoteles :
+											<field name="listHotels">
+											</field>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</t>
+					</templates>
+				</kanban>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="reserva_hoteles.citys">
+			<field name="name">
+				Ciudades
+			</field>
+			<field name="model">
+				reserva_hoteles.citys
+			</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="description" />
+					<field name="location" />
+					<field name="countrys" />
+					<field name="listHotels" />
+				</tree>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="reserva_hoteles.citys_form">
+			<field name="name">
+				Ciudades
+			</field>
+			<field name="model">
+				reserva_hoteles.citys
+			</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<h1 style="text-align:center;">
+							<field name="name" />
+						</h1>
+						<group>
+							<group>
+								<field name="name">
+								</field>
+								<field name="description">
+								</field>
+							</group>
+							<group>
+								<field name="location">
+								</field>
+								<field name="countrys">
+								</field>
+							</group>
+						</group>
+						<notebook>
+							<page string="Hoteles">
+								<field name="listHotels">
+								</field>
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="reserva_hoteles.citys_search">
+			<field name="name">
+				Search
+			</field>
+			<field name="model">
+				reserva_hoteles.citys
+			</field>
+			<field name="arch" type="xml">
+				<search string="Ciudades">
+					<field name="name">
+					</field>
+					<field name="description">
+					</field>
+					<group string="Agrupar por">
+						<filter name="countrys" string="Pais" context="{'group_by':'countrys'}">
+						</filter>
+					</group>
+				</search>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="reserva_hoteles.action_citys_window">
+			<field name="name">
+				Ciudades
+			</field>
+			<field name="res_model">
+				reserva_hoteles.citys
+			</field>
+			<field name="view_mode">
+				tree,form,kanban
+			</field>
+		</record>
+		<!-- Hoteles -->
+		<record model="ir.ui.view" id="reserva_hoteles.hotels_kanban">
+			<field name="name">
+				Hotel Kanban
+			</field>
+			<field name="model">
+				reserva_hoteles.hotels
+			</field>
+			<field name="arch" type="xml">
+				<kanban>
+					<!-- list of field to be loaded -->
+					<field name="name" />
+					<field name="photomainhotel" />
+					<field name="city" />
+					<field name="countrys" />
+					<field name="photoGallery" />
+					<field name="description" />
+					<field name="listRooms" />
+					<field name="valorations" />
+					<field name="listServices" />
+					<templates>
+						<t t-name="kanban-box">
+							<div class="oe_product_vignette">
+								<a type="open">
+									<field name="photomainhotel" style="border:1px solid gray;border-radius:1px;" widget="image" />
+									<img class="oe_kanban_image" t-att-src="kanban_image('photomainhotel')" style="height:128px;width:100%" />
+								</a>
+								<div class="oe_product_desc">
+									<h4>
+										<a type="edit">
+											<field name="name">
+											</field>
+										</a>
+									</h4>
+									<ul>
+										<li>
+											Valoracion Media:
+											<field name="valorations">
+											</field>
+										</li>
+										<li>
+											Ciudad:
+											<field name="city">
+											</field>
+										</li>
+										<li>
+											Descripcion:
+											<field name="description">
+											</field>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</t>
+					</templates>
+				</kanban>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="reserva_hoteles.hotels">
+			<field name="name">
+				Hoteles
+			</field>
+			<field name="model">
+				reserva_hoteles.hotels
+			</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="description" />
+					<field name="valorations" widget="priority" />
+					<field name="city" />
+				</tree>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="reserva_hoteles.hotels_form">
+			<field name="name">
+				Hoteles
+			</field>
+			<field name="model">
+				reserva_hoteles.hotels
+			</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<h1>
+							<field name="name" />
+						</h1>
+						<group>
+							<group>
+								<field name="name" />
+								<label for="city">
+									Ciudades
+								</label>
+								<field name="city" />
+							</group>
+							<group>
+								<h4>
+									Valoraciones
+								</h4>
+								<hr />
+								<field name="valorations" widget="priority" />
+							</group>
+							<group>
+								<h4>
+									Imagen principal
+								</h4>
+								<hr />
+								<kanban>
+									<templates>
+										<t t-name="kanban-box">
+											<field name="photomainhotel" style="border:1px solid gray;border-radius:1px;" widget="image" />
+										</t>
+									</templates>
+								</kanban>
+							</group>
+							<notebook>
+								<page string="Galeria">
+									<field name="photoGallery">
+										<kanban>
+											<templates>
+												<t t-name="kanban-box">
+													<div class="oe_product_vignette" style="border:none;flex:0;width:auto">
+														<a type="open">
+															<field name="photo" widget="image" />
+														</a>
+													</div>
+												</t>
+											</templates>
+										</kanban>
+									</field>
+								</page>
+								<page string="Habitaciones">
+									<div class="oe_product_vignette" style="border:none;flex:0;width:auto">
+										<a type="open">
+											<field name="listRooms">
+												<kanban>
+													<!-- list of field to be loaded -->
+													<!-- <field name="active_id"/> -->
+													<field name="name" />
+													<field name="beds" />
+													<field name="price" />
+													<field name="description" />
+													<templates>
+														<t t-name="kanban-box">
+															<div class="oe_product_vignette">
+																<a type="open">
+																	<field name="photomainroom" style="border:1px solid gray;border-radius:1px;" widget="image" />
+																</a>
+																<div class="oe_product_desc">
+																	<h4>
+																		<a type="edit">
+																			<field name="name">
+																			</field>
+																		</a>
+																	</h4>
+																	<ul>
+																		<li>
+																			cAMAS:
+																			<field name="beds">
+																			</field>
+																		</li>
+																		<li>
+																			Ciudad:
+																			<field name="city">
+																			</field>
+																		</li>
+																		<li>
+																			Descripcion:
+																			<field name="description">
+																			</field>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</t>
+													</templates>
+													<button name="anyadir_habitacion" type="object" string="Añadir habitacion aleatoria" class="btn btn-info" />
+												</kanban>
+											</field>
+										</a>
+									</div>
+								</page>
+								<page string="Comentarios">
+									<field name="comments">
+										<kanban>
+											<templates>
+												<t t-name="kanban-box">
+													<div class="oe_product_vignette">
+														<a type="open">
+															<field name="photoclient" widget="image" class="oe_left oe_avatar" />
+														</a>
+														<group>
+															<h4>
+																Nombre cliente:
+															</h4>
+															<field name="nameclient" widget="char">
+															</field>
+															<h4>
+																Descripcion:
+															</h4>
+															<field name="description" widget="char">
+															</field>
+															<h4>
+																Valoracion:
+															</h4>
+															<field name="valorations" widget="selection">
+															</field>
+														</group>
+													</div>
+												</t>
+											</templates>
+											<button name="anyadir_comentario" type="object" string="Añadir comentario aleatorio" class="btn btn-info" />
+										</kanban>
+									</field>
+								</page>
+								<page string="Servicios">
+									<field name="listServices">
+										<kanban>
+											<templates>
+												<t t-name="kanban-box">
+													<div class="oe_product_vignette" style="border:none;flex:0;width:auto">
+														<a type="open">
+															<field name="photo" widget="image" />
+														</a>
+													</div>
+												</t>
+											</templates>
+										</kanban>
+									</field>
+								</page>
+							</notebook>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="reserva_hoteles.hotels_search">
+			<field name="name">
+				reserva_hoteles Hotels
+			</field>
+			<field name="model">
+				reserva_hoteles.hotels
+			</field>
+			<field name="arch" type="xml">
+				<search string="Hotels">
+					<field name="city">
+					</field>
+					<field name="countrys">
+					</field>
+					<field name="valorations">
+					</field>
+					<group string="Agrupar por">
+						<filter name="countrys" string="Pais" context="{'group_by':'countrys'}">
+						</filter>
+						<filter name="city" string="Ciudad" context="{'group_by':'city'}">
+						</filter>
+					</group>
+				</search>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="reserva_hoteles.action_hotels_window">
+			<field name="name">
+				Hoteles
+			</field>
+			<field name="res_model">
+				reserva_hoteles.hotels
+			</field>
+			<field name="view_mode">
+				tree,form,kanban
+			</field>
+		</record>
+		<!-- Habitaciones -->
+		<record model="ir.ui.view" id="reserva_hoteles.rooms">
+			<field name="name">
+				Habitaciones
+			</field>
+			<field name="model">
+				reserva_hoteles.rooms
+			</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="beds" />
+					<field name="price" />
+					<!-- <field name="photos" widget="image" class="oe_left oe_avatar"/> -->
+					<field name="description" />
+					<field name="hotel" />
+				</tree>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="reserva_hoteles.rooms_form">
+			<field name="name">
+				Habitaciones
+			</field>
+			<field name="model">
+				reserva_hoteles.rooms
+			</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<h1>
+							<field name="name" />
+						</h1>
+						<group>
+							<field name="name" />
+							<field name="description" />
+						</group>
+						<group>
+							<field name="beds" />
+						</group>
+						<field name="price" />
+						<notebook>
+							<page string="Galleria de fotos">
+								<field name="photos" widget="image" class="oe_left oe_avatar">
+									<kanban>
+										<templates>
+											<t t-name="kanban-box">
+												<div class="oe_product_vignette" style="border:none;flex:0;width:auto">
+													<a type="open">
+														<field name="photo" widget="image" />
+													</a>
+												</div>
+											</t>
+										</templates>
+									</kanban>
+								</field>
+							</page>
+							<page string="Hotel">
+								<field name="hotel" />
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="reserva_hoteles.rooms_search">
+			<field name="name">
+				reserva_hoteles Habitacion
+			</field>
+			<field name="model">
+				reserva_hoteles.rooms
+			</field>
+			<field name="arch" type="xml">
+				<search string="Habitacion">
+					<field name="hotel">
+					</field>
+					<field name="avaible">
+					</field>
+					<group string="Agrupar por">
+						<filter name="hotel" string="Hotel" context="{'group_by':'hotel'}">
+						</filter>
+						<filter name="avaible" string="Disponibilidad" context="{'group_by':'avaible'}">
+						</filter>
+					</group>
+				</search>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="reserva_hoteles.action_rooms_window">
+			<field name="name">
+				Habitaciones
+			</field>
+			<field name="res_model">
+				reserva_hoteles.rooms
+			</field>
+			<field name="view_mode">
+				tree,form, kanban
+			</field>
+		</record>
+		<!-- Servicios -->
+		<record model="ir.ui.view" id="reserva_hoteles.services">
+			<field name="name">
+				Servicios
+			</field>
+			<field name="model">
+				reserva_hoteles.services
+			</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="photo" widget="image" class="oe_left oe_avatar" />
+					<!-- <field name="hotel"/> -->
+				</tree>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="reserva_hoteles.services_form">
+			<field name="name">
+				Servicios
+			</field>
+			<field name="model">
+				reserva_hoteles.services
+			</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<h1>
+							<field name="name" />
+						</h1>
+						<group>
+							<field name="name" />
+						</group>
+						<field name="photo" widget="image" class="oe_left oe_avatar" />
+						<!-- <field name="hotel"/> -->
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="reserva_hoteles.action_service_window">
+			<field name="name">
+				Servicios
+			</field>
+			<field name="res_model">
+				reserva_hoteles.services
+			</field>
+			<field name="view_mode">
+				tree,form
+			</field>
+		</record>
+		<!-- Rservas -->
+		<record model="ir.ui.view" id="reserva_hoteles.reserve">
+			<field name="name">
+				Reservas
+			</field>
+			<field name="model">
+				reserva_hoteles.reserve
+			</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<h1>
+							<field name="name" />
+						</h1>
+						<group>
+							<field name="name" />
+						</group>
+						<group>
+							<field name="datestart" />
+						</group>
+						<group>
+							<field name="dateend" />
+						</group>
+						<group>
+							<field name="fotoclient" class="oe_read_only" widget="image">
+							</field>
+							<field name="client" />
+							<field name="room" />
+							<field name="hotel" />
+						</group>
+						<notebook>
+							<field name="city" />
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="reserva_hoteles.reserve">
+			<field name="name">
+				Reservas
+			</field>
+			<field name="model">
+				reserva_hoteles.reserve
+			</field>
+			<field name="arch" type="xml">
+				<tree decoration-danger="datestart&lt;current_date and dateend&lt;current_date" decoration-bf="datestart&lt;current_date and dateend&gt;current_date" decoration-info="datestart&gt;current_date">
+					<field name="name" />
+					<field name="datestart" />
+					<field name="dateend" />
+					<field name="client" />
+					<field name="room" />
+					<field name="hotel" />
+					<field name="city" />
+				</tree>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="calendar1">
+			<field name="name">
+				reserva hotel Calendar
+			</field>
+			<field name="model">
+				reserva_hoteles.reserve
+			</field>
+			<field name="arch" type="xml">
+				<calendar string="Booking Calendar" date_start="datestart" date_stop="dateend" color="hotel">
+					<field name="name" />
+				</calendar>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="reserva_hoteles.action_reserve_window">
+			<field name="name">
+				Reservas
+			</field>
+			<field name="res_model">
+				reserva_hoteles.reserve
+			</field>
+			<field name="view_mode">
+				tree,form,calendar
+			</field>
+		</record>
+		<!-- Galleria de Fotos -->
+		<record model="ir.ui.view" id="reserva_hoteles.photogallery">
+			<field name="name">
+				Galleria de fotos
+			</field>
+			<field name="model">
+				reserva_hoteles.photogallery
+			</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="photo" widget="image" class="oe_left oe_avatar" />
+					<!-- <field name="room"/> -->
+				</tree>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="reserva_hoteles.action_photogallery_window">
+			<field name="name">
+				Galleria de fotos
+			</field>
+			<field name="res_model">
+				reserva_hoteles.photogallery
+			</field>
+			<field name="view_mode">
+				tree,form
+			</field>
+		</record>
+		<!-- Galleria de Fotos -->
+		<record model="ir.ui.view" id="reserva_hoteles.hotelgallery">
+			<field name="name">
+				Galleria de fotos del hotel
+			</field>
+			<field name="model">
+				reserva_hoteles.hotelgallery
+			</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="photo" widget="image" class="oe_left oe_avatar" />
+					<!-- <field name="hotel"/> -->
+				</tree>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="reserva_hoteles.action_hotelgallery_window">
+			<field name="name">
+				Galleria de fotos del hotel
+			</field>
+			<field name="res_model">
+				reserva_hoteles.hotelgallery
+			</field>
+			<field name="view_mode">
+				tree,form
+			</field>
+		</record>
+		<!-- Comentarios -->
+		<record model="ir.ui.view" id="reserva_hoteles.comments_kanban">
+			<field name="name">
+				Commentarios
+			</field>
+			<field name="model">
+				reserva_hoteles.comments
+			</field>
+			<field name="arch" type="xml">
+				<kanban>
+					<h1>
+						<field name="name" />
+					</h1>
+					<field name="name" />
+					<field name="description" />
+					<field name="clients" />
+					<field name="photoclient" />
+					<field name="nameclient" />
+					<field name="valorations" />
+					<field name="hotel" />
+					<templates>
+						<t t-name="kanban-box">
+							<div class="oe_product_vignette">
+								<a type="open">
+									<img style="height:100px;" class="oe_kanban_image" t-att-src="kanban_image('reserva_hoteles.comments', 'photoclient', record.id.raw_value)" />
+								</a>
+								<div class="oe_product_desc">
+									<ul>
+										<li>
+											<field name="nameclient">
+											</field>
+										</li>
+										<li>
+											<field name="description">
+											</field>
+										</li>
+										<li>
+											<field name="valorations">
+											</field>
+										</li>
+									</ul>
+									<button type="open" class="btn btn-primary">
+										Ver más detalles
+									</button>
+								</div>
+							</div>
+						</t>
+					</templates>
+				</kanban>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="reserva_hoteles.comments">
+			<field name="name">
+				Commentarios
+			</field>
+			<field name="model">
+				reserva_hoteles.comments
+			</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="description" />
+					<field name="clients" />
+					<field name="photoclient" />
+					<field name="nameclient" />
+					<field name="valorations" />
+					<field name="hotel" />
+				</tree>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="reserva_hoteles.comments_form">
+			<field name="name">
+				Commentarios
+			</field>
+			<field name="model">
+				reserva_hoteles.comments
+			</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<h1>
+							<field name="name" />
+						</h1>
+						<group>
+							<field name="name" />
+							<field name="description" />
+						</group>
+						<group>
+							<field name="clients" />
+						</group>
+						<group>
+							<field name="photoclient" />
+						</group>
+						<group>
+							<field name="nameclient" />
+						</group>
+						<group>
+							<field name="valorations" />
+							<field name="hotel" />
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="reserva_hoteles.action_comments_window">
+			<field name="name">
+				Commentarios
+			</field>
+			<field name="res_model">
+				reserva_hoteles.comments
+			</field>
+			<field name="view_mode">
+				tree,form, kanban
+			</field>
+		</record>
+		<!-- Top menu item -->
+		<menuitem name="reserva_hoteles" id="reserva_hoteles.menu_root" />
+		<!-- menu categories -->
+		<menuitem name="Menu 1" id="reserva_hoteles.menu_1" parent="reserva_hoteles.menu_root" />
+		<menuitem name="Menu 2" id="reserva_hoteles.menu_2" parent="reserva_hoteles.menu_root" />
+		<menuitem name="Hotels Reseve" id="reserva_hoteles.menu_1_list" parent="reserva_hoteles.menu_root" />
+		<!-- actions -->
+		<menuitem name="Ciudades" id="reserva_hoteles.menu_1_citys_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_citys_window" />
+		<menuitem name="Hoteles" id="reserva_hoteles.menu_2_hotels_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_hotels_window" />
+		<menuitem name="Habitaciones" id="reserva_hoteles.menu_3_rooms_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_rooms_window" />
+		<menuitem name="Reservas" id="reserva_hoteles.menu_4_reserves_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_reserve_window" />
+		<menuitem name="Servicios" id="reserva_hoteles.menu_5_reserves_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_service_window" />
+		<menuitem name="Galeria de Fotos de las Habitaciones" id="reserva_hoteles.menu_6_reserves_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_photogallery_window" />
+		<menuitem name="Galeria de Fotos del hotel" id="reserva_hoteles.menu_7_reserves_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_hotelgallery_window" />
+		<menuitem name="Commentarios" id="reserva_hoteles.menu_8_reserves_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_comments_window" />
+		<!--
+		<menuitem name="Server to list" id="reserva_hoteles" parent="reserva_hoteles.menu_2"
+		action="reserva_hoteles.action_server"/>
+		-->
+	</data>
 </odoo>
