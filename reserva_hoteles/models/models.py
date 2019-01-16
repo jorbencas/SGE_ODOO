@@ -23,6 +23,28 @@ class hotels (models.Model):
     city = fields.Many2one('reserva_hoteles.citys','name')
     countrys = fields.Char(related='city.countrys.name', store=True, readOnly=True)
     comments = fields.One2many('reserva_hoteles.comments','name')
+    reserve = fields.One2many('reserva_hoteles.reserve','hotel')
+    oldreserve = fields.One2many('reserva_hoteles.reserve','hotel', compute='get_old_reserve')
+    presentreserve = fields.One2many('reserva_hoteles.reserve','hotel', compute='get_present_reserve')
+    futurereserve = fields.One2many('reserva_hoteles.reserve','hotel', compute='get_future_reserve')
+
+    @api.one
+    @api.depends('reserve')
+    def get_old_reserve(self):
+        now = datetime.datetime.now()
+        self.oldreserve = self.env['reserva_hoteles.reserve'].search(['name' == self.name], ['datestart',  '<', now], ['dateeend', '<'. now])     
+    
+    @api.one
+    @api.depends('reserve')
+    def get_present_reserve(self):
+        now = datetime.datetime.now()
+        self.presentreserve = self.env['reserva_hoteles.reserve'].search(['name' == self.name], ['datestart', '>'. now],['dateeend', '<', now])      
+    
+    @api.one
+    @api.depends('reserve')
+    def get_future_reserve(self):
+        now = datetime.datetime.now()
+        self.futurereserve = self.env['reserva_hoteles.reserve'].search(['name' == self.name], ['datestart', '>'. now],['dateeend', '>'. now])
 
     @api.depends('photoGallery')
     def _get_resized_image_hotel(self):
@@ -76,7 +98,7 @@ class reserve (models.Model):
     room = fields.Many2one('reserva_hoteles.rooms','reserve')
     hotel = fields.Many2one('reserva_hoteles.hotels', related='room.hotel', readonly=True,store=True)
     city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readonly=True)
-    reserve_heredada = fields.One2many('reserva_hoteles.reserve_heredada', related="reserve", store=True)
+
     @api.onchange('datestart','dateend')
     def _manyana(self):
         for record in self:
@@ -114,56 +136,11 @@ class reserve (models.Model):
             if variable > 0:
                 raise ValidationError("Se solapan las 2 fechas \n"+ self.name + "com " + valor.name)
 
-class reserve_heredada (models.Model):
+class my_clients (models.Model):
     _name = 'res.partner'
     _inherit = 'res.partner'
-    reserve = fields.Many2one('reserva_hoteles.reserve', related="reserve_heredada",store=True,'name')
-    # name = fields.Text(string="Nombre de la reserva")
-    # datestart = fields.Date()
-    # dateend = fields.Date()
-    # client = fields.Many2one('res.partner', 'Nombre del cliente')
-    # room = fields.Many2one('reserva_hoteles.rooms','reserve')
-    # hotel = fields.Many2one('reserva_hoteles.hotels', related='room.hotel', readonly=True,store=True)
-    # city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readonly=True)
-
-    # @api.onchange('datestart','dateend')
-    # def _manyana(self):
-    #     for record in self:
-    #         if record.dateend and record.datestart:
-
-    #             fmt='%Y-%m-%d'
-    #             datestart=datetime.datetime.strptime(str(record.datestart),fmt)
-    #             dateend=datetime.datetime.strptime(str(record.dateend),fmt)
-    #             if dateend < datestart:
-    #                 record.dateeend = datestart + datetime.timedelta(days=1)
-    #                 print(record.fechaFinal)
-    #                 return {
-    #                     'warning': {
-    #                         'title': "Algo ha ocurrido mal",
-    #                         'message': "No puedes insertar un dia antes de la fecha de inicio",
-    #                     }
-    #                 }
-    #             else:
-    #                 print(" No hay error!")
-    #         elif record.datestart:
-    #             fmt = '%Y-%m-%d'
-    #             data = datetime.datetime.strptime(str(record.datestart), fmt)
-    #             record.dateend = data + datetime.timedelta(days=1)
-
-    # @api.constrains('datestart','dateend')
-    # def _comprobar_reserva(self):
-    #     for record in self:
-    #         variable = self.search_count([('id', '!=', record.id),('room.id', '=', record.room.id) ,('dateend', '>=', record.datestart), ('datestart','<=', record.dateend)])
-    #         variable2 = self.search([('id', '!=', record.id),('room.id', '=', record.room.id), ('dateend', '>=', record.datestart), ('datestart','<=', record.dateend)])
-
-    #         for valor in variable2:
-    #             print(self.name)
-    #             print(valor.name)
-
-    #         if variable > 0:
-    #             raise ValidationError("Se solapan las 2 fechas \n"+ self.name + "com " + valor.name)
-
-
+    reserve = fields.One2many('reserva_hoteles.reserve', 'client')
+    comments = fields.One2many('reserva_hoteles.comments', 'clients')
 
 class photoHotel (models.Model):
     _name='reserva_hoteles.hotelgallery'
