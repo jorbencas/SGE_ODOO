@@ -31,20 +31,17 @@ class hotels (models.Model):
     @api.one
     @api.depends('reserve')
     def get_old_reserve(self):
-        now = datetime.datetime.now()
-        self.oldreserve = self.env['reserva_hoteles.reserve'].search(['name' == self.name], ['datestart',  '<', now], ['dateeend', '<'. now])     
+        self.oldreserve = self.env['reserva_hoteles.reserve'].search([('name', '=', self.name), ('datestart',  '<',  datetime.datetime.now()), ('dateend', '<',  datetime.datetime.now())])     
     
     @api.one
     @api.depends('reserve')
     def get_present_reserve(self):
-        now = datetime.datetime.now()
-        self.presentreserve = self.env['reserva_hoteles.reserve'].search(['name' == self.name], ['datestart', '>'. now],['dateeend', '<', now])      
+        self.presentreserve = self.env['reserva_hoteles.reserve'].search([('name', '=', self.name), ('datestart', '>',  datetime.datetime.now()), ('dateend', '<',  datetime.datetime.now())])      
     
     @api.one
     @api.depends('reserve')
     def get_future_reserve(self):
-        now = datetime.datetime.now()
-        self.futurereserve = self.env['reserva_hoteles.reserve'].search(['name' == self.name], ['datestart', '>'. now],['dateeend', '>'. now])
+        self.futurereserve = self.env['reserva_hoteles.reserve'].search([('name', '=', self.name), ('datestart', '>',  datetime.datetime.now()), ('dateend', '>',  datetime.datetime.now())])
 
     @api.depends('photoGallery')
     def _get_resized_image_hotel(self):

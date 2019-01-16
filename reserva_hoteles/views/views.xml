@@ -68,15 +68,6 @@
                       <notebook >
                            <page string="Hoteles"><field name="listHotels"></field></page>
                       </notebook>
-                      <notebook>
-                        <page string="Reservas Pasadas"><field name="oldreserve"></field></page>
-                      </notebook>
-                      <notebook>
-                        <page string="Reservas Presentes"><field name="presentreserve"></field></page>
-                      </notebook>
-                      <notebook>
-                        <page string="Reservas Futuras"><field name="futurereserve"></field></page>
-                      </notebook>
                   </sheet>
 
               </form>
@@ -279,6 +270,13 @@
                       </field>
                     </page>
                   </notebook>
+                  <notebook>
+                        <page string="Reservas Pasadas"><field name="oldreserve"></field></page>
+
+                        <page string="Reservas Presentes"><field name="presentreserve"></field></page>
+
+                        <page string="Reservas Futuras"><field name="futurereserve"></field></page>
+                        </notebook>
               </group>
           </sheet>
         </form>
