@@ -133,6 +133,10 @@ class reserve (models.Model):
             if variable > 0:
                 raise ValidationError("Se solapan las 2 fechas \n"+ self.name + "com " + valor.name)
 
+# class reserve_inherit(models.Model):
+#     name='sale.order.line'
+    # _inherit='sale.order.line'
+    
 class my_clients (models.Model):
     _name = 'res.partner'
     _inherit = 'res.partner'
@@ -143,13 +147,11 @@ class photoHotel (models.Model):
     _name='reserva_hoteles.hotelgallery'
     name = fields.Text()
     photo = fields.Binary()
-    # hotel = fields.Many2one('reserva_hoteles.hotels','name')
 
 class photoGallery (models.Model):
     _name = 'reserva_hoteles.photogallery'
     name = fields.Text()
     photo = fields.Binary()
-    # room = fields.Many2one('reserva_hoteles.rooms','name')
 
 class services (models.Model):
     _name = 'reserva_hoteles.services'
