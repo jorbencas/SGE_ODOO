@@ -270,14 +270,14 @@
                       </field>
                     </page>
                   </notebook>
-                  <notebook>
+              </group>
+               <notebook>
                         <page string="Reservas Pasadas"><field name="oldreserve"></field></page>
 
                         <page string="Reservas Presentes"><field name="presentreserve"></field></page>
 
                         <page string="Reservas Futuras"><field name="futurereserve"></field></page>
-                        </notebook>
-              </group>
+                  </notebook>
           </sheet>
         </form>
       </field>

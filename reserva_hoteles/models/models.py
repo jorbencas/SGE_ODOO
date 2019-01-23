@@ -31,17 +31,17 @@ class hotels (models.Model):
     @api.one
     @api.depends('reserve')
     def get_old_reserve(self):
-        self.oldreserve = self.env['reserva_hoteles.reserve'].search([('name', '=', self.name), ('datestart',  '<',  datetime.datetime.now()), ('dateend', '<',  datetime.datetime.now())])     
+        self.oldreserve = self.env['reserva_hoteles.reserve'].search([('hotel', '=', self.name), ('datestart',  '<',  datetime.datetime.now()), ('dateend', '<',  datetime.datetime.now())])     
     
     @api.one
     @api.depends('reserve')
     def get_present_reserve(self):
-        self.presentreserve = self.env['reserva_hoteles.reserve'].search([('name', '=', self.name), ('datestart', '>',  datetime.datetime.now()), ('dateend', '<',  datetime.datetime.now())])      
+        self.presentreserve = self.env['reserva_hoteles.reserve'].search([('hotel', '=', self.name), ('datestart', '>',  datetime.datetime.now()), ('dateend', '<',  datetime.datetime.now())])      
     
     @api.one
     @api.depends('reserve')
     def get_future_reserve(self):
-        self.futurereserve = self.env['reserva_hoteles.reserve'].search([('name', '=', self.name), ('datestart', '>',  datetime.datetime.now()), ('dateend', '>',  datetime.datetime.now())])
+        self.futurereserve = self.env['reserva_hoteles.reserve'].search([('hotel', '=', self.name), ('datestart', '>',  datetime.datetime.now()), ('dateend', '>',  datetime.datetime.now())])
 
     @api.depends('photoGallery')
     def _get_resized_image_hotel(self):
@@ -95,6 +95,7 @@ class reserve (models.Model):
     room = fields.Many2one('reserva_hoteles.rooms','reserve')
     hotel = fields.Many2one('reserva_hoteles.hotels', related='room.hotel', readonly=True,store=True)
     city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readonly=True)
+    sale_line = fields.One2many('reserva_hoteles.reserve_inherit','reserve')
 
     @api.onchange('datestart','dateend')
     def _manyana(self):
@@ -133,10 +134,22 @@ class reserve (models.Model):
             if variable > 0:
                 raise ValidationError("Se solapan las 2 fechas \n"+ self.name + "com " + valor.name)
 
-# class reserve_inherit(models.Model):
-#     name='sale.order.line'
-    # _inherit='sale.order.line'
-    
+class reserve_inherit(models.Model):
+    name='sale.order.line'
+    _inherit='sale.order.line'
+    reserve = fields.Many2one('reserva_hoteles.reserve','sale_line')
+    hotel = fields.Many2one('reserva_hoteles.hotel', related='reserve.hotel', readOnly=True)
+    days = fields.Float('reserva_hoteles.reserve', compute="get_days_reserve")
+
+    @api.one
+    @api.depends('reserve')
+    def get_days_reserve(self):
+        for r in self.reserve:
+            date_format = "%m/%d/%Y";
+            d_start = datetime.strptime(r.datestart,date_format)
+            d_end = datetime.strptime(r.dateeend,date_format)
+            r.days = d_end  - d_start
+
 class my_clients (models.Model):
     _name = 'res.partner'
     _inherit = 'res.partner'
