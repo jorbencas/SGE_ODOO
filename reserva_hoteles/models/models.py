@@ -96,6 +96,16 @@ class reserve (models.Model):
     hotel = fields.Many2one('reserva_hoteles.hotels', related='room.hotel', readonly=True,store=True)
     city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readonly=True)
     sale_line = fields.One2many('reserva_hoteles.reserve_inherit','reserve')
+    days = fields.Float(default=1, compute="get_days_reserve")
+
+    @api.one
+    @api.depends('datestart','dateend')
+    def get_days_reserve(self):
+        for r in self:
+            date_format = "%m/%d/%Y";
+            d_start = datetime.strptime(r.datestart,date_format)
+            d_end = datetime.strptime(r.dateeend,date_format)
+            r.days = d_end - d_start
 
     @api.onchange('datestart','dateend')
     def _manyana(self):
@@ -135,20 +145,20 @@ class reserve (models.Model):
                 raise ValidationError("Se solapan las 2 fechas \n"+ self.name + "com " + valor.name)
 
 class reserve_inherit(models.Model):
-    name='sale.order.line'
+    _name='sale.order.line'
     _inherit='sale.order.line'
-    reserve = fields.Many2one('reserva_hoteles.reserve','sale_line')
+    reserve = fields.Many2one('reserva_hoteles.reserve', 'sale_line', Store=True)
     hotel = fields.Many2one('reserva_hoteles.hotel', related='reserve.hotel', readOnly=True)
-    days = fields.Float('reserva_hoteles.reserve', compute="get_days_reserve")
+    room_reserve_inherit = fields.Integer(related='reserve.room.name');
+    datestart_inherit = fields.Date(related='reserve.datestart', readOnly=True);
+    dateend_inherit = fields.Date(related='reserve.dateend', readOnly=True);
+    quantity = fields.Float(compute='get_reserve_quantity');
 
     @api.one
     @api.depends('reserve')
-    def get_days_reserve(self):
-        for r in self.reserve:
-            date_format = "%m/%d/%Y";
-            d_start = datetime.strptime(r.datestart,date_format)
-            d_end = datetime.strptime(r.dateeend,date_format)
-            r.days = d_end  - d_start
+    def get_reserve_quantity(self):
+        for record in self:
+	        record.quantity = len(record.reserve)
 
 class my_clients (models.Model):
     _name = 'res.partner'
@@ -158,12 +168,12 @@ class my_clients (models.Model):
 
 class photoHotel (models.Model):
     _name='reserva_hoteles.hotelgallery'
-    name = fields.Text()
+    name = fields.Text(string="Galeria de fotos del hotel")
     photo = fields.Binary()
 
 class photoGallery (models.Model):
     _name = 'reserva_hoteles.photogallery'
-    name = fields.Text()
+    name = fields.Text(string="Galeria de fotos de la habitación")
     photo = fields.Binary()
 
 class services (models.Model):
