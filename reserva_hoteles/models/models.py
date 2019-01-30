@@ -86,6 +86,23 @@ class rooms (models.Model):
             else:
                 record.avaible="Libre"
 
+class reserve_inherit(models.Model):
+    _name='sale.order.line'
+    _inherit='sale.order.line'
+    reserve = fields.Many2one('reserva_hoteles.reserve', 'sale_line', Store=True)
+    hotel = fields.Many2one('reserva_hoteles.hotel', related='reserve.hotel', readOnly=True)
+    room_reserve_inherit = fields.Integer(related='reserve.room.name');
+    datestart_inherit = fields.Date(related='reserve.datestart', readOnly=True);
+    dateend_inherit = fields.Date(related='reserve.dateend', readOnly=True);
+    quantity = fields.Float(compute='get_reserve_quantity');
+
+    @api.one
+    @api.depends('reserve')
+    def get_reserve_quantity(self):
+        for record in self:
+	        record.quantity = len(record.reserve)
+
+
 class reserve (models.Model):
     _name = 'reserva_hoteles.reserve'
     name = fields.Text(string="Nombre de la reserva")
@@ -95,16 +112,16 @@ class reserve (models.Model):
     room = fields.Many2one('reserva_hoteles.rooms','reserve')
     hotel = fields.Many2one('reserva_hoteles.hotels', related='room.hotel', readonly=True,store=True)
     city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readonly=True)
-    sale_line = fields.One2many('reserva_hoteles.reserve_inherit','reserve')
-    days = fields.Float(default=1, compute="get_days_reserve")
+    sale_line = fields.One2many('sale.order.line','reserve')
+    days = fields.Text(default=1, compute="get_days_reserve")
 
     @api.one
     @api.depends('datestart','dateend')
     def get_days_reserve(self):
         for r in self:
-            date_format = "%m/%d/%Y";
-            d_start = datetime.strptime(r.datestart,date_format)
-            d_end = datetime.strptime(r.dateeend,date_format)
+            date_format = "%Y-%m-%d";
+            d_start = datetime.datetime.strptime(r.datestart,date_format)
+            d_end = datetime.datetime.strptime(r.dateend,date_format)
             r.days = d_end - d_start
 
     @api.onchange('datestart','dateend')
@@ -144,21 +161,6 @@ class reserve (models.Model):
             if variable > 0:
                 raise ValidationError("Se solapan las 2 fechas \n"+ self.name + "com " + valor.name)
 
-class reserve_inherit(models.Model):
-    _name='sale.order.line'
-    _inherit='sale.order.line'
-    reserve = fields.Many2one('reserva_hoteles.reserve', 'sale_line', Store=True)
-    hotel = fields.Many2one('reserva_hoteles.hotel', related='reserve.hotel', readOnly=True)
-    room_reserve_inherit = fields.Integer(related='reserve.room.name');
-    datestart_inherit = fields.Date(related='reserve.datestart', readOnly=True);
-    dateend_inherit = fields.Date(related='reserve.dateend', readOnly=True);
-    quantity = fields.Float(compute='get_reserve_quantity');
-
-    @api.one
-    @api.depends('reserve')
-    def get_reserve_quantity(self):
-        for record in self:
-	        record.quantity = len(record.reserve)
 
 class my_clients (models.Model):
     _name = 'res.partner'
