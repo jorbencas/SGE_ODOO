@@ -5,22 +5,22 @@ import datetime
 
 class citys(models.Model):
 	_name = 'reserva_hoteles.citys'
-	name = fields.Text()
-	description = fields.Text()
-	location = fields.Text()
+	name = fields.Text('Ciudad')
+	description = fields.Text('Descripcion')
+	location = fields.Text('Localización')
 	countrys = fields.Many2one('res.country','Pais')
 	listHotels = fields.One2many('reserva_hoteles.hotels', 'city')
 
 class hotels (models.Model):
     _name = 'reserva_hoteles.hotels'
-    name = fields.Text()
+    name = fields.Text('Hotel')
     photoGallery = fields.Many2many('reserva_hoteles.hotelgallery')
     photomainhotel = fields.Binary(compute='_get_resized_image_hotel',store=True)
-    description = fields.Text()
+    description = fields.Text('Dscripción')
     listRooms = fields.One2many('reserva_hoteles.rooms','name')
     valorations = fields.Selection([('1', '⭐'), ('2', '⭐⭐'), ('3', '⭐⭐⭐'), ('4', '⭐⭐⭐⭐'), ('5', '⭐⭐⭐⭐⭐')])
     listServices = fields.Many2many('reserva_hoteles.services')
-    city = fields.Many2one('reserva_hoteles.citys','name')
+    city = fields.Many2one('reserva_hoteles.citys','Ciudad')
     countrys = fields.Char(related='city.countrys.name', store=True, readOnly=True)
     comments = fields.One2many('reserva_hoteles.comments','name')
     reserve = fields.One2many('reserva_hoteles.reserve','hotel')
@@ -54,14 +54,14 @@ class hotels (models.Model):
 
 class rooms (models.Model):
     _name = 'reserva_hoteles.rooms'
-    name = fields.Integer()
-    beds = fields.Selection([('0','Una Cama'),('1','Dos Camas'),('2','Cama de Matrimonio'),('3','Cama de matromonio mas cama infantil') ],'Type', default='1')
+    name = fields.Integer('Numero de Habitación')
+    beds = fields.Selection([('0','Una Cama'),('1','Dos Camas'),('2','Cama de Matrimonio'),('3','Cama de matromonio mas cama infantil') ],'Numero de camas', default='1')
     photos = fields.Many2many('reserva_hoteles.photogallery')
     photomainroom = fields.Binary(compute='_get_resized_image',store=True)
     price = fields.Float(default=1)
     description = fields.Text(default="Habitación grande, espaciosa y con gran luminosidad.")
-    hotel = fields.Many2one('reserva_hoteles.hotels','listRooms')
-    city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readOnly=True)
+    hotel = fields.Many2one('reserva_hoteles.hotels','Lista de habitaciones')
+    city = fields.Many2one('reserva_hoteles.citys', related='hotel.city',readOnly=True)
     reserve = fields.One2many('reserva_hoteles.reserve','name')
     avaible = fields.Char(string="Estado", compute='_getestado', readOnly=True)
 
@@ -89,7 +89,7 @@ class rooms (models.Model):
 class reserve_inherit(models.Model):
     _name='sale.order.line'
     _inherit='sale.order.line'
-    reserve = fields.Many2one('reserva_hoteles.reserve', 'sale_line', Store=True)
+    reserve = fields.Many2one('reserva_hoteles.reserve', 'Linea de Venta', Store=True)
     hotel = fields.Many2one('reserva_hoteles.hotel', related='reserve.hotel', readOnly=True)
     room_reserve_inherit = fields.Integer(related='reserve.room.name');
     datestart_inherit = fields.Date(related='reserve.datestart', readOnly=True);
@@ -106,12 +106,12 @@ class reserve_inherit(models.Model):
 class reserve (models.Model):
     _name = 'reserva_hoteles.reserve'
     name = fields.Text(string="Nombre de la reserva")
-    datestart = fields.Date()
-    dateend = fields.Date()
+    datestart = fields.Date('Fecha de Inicio')
+    dateend = fields.Date('Fecha de fin')
     client = fields.Many2one('res.partner', 'Nombre del cliente')
-    room = fields.Many2one('reserva_hoteles.rooms','reserve')
-    hotel = fields.Many2one('reserva_hoteles.hotels', related='room.hotel', readonly=True,store=True)
-    city = fields.Many2one('reserva_hoteles.citys', related='hotel.city', readonly=True)
+    room = fields.Many2one('reserva_hoteles.rooms','Habitacion')
+    hotel = fields.Many2one('reserva_hoteles.hotels','Hotel', related='room.hotel', readonly=True,store=True)
+    city = fields.Many2one('reserva_hoteles.citys','Ciudad', related='hotel.city', readonly=True)
     sale_line = fields.One2many('sale.order.line','reserve')
     days = fields.Text(default=1, compute="get_days_reserve")
 
