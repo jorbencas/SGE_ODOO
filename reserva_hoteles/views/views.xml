@@ -2,7 +2,7 @@
   <data>
     <!--Citys-->
 
-    <record model="ir.ui.view" id="reserva_hoteles.city_kanban">
+  <record model="ir.ui.view" id="reserva_hoteles.city_kanban">
 	<field name="name">Ciudades</field>
   <field name="model">reserva_hoteles.citys</field>
   <field name="arch" type="xml">
@@ -271,7 +271,25 @@
                     </page>
                   </notebook>
               </group>
+               
+
                <notebook>
+
+               <!-- <page string="Reservas">
+                              <div attrs="{'invisible':[('oldreserve', '=', [])]}">
+                                  <h4 style="text-align:center;">Reservas pasadas</h4>
+                                   <field name="oldreserve" widget="one2many"></field>
+                              </div>
+                              <div attrs="{'invisible':[('presentreserve', '=', [])]}">
+                                   <h4 style="text-align:center;">Reservas Presentes</h4>
+                                   <field name="presentreserve" widget="one2many"></field>
+                              </div>
+                              <div attrs="{'invisible':[('futurereserve', '=', [])]}">
+                                  <h4 style="text-align:center;">Reservas Futuras</h4>
+                                   <field name="futurereserve" widget="one2many"></field>
+                              </div>
+</page> -->
+
                         <page string="Reservas Pasadas"><field name="oldreserve"></field></page>
 
                         <page string="Reservas Presentes"><field name="presentreserve"></field></page>
@@ -443,6 +461,12 @@
           <notebook>
           <field name="city"/>
         </notebook>
+        <notebook>
+          <field name="sale_line"/>
+          <field name="days"/>
+        </notebook>
+          <button name="crear_venta" type="object" string="Crear venta de esta reserva" class="btn btn-info oe_read_only" />
+          <button name="crear_venta_todos" type="object" string="Crear venta de todas las reservas del cliente" class="btn btn-success oe_read_only" />
           </sheet>
         </form>
       </field>
@@ -460,6 +484,7 @@
           <field name="room"/>
           <field name="hotel"/>
           <field name="city"/>
+          <field name="days"/>
         </tree>
       </field>
     </record>
@@ -469,8 +494,7 @@
             <field name="model">reserva_hoteles.reserve</field>
             <field name="arch" type="xml">
                 <calendar string="Booking Calendar" date_start="datestart"
-                          date_stop="dateend" color="hotel"
-                          >
+                          date_stop="dateend" color="hotel">
                     <field name="name"/>
                 </calendar>
             </field>
@@ -532,6 +556,75 @@
 			<field name="view_id" ref="reserva_hoteles.my_clients_form" />
 			<field name="act_window_id" ref="reserva_hoteles.action_my_clients_window" />
 		</record>
+
+<!-- Venta-->
+    <record model="ir.ui.view" id="reserva_hoteles.order_form">
+        <field name="name">Venta</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form/sheet/notebook/page/field[@name='order_line']/tree/field[@name='name']" position="after">
+                <field name="reserve" widget="many2one"/>
+            </xpath>
+        </field>
+        </record>
+
+      <record model="ir.actions.act_window" id="reserva_hoteles.action_window10">
+      <field name="name">Venta</field>
+      <field name="res_model">sale.order</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window.view" id="reserva_hoteles.action_window10_form">
+      <field eval="1" name="sequence"/>
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="reserva_hoteles.order_form"/>
+      <field name="act_window_id" ref="reserva_hoteles.action_window10"/>
+    </record>
+
+<!-- Lineas de Venta -->
+  <record id="reserva_hoteles.sale_order_line_inherit_tree" model="ir.ui.view">
+    <field name="name">Linea de Venta</field>
+    <field name="model">sale.order.line</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="reserve"/>
+        <!-- <field name="hotel"/> -->
+        <field name="room_sale_order_line_inherit"/>
+        <field name="datestart_inherit"/> 
+        <field name="dateend_inherit"/>
+        <field name="quantity"/>
+      </tree>
+    </field>
+  </record>
+
+
+<record id="reserva_hoteles.sale_order_line_inherit_form" model="ir.ui.view">
+  <field name="name">Lineas de venta form</field>
+  <field name="model">sale.order.line</field>
+  <field name="arch" type="xml">
+    <form>
+      <sheet>
+        <group>
+          <field name="reserve"></field>  
+          <!-- <field name="hotel"></field>  -->
+          <field name="room_sale_order_line_inherit"></field> 
+          <field name="datestart_inherit"></field> 
+          <field name="dateend_inherit"></field> 
+          <field name="quantity"></field> 
+        </group>
+      </sheet>
+    </form>
+  </field>
+</record>
+  
+  <record model="ir.actions.act_window" id="reserva_hoteles.action_sale_lines_window">
+    <field name="name">Linea de Venta</field>
+    <field name="res_model">sale.order.line</field>
+    <field name="context">{'search_default_reserva':1}</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
 
     <!--Galleria de Fotos-->
     <record model="ir.ui.view" id="reserva_hoteles.photogallery">
@@ -649,6 +742,9 @@
               action="reserva_hoteles.action_hotelgallery_window"/>
     <menuitem name="Commentarios" id="reserva_hoteles.menu_8_reserves_list" parent="reserva_hoteles.menu_1_list"
               action="reserva_hoteles.action_comments_window"/>
-    <menuitem name="Clientes" id="reserva_hoteles.menu_9_reserves_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_my_clients_window" />
+    <menuitem name="Clientes" id="reserva_hoteles.menu_9_reserves_list" parent="reserva_hoteles.menu_1_list" 
+              action="reserva_hoteles.action_my_clients_window" />
+    <menuitem name="Lineas de venta" id="reserva_hoteles.menu_10_reserves_list" parent="reserva_hoteles.menu_1_list" 
+              action="reserva_hoteles.action_sale_lines_window" />
   </data>
 </odoo>

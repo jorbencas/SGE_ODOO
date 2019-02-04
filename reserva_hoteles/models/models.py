@@ -86,12 +86,12 @@ class rooms (models.Model):
             else:
                 record.avaible="Libre"
 
-class reserve_inherit(models.Model):
+class sale_order_line_inherit(models.Model):
     _name='sale.order.line'
     _inherit='sale.order.line'
     reserve = fields.Many2one('reserva_hoteles.reserve', 'Linea de Venta', Store=True)
     hotel = fields.Many2one('reserva_hoteles.hotel', related='reserve.hotel', readOnly=True)
-    room_reserve_inherit = fields.Integer(related='reserve.room.name');
+    room_sale_order_line_inherit = fields.Integer(related='reserve.room.name');
     datestart_inherit = fields.Date(related='reserve.datestart', readOnly=True);
     dateend_inherit = fields.Date(related='reserve.dateend', readOnly=True);
     quantity = fields.Float(compute='get_reserve_quantity');
@@ -101,7 +101,6 @@ class reserve_inherit(models.Model):
     def get_reserve_quantity(self):
         for record in self:
 	        record.quantity = len(record.reserve)
-
 
 class reserve (models.Model):
     _name = 'reserva_hoteles.reserve'
@@ -160,6 +159,30 @@ class reserve (models.Model):
 
             if variable > 0:
                 raise ValidationError("Se solapan las 2 fechas \n"+ self.name + "com " + valor.name)
+
+     @api.one
+    
+    @api.one
+    def crear_venta(self):
+        sale_id = self.env['sale.order'].create({'partner_id': self.clientes.id})
+        venta={'product_id':self.id,'order_id':sale_id,'name':self.name,'reservas':self.id,'product_uom_qty':self.dias,'qty_delivered':1,'qty_invoiced':1,'price_unit':self.habitaciones.precios}
+        print(venta)
+
+    @api.one
+    def crear_venta_todos(self):
+        print(self.clientes)
+        reservasCliente=self.clientes.reserve
+        print(reservasCliente)
+        id_producto = self.env.ref('reserva_hoteles.product2')
+        sale_id = self.env['sale.order'].create({'partner_id': self.clientes.id})
+        for reserva in reservasCliente:
+            venta = {'product_id': id_producto.id, 'order_id': sale_id.id, 'name': reserve.name,'reserve':self.id,
+                     'product_uom_qty': reserve.days, 'qty_delivered': 1, 'qty_invoiced': 1,
+                     'price_unit': reserva.habitaciones.precios}
+            
+            self.env['sale.order.line'].create(venta)
+
+
 
 
 class my_clients (models.Model):

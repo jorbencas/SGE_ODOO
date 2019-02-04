@@ -36,5 +36,6 @@
         'demo/citys.xml',
         'demo/hotels.xml',
         'demo/rooms.xml',
+        'demo/product.xml'
     ],
 }
