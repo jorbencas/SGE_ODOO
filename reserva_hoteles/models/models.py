@@ -160,13 +160,12 @@ class reserve (models.Model):
             if variable > 0:
                 raise ValidationError("Se solapan las 2 fechas \n"+ self.name + "com " + valor.name)
 
-     @api.one
-    
     @api.one
     def crear_venta(self):
         sale_id = self.env['sale.order'].create({'partner_id': self.clientes.id})
-        venta={'product_id':self.id,'order_id':sale_id,'name':self.name,'reservas':self.id,'product_uom_qty':self.dias,'qty_delivered':1,'qty_invoiced':1,'price_unit':self.habitaciones.precios}
-        print(venta)
+        print(sale_id)
+        #venta={'product_id':self.id,'order_id':sale_id,'name':self.name,'reservas':self.id,'product_uom_qty':self.dias,'qty_delivered':1,'qty_invoiced':1,'price_unit':self.habitaciones.precios}
+        #print(venta)
 
     @api.one
     def crear_venta_todos(self):

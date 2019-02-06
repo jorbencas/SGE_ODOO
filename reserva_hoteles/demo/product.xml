@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<data>
-		<record model="product.product" id="hotels_be_bago.product2">
+		<record model="product.product" id="reserva_hoteles.product2">
 			<field name="name">Venta de reserva</field>
             <field name="type">service</field>
             <field name="categ_id" ref="product.product_category_1"></field>
