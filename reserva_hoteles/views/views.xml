@@ -16,32 +16,15 @@
 								<div class="oe_product_vignette">
 									<a type="open">
 										<h4>
-											<field name="name">
-											</field>
+											<field name="name"></field>
 										</h4>
 									</a>
 									<div class="oe_product_desc">
 										<ul>
-											<li>
-												Descripcion:
-												<field name="description">
-												</field>
-											</li>
-											<li>
-												Ubicación :
-												<field name="location">
-												</field>
-											</li>
-											<li>
-												Pais :
-												<field name="countrys">
-												</field>
-											</li>
-											<li>
-												Numero hoteles :
-												<field name="listHotels">
-												</field>
-											</li>
+											<li>Descripcion:<field name="description"></field></li>
+											<li>Ubicación :<field name="location"></field></li>
+											<li>Pais :<field name="countrys"></field></li>
+											<li>Numero hoteles :<field name="listHotels"></field></li>
 										</ul>
 									</div>
 								</div>
@@ -65,7 +48,7 @@
 			</record>
 			<record model="ir.ui.view" id="reserva_hoteles.citys_form">
 				<field name="name">Ciudades</field>
-				<field name="model">reserva_hoteles.city</field>
+				<field name="model">reserva_hoteles.citys</field>
 				<field name="arch" type="xml">
 					<form>
 						<sheet>
@@ -139,13 +122,9 @@
 											</a>
 										</h4>
 										<ul>
-											<li>Valoracion Media:<field name="valorations"></field>
-											</li>
-											<li>Ciudad: <field name="city"></field>
-											</li>
-											<li>Descripcion:
-												<field name="description"></field>
-											</li>
+											<li>Valoracion Media:<field name="valorations"></field></li>
+											<li>Ciudad: <field name="city"></field></li>
+											<li>Descripcion:<field name="description"></field></li>
 										</ul>
 									</div>
 								</div>
@@ -155,12 +134,8 @@
 				</field>
 			</record>
 			<record model="ir.ui.view" id="reserva_hoteles.hotels">
-				<field name="name">
-					Hoteles
-				</field>
-				<field name="model">
-					reserva_hoteles.hotels
-				</field>
+				<field name="name">Hoteles</field>
+				<field name="model">reserva_hoteles.hotels</field>
 				<field name="arch" type="xml">
 					<tree>
 						<field name="name" />
@@ -240,13 +215,9 @@
 																			</a>
 																		</h4>
 																		<ul>
-																			<li>cAMAS:<field name="beds"></field>
-																			</li>
-																			<li>Ciudad:<field name="city"></field>
-																			</li>
-																			<li>
-																				Descripcion:<field name="description"></field>
-																			</li>
+																			<li>Camas:<field name="beds"></field></li>
+																			<li>Ciudad:<field name="city"></field></li>
+																			<li>Descripcion:<field name="description"></field></li>
 																		</ul>
 																	</div>
 																</div>
@@ -254,6 +225,7 @@
 														</templates>
 													</kanban>
 												</field>
+												<!-- <button name="anyadir_habitacion" type="object" string="Añadir habitacion aleatoria" class="btn btn-info" /> -->
 											</a>
 										</div>
 									</page>
@@ -268,24 +240,19 @@
 															</a>
 															<group>
 																<h4>Nombre cliente:</h4>
-																<field name="nameclient" widget="char">
-																</field>
-																<h4>
-																	Descripcion:
-																</h4>
-																<field name="description" widget="char">
-																</field>
-																<h4>
-																	Valoracion:
-																</h4>
-																<field name="valorations" widget="selection">
-																</field>
+																<field name="nameclient" widget="char"></field>
+																<h4>Descripcion:</h4>
+																<field name="description" widget="char"></field>
+																<h4>Valoracion:</h4>
+																<field name="valorations" widget="selection"></field>
 															</group>
 														</div>
 													</t>
 												</templates>
 											</kanban>
 										</field>
+										 <!-- <button name="anyadir_comentario" type="object" string="Añadir comentario aleatorio" class="btn btn-info" /> -->
+
 									</page>
 									<page string="Servicios">
 										<field name="listServices">
@@ -304,18 +271,20 @@
 									</page>
 								</notebook>
 							</group>
+							
 							<notebook>
 								<page string="Reservas Pasadas">
-									<field name="oldreserve">
-									</field>
+									<field name="oldreserve"></field>
 								</page>
+							</notebook>	
+							<notebook>
 								<page string="Reservas Presentes">
-									<field name="presentreserve">
-									</field>
+									<field name="presentreserve"></field>
 								</page>
+							</notebook>
+							<notebook>
 								<page string="Reservas Futuras">
-									<field name="futurereserve">
-									</field>
+									<field name="futurereserve"></field>
 								</page>
 							</notebook>
 						</sheet>
@@ -323,12 +292,8 @@
 				</field>
 			</record>
 			<record model="ir.ui.view" id="reserva_hoteles.hotels_search">
-				<field name="name">
-					reserva_hoteles Hotels
-				</field>
-				<field name="model">
-					reserva_hoteles.hotels
-				</field>
+				<field name="name">reserva_hoteles Hotels</field>
+				<field name="model">reserva_hoteles.hotels</field>
 				<field name="arch" type="xml">
 					<search string="Hotels">
 						<field name="city">
@@ -347,24 +312,14 @@
 				</field>
 			</record>
 			<record model="ir.actions.act_window" id="reserva_hoteles.action_hotels_window">
-				<field name="name">
-					Hoteles
-				</field>
-				<field name="res_model">
-					reserva_hoteles.hotels
-				</field>
-				<field name="view_mode">
-					tree,form,kanban
-				</field>
+				<field name="name">Hoteles</field>
+				<field name="res_model">reserva_hoteles.hotels</field>
+				<field name="view_mode">tree,form,kanban</field>
 			</record>
 			<!-- Habitaciones -->
 			<record model="ir.ui.view" id="reserva_hoteles.rooms">
-				<field name="name">
-					Habitaciones
-				</field>
-				<field name="model">
-					reserva_hoteles.rooms
-				</field>
+				<field name="name">Habitaciones</field>
+				<field name="model">reserva_hoteles.rooms</field>
 				<field name="arch" type="xml">
 					<tree>
 						<field name="name" />
@@ -377,12 +332,8 @@
 				</field>
 			</record>
 			<record model="ir.ui.view" id="reserva_hoteles.rooms_form">
-				<field name="name">
-					Habitaciones
-				</field>
-				<field name="model">
-					reserva_hoteles.rooms
-				</field>
+				<field name="name">Habitaciones</field>
+				<field name="model">reserva_hoteles.rooms</field>
 				<field name="arch" type="xml">
 					<form>
 						<sheet>
@@ -422,12 +373,8 @@
 				</field>
 			</record>
 			<record model="ir.ui.view" id="reserva_hoteles.rooms_search">
-				<field name="name">
-					reserva_hoteles Habitacion
-				</field>
-				<field name="model">
-					reserva_hoteles.rooms
-				</field>
+				<field name="name">reserva_hoteles Habitacion</field>
+				<field name="model">reserva_hoteles.rooms</field>
 				<field name="arch" type="xml">
 					<search string="Habitacion">
 						<field name="hotel">
@@ -444,24 +391,14 @@
 				</field>
 			</record>
 			<record model="ir.actions.act_window" id="reserva_hoteles.action_rooms_window">
-				<field name="name">
-					Habitaciones
-				</field>
-				<field name="res_model">
-					reserva_hoteles.rooms
-				</field>
-				<field name="view_mode">
-					tree,form, kanban
-				</field>
+				<field name="name">Habitaciones</field>
+				<field name="res_model">reserva_hoteles.rooms</field>
+				<field name="view_mode">tree,form, kanban</field>
 			</record>
 			<!-- Servicios -->
 			<record model="ir.ui.view" id="reserva_hoteles.services">
-				<field name="name">
-					Servicios
-				</field>
-				<field name="model">
-					reserva_hoteles.services
-				</field>
+				<field name="name">Servicios</field>
+				<field name="model">reserva_hoteles.services</field>
 				<field name="arch" type="xml">
 					<tree>
 						<field name="name" />
@@ -471,12 +408,8 @@
 				</field>
 			</record>
 			<record model="ir.ui.view" id="reserva_hoteles.services_form">
-				<field name="name">
-					Servicios
-				</field>
-				<field name="model">
-					reserva_hoteles.services
-				</field>
+				<field name="name">Servicios</field>
+				<field name="model">reserva_hoteles.services</field>
 				<field name="arch" type="xml">
 					<form>
 						<sheet>
@@ -493,24 +426,14 @@
 				</field>
 			</record>
 			<record model="ir.actions.act_window" id="reserva_hoteles.action_service_window">
-				<field name="name">
-					Servicios
-				</field>
-				<field name="res_model">
-					reserva_hoteles.services
-				</field>
-				<field name="view_mode">
-					tree,form
-				</field>
+				<field name="name">Servicios</field>
+				<field name="res_model">reserva_hoteles.services</field>
+				<field name="view_mode">tree,form</field>
 			</record>
 			<!-- Rservas -->
 			<record model="ir.ui.view" id="reserva_hoteles.reserve_form">
-				<field name="name">
-					Reservas
-				</field>
-				<field name="model">
-					reserva_hoteles.reserve
-				</field>
+				<field name="name">Reservas</field>
+				<field name="model">reserva_hoteles.reserve</field>
 				<field name="arch" type="xml">
 					<form>
 						<sheet>
@@ -545,12 +468,8 @@
 				</field>
 			</record>
 			<record model="ir.ui.view" id="reserva_hoteles.reserve_tree">
-				<field name="name">
-					Reservas
-				</field>
-				<field name="model">
-					reserva_hoteles.reserve
-				</field>
+				<field name="name">Reservas</field>
+				<field name="model">reserva_hoteles.reserve</field>
 				<field name="arch" type="xml">
 					<tree decoration-danger="datestart&lt;current_date and dateend&lt;current_date" decoration-bf="datestart&lt;current_date and dateend&gt;current_date" decoration-info="datestart&gt;current_date">
 						<field name="name" />
@@ -565,12 +484,8 @@
 				</field>
 			</record>
 			<record model="ir.ui.view" id="calendar1">
-				<field name="name">
-					reserva hotel Calendar
-				</field>
-				<field name="model">
-					reserva_hoteles.reserve
-				</field>
+				<field name="name">reserva hotel Calendar</field>
+				<field name="model">reserva_hoteles.reserve</field>
 				<field name="arch" type="xml">
 					<calendar string="Booking Calendar" date_start="datestart" date_stop="dateend" color="hotel">
 						<field name="name" />
@@ -578,93 +493,60 @@
 				</field>
 			</record>
 			<record model="ir.actions.act_window" id="reserva_hoteles.action_reserve_window">
-				<field name="name">
-					Reservas
-				</field>
-				<field name="res_model">
-					reserva_hoteles.reserve
-				</field>
-				<field name="view_mode">
-					tree,form,calendar
-				</field>
+				<field name="name">Reservas</field>
+				<field name="res_model">reserva_hoteles.reserve</field>
+				<field name="view_mode">tree,form,calendar</field>
 			</record>
 			<!-- Clientes -->
 			<!-- reserva_hoteles.my_clients tree view -->
 			<record id="reserva_hoteles.my_clients_tree" model="ir.ui.view">
-				<field name="name">
-					Res partner tree
-				</field>
-				<field name="model">
-					res.partner
-				</field>
+				<field name="name">Res partner tree</field>
+				<field name="model">res.partner</field>
 				<field name="arch" type="xml">
 					<tree>
-						<field name="display_name">
-						</field>
-						<field name="reserve">
-						</field>
-						<field name="comments">
-						</field>
+						<field name="display_name"></field>
+						<field name="reserve"></field>
+						<field name="comments"></field>
 					</tree>
 				</field>
 			</record>
 			<!-- reserva_hoteles.my_clients form view -->
 			<record id="reserva_hoteles.my_clients_form" model="ir.ui.view">
-				<field name="name">
-					Reserva  res partner
-				</field>
-				<field name="model">
-					res.partner
-				</field>
+				<field name="name">Reserva  res partner</field>
+				<field name="model">res.partner</field>
 				<field name="inherit_id" ref="base.view_partner_form" />
 				<field name="arch" type="xml">
 					<xpath expr="//page[@name='internal_notes']" position="after">
 						<page string="Reservas">
-							<field name="reserve">
-							</field>
+							<field name="reserve"></field>
 						</page>
 						<page string="Comentarios">
-							<field name="comments">
-							</field>
+							<field name="comments"></field>
 						</page>
 					</xpath>
 				</field>
 			</record>
 			<record model="ir.actions.act_window" id="reserva_hoteles.action_my_clients_window">
-				<field name="name">
-					my_client
-				</field>
-				<field name="res_model">
-					res.partner
-				</field>
-				<field name="view_mode">
-					tree,form
-				</field>
+				<field name="name">my_client</field>
+				<field name="res_model">res.partner</field>
+				<field name="view_mode">tree,form</field>
 			</record>
 			<record model="ir.actions.act_window.view" id="act_hr_employee_tree_view">
 				<field eval="1" name="sequence" />
-				<field name="view_mode">
-					tree
-				</field>
+				<field name="view_mode">tree</field>
 				<field name="view_id" ref="reserva_hoteles.my_clients_tree" />
 				<field name="act_window_id" ref="reserva_hoteles.action_my_clients_window" />
 			</record>
 			<record model="ir.actions.act_window.view" id="act_hr_employee_form_view">
 				<field eval="2" name="sequence" />
-				<field name="view_mode">
-					form
-				</field>
+				<field name="view_mode">form</field>
 				<field name="view_id" ref="reserva_hoteles.my_clients_form" />
 				<field name="act_window_id" ref="reserva_hoteles.action_my_clients_window" />
 			</record>
 			<!-- Venta -->
 			<record model="ir.ui.view" id="reserva_hoteles.order_form">
-				<field name="name">
-					Venta
-				</field>
-				<field name="model">
-					sale.order
-				</field>
+				<field name="name">Venta</field>
+				<field name="model">sale.order</field>
 				<field name="inherit_id" ref="sale.view_order_form" />
 				<field name="arch" type="xml">
 					<xpath expr="/form/sheet/notebook/page/field[@name='order_line']/tree/field[@name='name']" position="after">
@@ -757,12 +639,8 @@
 				<field name="view_mode">tree,form</field>
 			</record>
 			<record model="ir.ui.view" id="reserva_hoteles.comments">
-				<field name="name">
-					Commentarios
-				</field>
-				<field name="model">
-					reserva_hoteles.comments
-				</field>
+				<field name="name">Commentarios</field>
+				<field name="model">reserva_hoteles.comments</field>
 				<field name="arch" type="xml">
 					<tree>
 						<field name="name" />
@@ -776,12 +654,8 @@
 				</field>
 			</record>
 			<record model="ir.ui.view" id="reserva_hoteles.comments_form">
-				<field name="name">
-					Commentarios
-				</field>
-				<field name="model">
-					reserva_hoteles.comments
-				</field>
+				<field name="name">Commentarios</field>
+				<field name="model">reserva_hoteles.comments</field>
 				<field name="arch" type="xml">
 					<form>
 						<sheet>
@@ -810,15 +684,9 @@
 				</field>
 			</record>
 			<record model="ir.actions.act_window" id="reserva_hoteles.action_comments_window">
-				<field name="name">
-					Commentarios
-				</field>
-				<field name="res_model">
-					reserva_hoteles.comments
-				</field>
-				<field name="view_mode">
-					tree,form
-				</field>
+				<field name="name">Commentarios</field>
+				<field name="res_model">reserva_hoteles.comments</field>
+				<field name="view_mode">tree,form</field>
 			</record>
 			<!-- Top menu item -->
 			<menuitem name="reserva_hoteles" id="reserva_hoteles.menu_root" />

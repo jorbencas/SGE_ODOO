@@ -32,17 +32,18 @@ class hotels (models.Model):
     @api.depends('reserve')
     def get_old_reserve(self):
         self.oldreserve = self.env['reserva_hoteles.reserve'].search([('hotel', '=', self.name), ('datestart',  '<',  datetime.datetime.now()), ('dateend', '<',  datetime.datetime.now())])     
-    
+        print("/****************************************************************************/" + str(self.oldreserve))
     @api.one
     @api.depends('reserve')
     def get_present_reserve(self):
         self.presentreserve = self.env['reserva_hoteles.reserve'].search([('hotel', '=', self.name), ('datestart', '>',  datetime.datetime.now()), ('dateend', '<',  datetime.datetime.now())])      
-    
+        print("/****************************************************************************/" + str(self.presentreserve))
     @api.one
     @api.depends('reserve')
     def get_future_reserve(self):
         self.futurereserve = self.env['reserva_hoteles.reserve'].search([('hotel', '=', self.name), ('datestart', '>',  datetime.datetime.now()), ('dateend', '>',  datetime.datetime.now())])
-
+        print("/****************************************************************************/" + str(self.futurereserve))
+    
     @api.depends('photoGallery')
     def _get_resized_image_hotel(self):
         for p in self:
@@ -51,6 +52,36 @@ class hotels (models.Model):
                  p.photomainhotel = p.photoGallery[0].photo
             else:
                  print("Este hotel no tiene fotos...")
+
+    # @api.one
+    # def anyadir_comentario(self):
+    #     reserva=self.env['hotels_be_bago.reserva'].search([('habitaciones.hotel','=',self.id),('fechaFinal','<=',str(datetime.datetime.today()))])
+    #     #el self.env se usa para recuperar una tabla de la bbdd
+        #el search es como usn elect
+    #     comentarios=['Me lo he pasado bien','Buenos efectos audivisuales y atencion al cliente','El baño me ha puesto nervioso', 'J**** donde m***** me he metido tio',"Tocará volver"]
+
+    #     if len(reserva)!=0:
+    #         cliente={'clientes':reserva[random.randint(0,len(reserva)-1)].clientes.id,'hoteles':self.id,'descripcion':comentarios[random.randint(0,len(comentarios)-1)],'valoracion':str(random.randint(1,5))}
+    #         self.env['hotels_be_bago.comentarios'].create(cliente)
+    #     else:
+    #         print("No se puede crear un comentario porque el hotel no tiene  clientes!")
+    #         return {
+    #             'warning': {
+    #                 'title': "Algo ha ocurrido mal",
+    #                 'message': "No puedes añadir un comentario aleatorio porque este hotel no tiene clientes",
+    #             }
+    #         }
+    # @api.one
+    # def anyadir_habitacion(self):
+    #     hotel=self.env['hotels_be_bago.hotel'].search([('id','=',self.id)])
+    #     name="Habitacion " + str(hotel.name) + str(random.randint(1,1000))
+    #     camas=str(random.randint(1,5))
+    #     precios=random.randint(100,1000)
+    #     fotos=self.env['hotels_be_bago.roomfotos'].search([('id','=',random.choice([self.env.ref('hotels_be_bago.roomfoto1').id,self.env.ref('hotels_be_bago.roomfoto2').id,self.env.ref('hotels_be_bago.roomfoto3').id,self.env.ref('hotels_be_bago.roomfoto4').id,self.env.ref('hotels_be_bago.roomfoto5').id]))])
+
+    #     habitacion={'hotel':hotel.id,'name':name,'camas':camas,'precios':precios,'fotos':[(6,0,fotos.ids)]}
+    #     hotel.roomlist.create(habitacion)
+        #print(habitacion)
 
 class rooms (models.Model):
     _name = 'reserva_hoteles.rooms'
@@ -112,16 +143,19 @@ class reserve (models.Model):
     hotel = fields.Many2one('reserva_hoteles.hotels','Hotel', related='room.hotel', readonly=True,store=True)
     city = fields.Many2one('reserva_hoteles.citys','Ciudad', related='hotel.city', readonly=True)
     sale_line = fields.One2many('sale.order.line','reserve')
-    days = fields.Text(default=1, compute="get_days_reserve")
+    days = fields.Float(default=1, compute="get_days_reserve")
 
     @api.one
     @api.depends('datestart','dateend')
     def get_days_reserve(self):
-        for r in self:
-            date_format = "%Y-%m-%d";
-            d_start = datetime.datetime.strptime(r.datestart,date_format)
-            d_end = datetime.datetime.strptime(r.dateend,date_format)
-            r.days = d_end - d_start
+        for record in self:
+            if (record.datestart and record.dateend):
+                DATE_FORMAT="%Y-%m-%d"
+                datestart=datetime.datetime.strptime(str(record.datestart),DATE_FORMAT)
+                dateend=datetime.datetime.strptime(str(record.dateend),DATE_FORMAT)
+                resu = dateend - datestart
+                resu_day = resu.days + float(resu.seconds) / 86400
+                record.days = resu_day
 
     @api.onchange('datestart','dateend')
     def _manyana(self):
@@ -162,22 +196,23 @@ class reserve (models.Model):
 
     @api.one
     def crear_venta(self):
-        sale_id = self.env['sale.order'].create({'partner_id': self.clientes.id})
+        sale_id = self.env['sale.order'].create({'partner_id': self.client.id})
         print(sale_id)
-        #venta={'product_id':self.id,'order_id':sale_id,'name':self.name,'reservas':self.id,'product_uom_qty':self.dias,'qty_delivered':1,'qty_invoiced':1,'price_unit':self.habitaciones.precios}
-        #print(venta)
+        venta={'product_id':self.id,'order_id':sale_id,'name':self.name,'reservas':self.id,'product_uom_qty':self.days,'qty_delivered':1,'qty_invoiced':1,'price_unit':self.room.price}
+        print(venta)
 
     @api.one
     def crear_venta_todos(self):
-        print(self.clientes)
-        reservasCliente=self.clientes.reserve
+        print( "/************************************************************************/")
+        reservasCliente=self.client.reserve
         print(reservasCliente)
         id_producto = self.env.ref('reserva_hoteles.product2')
-        sale_id = self.env['sale.order'].create({'partner_id': self.clientes.id})
+        sale_id = self.env['sale.order'].create({'partner_id': self.client.id})
         for reserva in reservasCliente:
-            venta = {'product_id': id_producto.id, 'order_id': sale_id.id, 'name': reserve.name,'reserve':self.id,
-                     'product_uom_qty': reserve.days, 'qty_delivered': 1, 'qty_invoiced': 1,
-                     'price_unit': reserva.habitaciones.precios}
+            print(reserva.room);
+            venta = {'product_id': id_producto.id, 'order_id': sale_id.id, 'name': reserva.name,'reserve':self.id,
+                     'product_uom_qty': reserva.days, 'qty_delivered': 1, 'qty_invoiced': 1,
+                     'price_unit': reserva.room.price}
             
             self.env['sale.order.line'].create(venta)
 
