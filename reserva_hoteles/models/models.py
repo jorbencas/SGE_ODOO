@@ -224,6 +224,41 @@ class my_clients (models.Model):
     _inherit = 'res.partner'
     reserve = fields.One2many('reserva_hoteles.reserve', 'client')
     comments = fields.One2many('reserva_hoteles.comments', 'clients')
+    reservewithoutpaying = fields.One2many('reserva_hoteles.reserve', 'client', compute='generate_reserve_without_paying')
+    reservepaying = fields.One2many('reserva_hoteles.reserve', 'client', compute='generate_reserve_paying')
+    slopereserves = fields.Boolean(compute="get_slope_reserves")
+
+    #Obtenemos si el cliente tiene reservas sin pagar, osea son reservas pendinetes
+
+    @api.depends('reserve','reservewithoutpaying')
+    def get_slope_reserves(self):
+        for record in self:
+            if(len(record.reservewithoutpaying) > 0 ):
+                print(len(record.reservewithoutpaying))
+                record.slopereserves=True
+            else:
+                record.slopereserves=False
+
+    @api.depends('reserve')
+    def generate_reserve_without_paying(self):
+        for record in self:
+            if(record.reserve):
+                reservaPagada = self.env['sale.order.line'].search([]).mapped('reserve')  # obtengo las reservas que tiene una linea de factura
+                record.reservewithoutpaying=record.reserve
+                for pagada in reservaPagada: # me dispongo a recorrer las reservas que estan pagadas para ver si son todas las que tiene el usuario self.id
+                    if(pagada.client.id==record.id):
+                        record.reservewithoutpaying = record.reservewithoutpaying-pagada
+
+    @api.depends('reserve')
+    def generate_reserve_paying(self):
+        for record in self:
+            if(record.reserve ):
+                    print(len(record.reservepaying))
+                    if (len(record.reservewithoutpaying)==0):
+                        record.reservepaying=record.reserve
+                    else:
+                        record.reservepaying=record.reserve-record.reservewithoutpaying
+
 
 class photoHotel (models.Model):
     _name='reserva_hoteles.hotelgallery'
