@@ -2,6 +2,7 @@
 from odoo import models, fields, api, tools
 from odoo.exceptions import ValidationError
 import datetime
+import random
 
 class citys(models.Model):
 	_name = 'reserva_hoteles.citys'
@@ -53,45 +54,44 @@ class hotels (models.Model):
             else:
                  print("Este hotel no tiene fotos...")
 
-    # @api.one
-    # def anyadir_comentario(self):
-    #     reserva=self.env['hotels_be_bago.reserva'].search([('habitaciones.hotel','=',self.id),('fechaFinal','<=',str(datetime.datetime.today()))])
-    #     #el self.env se usa para recuperar una tabla de la bbdd
-        #el search es como usn elect
-    #     comentarios=['Me lo he pasado bien','Buenos efectos audivisuales y atencion al cliente','El baño me ha puesto nervioso', 'J**** donde m***** me he metido tio',"Tocará volver"]
+    @api.one
+    def anyadir_comentario(self):
+        reserva=self.env['reserva_hoteles.reserve'].search([('room.hotel','=',self.name),('dateend','<=',str(datetime.datetime.today()))])
+        comentarios=['Me lo he pasado bien','Buenos efectos audivisuales y atencion al cliente','El baño me ha puesto nervioso', 'J**** donde m***** me he metido tio',"Tocará volver"]
 
-    #     if len(reserva)!=0:
-    #         cliente={'clientes':reserva[random.randint(0,len(reserva)-1)].clientes.id,'hoteles':self.id,'descripcion':comentarios[random.randint(0,len(comentarios)-1)],'valoracion':str(random.randint(1,5))}
-    #         self.env['hotels_be_bago.comentarios'].create(cliente)
-    #     else:
-    #         print("No se puede crear un comentario porque el hotel no tiene  clientes!")
-    #         return {
-    #             'warning': {
-    #                 'title': "Algo ha ocurrido mal",
-    #                 'message': "No puedes añadir un comentario aleatorio porque este hotel no tiene clientes",
-    #             }
-    #         }
-    # @api.one
-    # def anyadir_habitacion(self):
-    #     hotel=self.env['hotels_be_bago.hotel'].search([('id','=',self.id)])
-    #     name="Habitacion " + str(hotel.name) + str(random.randint(1,1000))
-    #     camas=str(random.randint(1,5))
-    #     precios=random.randint(100,1000)
-    #     fotos=self.env['hotels_be_bago.roomfotos'].search([('id','=',random.choice([self.env.ref('hotels_be_bago.roomfoto1').id,self.env.ref('hotels_be_bago.roomfoto2').id,self.env.ref('hotels_be_bago.roomfoto3').id,self.env.ref('hotels_be_bago.roomfoto4').id,self.env.ref('hotels_be_bago.roomfoto5').id]))])
+        if len(reserva)!=0:
+            cliente={'name':"Comantario nuevo",'description':"Descrippción de los comentarios creados genericamente",'valorations':str(random.randint(1,5)),'hotel':self.name,'clients':reserve[0].client.id}
+            self.env['reserva_hoteles.comments'].create(cliente)
+        else:
+            print("/+++++++++++++++++++++++++++++++++++++++++++No se puede crear un comentario porque el hotel no tiene  clientes!")
+            return {
+                'warning': {
+                    'title': "Algo ha ocurrido mal",
+                    'message': "No puedes añadir un comentario aleatorio porque este hotel no tiene clientes",
+                }
+            }
+    @api.one
+    def anyadir_habitacion(self):
+        hotel=self.env['reserva_hoteles.hotels'].search([('name','=',self.name)])
+        print("/--***----****----***--**----****----**-/" + str(hotel.name))
+        name=random.randint(1,1000)
+        beds=str(random.randint(0,3))
+        price=random.randint(100,1000)
+        #photos=self.env['reserva_hoteles.photogallery'].search([('name','=',random.choice([self.env.ref('reserva_hoteles.photogallery').name,self.env.ref('hotels_be_bago.roomfoto2').id,self.env.ref('hotels_be_bago.roomfoto3').id,self.env.ref('hotels_be_bago.roomfoto4').id,self.env.ref('hotels_be_bago.roomfoto5').id]))])
 
-    #     habitacion={'hotel':hotel.id,'name':name,'camas':camas,'precios':precios,'fotos':[(6,0,fotos.ids)]}
-    #     hotel.roomlist.create(habitacion)
-        #print(habitacion)
+        habitacion={'name':name,'beds':beds,'price':price,'description':"Es una habitación muy lumninosa",'hotel':hotel.id}
+        hotel.listRooms.create(habitacion)
+        print(habitacion)
 
 class rooms (models.Model):
     _name = 'reserva_hoteles.rooms'
     name = fields.Integer('Numero de Habitación')
     beds = fields.Selection([('0','Una Cama'),('1','Dos Camas'),('2','Cama de Matrimonio'),('3','Cama de matromonio mas cama infantil') ],'Numero de camas', default='1')
-    photos = fields.Many2many('reserva_hoteles.photogallery')
-    photomainroom = fields.Binary(compute='_get_resized_image',store=True)
     price = fields.Float(default=1)
     description = fields.Text(default="Habitación grande, espaciosa y con gran luminosidad.")
     hotel = fields.Many2one('reserva_hoteles.hotels','Lista de habitaciones')
+    photos = fields.Many2many('reserva_hoteles.photogallery')
+    photomainroom = fields.Binary(compute='_get_resized_image',store=True)
     city = fields.Many2one('reserva_hoteles.citys', related='hotel.city',readOnly=True)
     reserve = fields.One2many('reserva_hoteles.reserve','name')
     avaible = fields.Char(string="Estado", compute='_getestado', readOnly=True)
@@ -103,7 +103,7 @@ class rooms (models.Model):
             if len(record.photos) > 0:
                 record.photomainroom = record.photos[0].photo
             else:
-                print("Este hotel no tiene fotos...")
+                print("Esta habitación no tiene fotos...")
 
     @api.depends('reserve')
     def _getestado(self):
@@ -279,8 +279,9 @@ class comments (models.Model):
     _name = 'reserva_hoteles.comments'
     name = fields.Text()
     description = fields.Text()
+    valorations = fields.Selection([('1', '⭐'), ('2', '⭐⭐'), ('3', '⭐⭐⭐'), ('4', '⭐⭐⭐⭐'), ('5', '⭐⭐⭐⭐⭐')],default='5')
+    hotel = fields.Many2one('reserva_hoteles.hotels',"comments")
     clients = fields.Many2one("res.partner", "Nombre del cliente")
     photoclient = fields.Binary(related='clients.image',store=True)
     nameclient = fields.Char(related='clients.name')
-    valorations = fields.Selection([('1', '⭐'), ('2', '⭐⭐'), ('3', '⭐⭐⭐'), ('4', '⭐⭐⭐⭐'), ('5', '⭐⭐⭐⭐⭐')],default='5')
-    hotel = fields.Many2one('reserva_hoteles.hotels',"comments")
+   

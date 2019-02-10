@@ -226,7 +226,7 @@
 														</templates>
 													</kanban>
 												</field>
-												<!-- <button name="anyadir_habitacion" type="object" string="Añadir habitacion aleatoria" class="btn btn-info" /> -->
+												<button name="anyadir_habitacion" type="object" string="Añadir habitacion aleatoria" class="btn btn-info" />
 											</a>
 										</div>
 									</page>
@@ -252,7 +252,7 @@
 												</templates>
 											</kanban>
 										</field>
-										 <!-- <button name="anyadir_comentario" type="object" string="Añadir comentario aleatorio" class="btn btn-info" /> -->
+										 <button name="anyadir_comentario" type="object" string="Añadir comentario aleatorio" class="btn btn-info" />
 									</page>
 									<page string="Servicios">
 										<field name="listServices">
