@@ -83,7 +83,7 @@
 						<field name="name"></field>
 						<field name="description"></field>
 						<group string="Agrupar por">
-							<filter name="countrys" string="Pais" context="{'group_by':'countrys'}"></filter>
+							<filter name="contrys" string="Pais" context="{'group_by':'countrys'}"></filter>
 						</group>
 					</search>
 				</field>
@@ -456,7 +456,6 @@
 								</page>
 							</notebook>
 							<button name="crear_venta" type="object" string="Crear venta de esta reserva" class="btn btn-info oe_read_only" />
-							<button name="crear_venta_todos" type="object" string="Crear venta de todas las reservas del cliente" class="btn btn-success oe_read_only" />
 						</sheet>
 					</form>
 				</field>
@@ -512,13 +511,39 @@
 			</record>
 
 			<record id="reserva_hoteles.my_clients_form" model="ir.ui.view">
-				<field name="name">Reserva  res partner</field>
+				<field name="name">Reserva res partner</field>
 				<field name="model">res.partner</field>
 				<field name="inherit_id" ref="base.view_partner_form" />
 				<field name="arch" type="xml">
 					<xpath expr="//page[@name='internal_notes']" position="after">
 						<page string="Reservas">
-							<field name="reserve"></field>
+							<h4>Las reservas sin facturar</h4>
+                            <field name="reservewithoutpaying"> 
+                                <tree decoration-danger="True">
+									<field name="name" />
+									<field name="datestart" />
+									<field name="dateend" />
+									<field name="client" />
+									<field name="room" />
+									<field name="hotel" />
+									<field name="city" />
+									<field name="days" />
+								</tree>
+                            </field>
+							 <h4>Todas Reservas</h4>
+                            <field name="reservepaying">
+                                <tree decoration-info="True" >
+									<field name="name" />
+									<field name="datestart" />
+									<field name="dateend" />
+									<field name="client" />
+									<field name="room" />
+									<field name="hotel" />
+									<field name="city" />
+									<field name="days" />
+								</tree>
+                            </field>
+							<button name="crear_venta_todos" type="object" string="Crear venta de todas las reservas del cliente" class="btn btn-success oe_read_only" />
 						</page>
 						<page string="Comentarios">
 							<field name="comments"></field>
@@ -527,10 +552,20 @@
 				</field>
 			</record>
 
+			<record id="reserva_hoteles.my_clients_search" model="ir.ui.view">
+				<field name="name">Reservas Clientes Form</field>
+				<field name="model">res.partner</field>
+				<field name="arch" type="xml">
+				<search>
+					<filter name="reserve" string="Mostrar clientes con reservas" domain="[('reserve','&gt;',0)]"></filter>
+				</search>
+				</field>
+			</record>
+
 			<record model="ir.actions.act_window" id="reserva_hoteles.action_my_clients_window">
 				<field name="name">my_client</field>
 				<field name="res_model">res.partner</field>
-				<field name="view_mode">tree,form</field>
+				<field name="view_mode">tree,form,search</field>
 			</record>
 
 			<record model="ir.actions.act_window.view" id="act_hr_employee_tree_view">
@@ -584,6 +619,7 @@
 					</tree>
 				</field>
 			</record>
+
 			<record id="reserva_hoteles.sale_order_line_inherit_form" model="ir.ui.view">
 				<field name="name">Lineas de venta form</field>
 				<field name="model">sale.order.line</field>
@@ -602,11 +638,20 @@
 				</field>
 			</record>
 
+			 <record id="reserva_hoteles.sale_order_line_inherit_search" model="ir.ui.view">
+				<field name="name">Reservas Cliente</field>
+				<field name="model">sale.order.line</field>
+				<field name="arch" type="xml">
+				<search>
+					<filter name="reserve" string="Mostrar reservas facturadas" domain="[('quantity','&gt;',0)]"></filter>
+				</search>
+				</field>
+			</record>
+
 			<record model="ir.actions.act_window" id="reserva_hoteles.action_sale_lines_window">
 				<field name="name">Linea de Venta</field>
 				<field name="res_model">sale.order.line</field>
-				<field name="context">{'search_default_reserva':1}</field>
-				<field name="view_mode">tree,form</field>
+				<field name="view_mode">tree,form,search</field>
 			</record>
 
 			<!-- Galleria de Fotos -->

@@ -131,7 +131,7 @@ class sale_order_line_inherit(models.Model):
     @api.depends('reserve')
     def get_reserve_quantity(self):
         for record in self:
-	        record.quantity = len(record.reserve)
+            record.quantity = len(record.reserve) 
 
 class reserve (models.Model):
     _name = 'reserva_hoteles.reserve'
@@ -196,26 +196,14 @@ class reserve (models.Model):
 
     @api.one
     def crear_venta(self):
-        sale_id = self.env['sale.order'].create({'partner_id': self.client.id})
-        print(sale_id)
-        venta={'product_id':self.id,'order_id':sale_id,'name':self.name,'reservas':self.id,'product_uom_qty':self.days,'qty_delivered':1,'qty_invoiced':1,'price_unit':self.room.price}
-        print(venta)
-
-    @api.one
-    def crear_venta_todos(self):
-        print( "/************************************************************************/")
-        reservasCliente=self.client.reserve
-        print(reservasCliente)
         id_producto = self.env.ref('reserva_hoteles.product2')
         sale_id = self.env['sale.order'].create({'partner_id': self.client.id})
-        for reserva in reservasCliente:
-            print(reserva.room);
-            venta = {'product_id': id_producto.id, 'order_id': sale_id.id, 'name': reserva.name,'reserve':self.id,
-                     'product_uom_qty': reserva.days, 'qty_delivered': 1, 'qty_invoiced': 1,
-                     'price_unit': reserva.room.price}
-            
-            self.env['sale.order.line'].create(venta)
-
+        print(sale_id)
+        venta = {'product_id': id_producto.id, 'order_id': sale_id.id, 'name': self.name,'reserve':self.id,
+                     'product_uom_qty': self.days, 'qty_delivered': 1, 'qty_invoiced': 1,
+                     'price_unit': self.room.price}
+        print(venta)
+        self.env['sale.order.line'].create(venta)
 
 
 
@@ -258,6 +246,20 @@ class my_clients (models.Model):
                         record.reservepaying=record.reserve
                     else:
                         record.reservepaying=record.reserve-record.reservewithoutpaying
+
+    @api.one
+    def crear_venta_todos(self):
+        print( "/************************************************************************/")
+        for reserva in self.reservewithoutpaying:
+            print(reserva);
+            id_producto = self.env.ref('reserva_hoteles.product2')
+            sale_id = self.env['sale.order'].create({'partner_id': self.id})
+
+            venta = {'product_id': id_producto.id, 'order_id': sale_id.id, 'name': reserva.name,'reserve':self.id,
+                     'product_uom_qty': reserva.days, 'qty_delivered': 1, 'qty_invoiced': 1,
+                     'price_unit': reserva.room.price}
+            
+            self.env['sale.order.line'].create(venta)
 
 
 class photoHotel (models.Model):
