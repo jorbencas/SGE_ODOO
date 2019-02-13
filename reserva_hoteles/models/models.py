@@ -120,12 +120,12 @@ class rooms (models.Model):
 class sale_order_line_inherit(models.Model):
     _name='sale.order.line'
     _inherit='sale.order.line'
-    reserve = fields.Many2one('reserva_hoteles.reserve', 'Linea de Venta', Store=True)
+    reserve = fields.Many2one('reserva_hoteles.reserve', 'Linea de Venta', store=True)
     hotel = fields.Many2one('reserva_hoteles.hotel', related='reserve.hotel', readOnly=True)
     room_sale_order_line_inherit = fields.Integer(related='reserve.room.name');
     datestart_inherit = fields.Date(related='reserve.datestart', readOnly=True);
     dateend_inherit = fields.Date(related='reserve.dateend', readOnly=True);
-    quantity = fields.Float(compute='get_reserve_quantity');
+    quantity = fields.Integer(compute='get_reserve_quantity', store=True);
 
     @api.one
     @api.depends('reserve')
@@ -250,17 +250,17 @@ class my_clients (models.Model):
     @api.one
     def crear_venta_todos(self):
         print( "/************************************************************************/")
+        id_producto = self.env.ref('reserva_hoteles.product2')
+        print(id_producto)
+        sale_id = self.env['sale.order'].create({'partner_id': self.id})
+        print(sale_id)
         for reserva in self.reservewithoutpaying:
-            print(reserva);
-            id_producto = self.env.ref('reserva_hoteles.product2')
-            sale_id = self.env['sale.order'].create({'partner_id': self.id})
-
-            venta = {'product_id': id_producto.id, 'order_id': sale_id.id, 'name': reserva.name,'reserve':self.id,
+            venta = {'product_id': id_producto.id, 'order_id': sale_id.id, 'name': reserva.name,'reserve':reserva.id,
                      'product_uom_qty': reserva.days, 'qty_delivered': 1, 'qty_invoiced': 1,
                      'price_unit': reserva.room.price}
-            
+            print(venta)
             self.env['sale.order.line'].create(venta)
-
+        self.reservewithoutpaying=self.reservewithoutpaying-reserva
 
 class photoHotel (models.Model):
     _name='reserva_hoteles.hotelgallery'
@@ -287,3 +287,37 @@ class comments (models.Model):
     photoclient = fields.Binary(related='clients.image',store=True)
     nameclient = fields.Char(related='clients.name')
    
+
+class wizard_selection_reserve(models.TransientModel):
+    _name='reserva_hoteles.selection_reserve_wizard'
+
+    def _default_cliente(self):
+        return self.env['res.partner'].browse(self._context.get('active_id'))
+
+    def _default_pendientes(self):
+        return self.env['res.partner'].browse(self._context.get('active_id')).reservasPorPagar
+
+
+    cli = fields.Many2one('res.partner', default=_default_cliente , string="Cliente actual")
+    cliReservasPendientesMany = fields.Many2many('hotels_be_bago.reserva',default=_default_pendientes, string="Reservas por pagar")
+    name=fields.Char(name="Nombre de la reserva" , related='cliReservasPendientesMany.name')
+    fechaInicio=fields.Date(name="Inicio de la reserva",related='cliReservasPendientesMany.fechaInicio')
+    fechaFinal = fields.Date(name="Final de la reserva", related='cliReservasPendientesMany.fechaFinal')
+    dias=fields.Float(name="Numero de dias" , related='cliReservasPendientesMany.dias')
+
+    @api.multi
+    def launch(self):
+        #print("betweeen")
+        id_producto = self.env.ref('hotels_be_bago.product2')
+        sale_id = self.env['sale.order'].create({'partner_id': self.cli.id})
+
+        for reserva in self.cliReservasPendientesMany:
+            venta = {'product_id': id_producto.id, 'order_id': sale_id.id, 'name': reserva.name, 'reserva': reserva.id,
+                     'product_uom_qty': reserva.dias, 'qty_delivered': 1, 'qty_invoiced': 1,
+                     'price_unit': reserva.room.price}
+
+            self.env['sale.order.line'].create(venta)
+            self.cliReservasPendientesMany = self.cliReservasPendientesMany - reserva
+        return {}
+
+
