@@ -77,7 +77,7 @@ class hotels (models.Model):
         name=random.randint(1,1000)
         beds=str(random.randint(0,3))
         price=random.randint(100,1000)
-        #photos=self.env['reserva_hoteles.photogallery'].search([('name','=',random.choice([self.env.ref('reserva_hoteles.photogallery').name,self.env.ref('hotels_be_bago.roomfoto2').id,self.env.ref('hotels_be_bago.roomfoto3').id,self.env.ref('hotels_be_bago.roomfoto4').id,self.env.ref('hotels_be_bago.roomfoto5').id]))])
+        #photos=self.env['reserva_hoteles.photogallery'].search([('name','=',random.choice([self.env.ref('reserva_hoteles.photogallery').name,self.env.ref('reserva_hoteles.roomfoto2').id,self.env.ref('reserva_hoteles.roomfoto3').id,self.env.ref('reserva_hoteles.roomfoto4').id,self.env.ref('reserva_hoteles.roomfoto5').id]))])
 
         habitacion={'name':name,'beds':beds,'price':price,'description':"Es una habitación muy lumninosa",'hotel':hotel.id}
         hotel.listRooms.create(habitacion)
@@ -167,7 +167,7 @@ class reserve (models.Model):
                 dateend=datetime.datetime.strptime(str(record.dateend),fmt)
                 if dateend < datestart:
                     record.dateeend = datestart + datetime.timedelta(days=1)
-                    print(record.fechaFinal)
+                    print(record.dateend)
                     return {
                         'warning': {
                             'title': "Algo ha ocurrido mal",
@@ -289,35 +289,33 @@ class comments (models.Model):
    
 
 class wizard_selection_reserve(models.TransientModel):
-    _name='reserva_hoteles.selection_reserve_wizard'
+    _name='reserva_hoteles.selection_wizard'
 
     def _default_cliente(self):
         return self.env['res.partner'].browse(self._context.get('active_id'))
 
     def _default_pendientes(self):
-        return self.env['res.partner'].browse(self._context.get('active_id')).reservasPorPagar
+        return self.env['res.partner'].browse(self._context.get('active_id')).reservewithoutpaying
 
 
     cli = fields.Many2one('res.partner', default=_default_cliente , string="Cliente actual")
-    cliReservasPendientesMany = fields.Many2many('hotels_be_bago.reserva',default=_default_pendientes, string="Reservas por pagar")
+    cliReservasPendientesMany = fields.Many2many('reserva_hoteles.reserve',default=_default_pendientes, string="Reservas por pagar")
     name=fields.Char(name="Nombre de la reserva" , related='cliReservasPendientesMany.name')
-    fechaInicio=fields.Date(name="Inicio de la reserva",related='cliReservasPendientesMany.fechaInicio')
-    fechaFinal = fields.Date(name="Final de la reserva", related='cliReservasPendientesMany.fechaFinal')
-    dias=fields.Float(name="Numero de dias" , related='cliReservasPendientesMany.dias')
+    datestart=fields.Date(name="Inicio de la reserva",related='cliReservasPendientesMany.datestart')
+    dateend = fields.Date(name="Final de la reserva", related='cliReservasPendientesMany.dateend')
+    days=fields.Float(name="Numero de dias" , related='cliReservasPendientesMany.days')
 
     @api.multi
     def launch(self):
         #print("betweeen")
-        id_producto = self.env.ref('hotels_be_bago.product2')
+        id_producto = self.env.ref('reserva_hoteles.product2')
         sale_id = self.env['sale.order'].create({'partner_id': self.cli.id})
 
         for reserva in self.cliReservasPendientesMany:
             venta = {'product_id': id_producto.id, 'order_id': sale_id.id, 'name': reserva.name, 'reserva': reserva.id,
-                     'product_uom_qty': reserva.dias, 'qty_delivered': 1, 'qty_invoiced': 1,
+                     'product_uom_qty': reserva.days, 'qty_delivered': 1, 'qty_invoiced': 1,
                      'price_unit': reserva.room.price}
 
             self.env['sale.order.line'].create(venta)
             self.cliReservasPendientesMany = self.cliReservasPendientesMany - reserva
         return {}
-
-

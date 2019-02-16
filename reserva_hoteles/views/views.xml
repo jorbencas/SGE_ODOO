@@ -582,9 +582,10 @@
 				<field name="act_window_id" ref="reserva_hoteles.action_my_clients_window" />
 			</record>
 
+	<!--Wizard -->
 			<record model="ir.ui.view" id="wizard_seleccion_reserva">
             <field name="name">Selecciona reservas a facturar</field>
-            <field name="model">reserva_hoteles.selection_reserve_wizard</field>
+            <field name="model">reserva_hoteles.selection_wizard</field>
             <field name="arch" type="xml">
                 <form string="Selecciona reserva">
                     <group>
@@ -594,9 +595,9 @@
                      <field name="cliReservasPendientesMany" widget="many2many">
                          <tree create="true" delete="true">
                              <field name="name"></field>
-                             <field name="fechaInicio"></field>
-                             <field name="fechaFinal"></field>
-                             <field name="dias"></field>
+                             <field name="datestart"></field>
+                             <field name="dateend"></field>
+                             <field name="days"></field>
                          </tree>
 
                         </field>
