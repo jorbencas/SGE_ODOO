@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import json
 from odoo import models, fields, api, tools
 from odoo.exceptions import ValidationError
 import datetime
@@ -28,12 +29,33 @@ class hotels (models.Model):
     oldreserve = fields.One2many('reserva_hoteles.reserve','hotel', compute='get_old_reserve')
     presentreserve = fields.One2many('reserva_hoteles.reserve','hotel', compute='get_present_reserve')
     futurereserve = fields.One2many('reserva_hoteles.reserve','hotel', compute='get_future_reserve')
+    grafic=fields.Float(compute='calcular_porcentaje',string='Ocupacion')
+    ocupacionsemanal=fields.Char(compute='calcular_ocupacion')
+
+
+    @api.multi
+    def calcular_porcentaje(self):
+        for hotel in self:
+            hotel.grafic=len(hotel.futurereserve)+len(hotel.presentreserve)
+            hotel.grafic=hotel.grafic/len(hotel.listRooms)
+            hotel.grafic=hotel.grafic*100
+            print(hotel.grafic)
+   
+    @api.multi
+    def calcular_ocupacion(self):
+        valores=[]
+        for valor in self.presentreserve:
+            reserves=valor.days
+            valores.append({'label':str(valor.name),'value':str(reserves)})
+        graph=[{'values':valores,'area':True,'title':'Reservas de esta semana','key':'Reservas','color':'#7c7bad'}]
+        self.ocupacionsemanal=json.dumps(graph)
 
     @api.one
     @api.depends('reserve')
     def get_old_reserve(self):
         self.oldreserve = self.env['reserva_hoteles.reserve'].search([('hotel', '=', self.name), ('datestart',  '<',  datetime.datetime.now()), ('dateend', '<',  datetime.datetime.now())])     
         print("/****************************************************************************/" + str(self.oldreserve))
+    
     @api.one
     @api.depends('reserve')
     def get_present_reserve(self):
@@ -86,7 +108,7 @@ class hotels (models.Model):
 class rooms (models.Model):
     _name = 'reserva_hoteles.rooms'
     name = fields.Integer('Numero de Habitación')
-    beds = fields.Selection([('0','Una Cama'),('1','Dos Camas'),('2','Cama de Matrimonio'),('3','Cama de matromonio mas cama infantil') ],'Numero de camas', default='1')
+    beds = fields.Selection([('0','Una Cama'),('1','Dos beds'),('2','Cama de Matrimonio'),('3','Cama de matromonio mas cama infantil') ],'Numero de beds', default='1')
     price = fields.Float(default=1)
     description = fields.Text(default="Habitación grande, espaciosa y con gran luminosidad.")
     hotel = fields.Many2one('reserva_hoteles.hotels','Lista de habitaciones')
@@ -297,17 +319,15 @@ class wizard_selection_reserve(models.TransientModel):
     def _default_pendientes(self):
         return self.env['res.partner'].browse(self._context.get('active_id')).reservewithoutpaying
 
-
     cli = fields.Many2one('res.partner', default=_default_cliente , string="Cliente actual")
     cliReservasPendientesMany = fields.Many2many('reserva_hoteles.reserve',default=_default_pendientes, string="Reservas por pagar")
-    name=fields.Char(name="Nombre de la reserva" , related='cliReservasPendientesMany.name')
+    #name=fields.Char(name="Nombre de la reserva" , related='cliReservasPendientesMany.name')
     datestart=fields.Date(name="Inicio de la reserva",related='cliReservasPendientesMany.datestart')
     dateend = fields.Date(name="Final de la reserva", related='cliReservasPendientesMany.dateend')
     days=fields.Float(name="Numero de dias" , related='cliReservasPendientesMany.days')
 
     @api.multi
     def launch(self):
-        #print("betweeen")
         id_producto = self.env.ref('reserva_hoteles.product2')
         sale_id = self.env['sale.order'].create({'partner_id': self.cli.id})
 
@@ -319,3 +339,166 @@ class wizard_selection_reserve(models.TransientModel):
             self.env['sale.order.line'].create(venta)
             self.cliReservasPendientesMany = self.cliReservasPendientesMany - reserva
         return {}
+
+class reserva_wizard(models.TransientModel):   # La classe és transientModel
+    _name = 'reserva_hoteles.reserve_wizard'
+
+    def _default_servicios(self):
+        return self.env['reserva_hoteles.services'].search([])
+
+    def default_hoteles(self):
+        return self.env['reserva_hoteles.hotels'].search([])
+
+    def default_paises_con_hoteles(self):
+        return self.env['reserva_hoteles.hotels'].search([]).mapped('city').mapped('countrys').ids
+
+    def default_habitaciones(self):
+        print(self.hotel.search([]))
+        return self.hotel.search([]).mapped('listRooms').ids
+
+    clientes = fields.Many2one("res.partner", "Nombre del cliente")
+    city=fields.Many2one("reserva_hoteles.citys","Ciudad")
+    countries=fields.Many2many("res.country",default=default_paises_con_hoteles)
+    country=fields.Many2one("res.country")
+
+    hotel=fields.Many2many("reserva_hoteles.hotels","Hotel",default=default_hoteles)
+    descripcion=fields.Text(related='hotel.description')
+    fotoprincipalhotel=fields.Binary(related='hotel.photomainhotel')
+    servicis=fields.Many2many("reserva_hoteles.services", default=_default_servicios)
+    estrellasMax = fields.Selection([('1', '⭐'), ('2', '⭐⭐'), ('3', '⭐⭐⭐'), ('4', '⭐⭐⭐⭐'), ('5', '⭐⭐⭐⭐⭐')],string ="Maximo estrell",default='5')
+    estrellasMin = fields.Selection([('1', '⭐'), ('2', '⭐⭐'), ('3', '⭐⭐⭐'), ('4', '⭐⭐⭐⭐'), ('5', '⭐⭐⭐⭐⭐')], string="Minimo rellas",default='1')
+    beds = fields.Selection([('0','Una Cama'),('1','Dos beds'),('2','Cama de Matrimonio'),('3','Cama de matromonio mas cama infantil') ])
+    precios=fields.Integer()
+    #es posible que alguien queira hacer varias reservas
+    rooms=fields.Many2many("reserva_hoteles.rooms",default=default_habitaciones,limit=10)
+
+    fechaInicio = fields.Date()
+    fechaFinal = fields.Date()
+
+    state = fields.Selection([  # El camp state és per a crear l'assistent.
+        ('localizacion', "Selecciona Localización"),
+        ('habitacion', "Selecciona el hotel"),
+        ('reserva', "Selecciona la habitación"),
+        ('fin', "Fin"),
+    ], default='localizacion')
+
+    @api.onchange('city','clientes')
+    def _oc_city(self):
+        if (self.city and self.clientes):
+            self.aplicar_filtros()
+            #self.state
+            return {}
+
+    @api.onchange('country')
+    def _oc_country(self):
+        if (self.country):
+            self.aplicar_filtros()
+            # self.state
+            return {}
+
+    @api.onchange('beds')
+    def _oc_beds(self):
+        if(self.beds):
+            self.aplicar_filtros()
+            return {}
+
+    @api.onchange('precios')
+    def _oc_prices(self):
+        if (self.precios):
+            self.aplicar_filtros()
+            return {}
+
+    @api.onchange('estrellasMin')
+    def _oc_min_stars(self):
+        if(self.estrellasMin):
+            self.aplicar_filtros()
+            return {}
+
+    @api.onchange('estrellasMax')
+    def _oc_max_stars(self):
+        if (self.estrellasMax):
+            self.aplicar_filtros()
+            return {}
+
+    @api.onchange('fechaInicio','fechaFinal')
+    def _on_dates(self):
+        if(self.fechaFinal and self.fechaFinal):
+            self.aplicar_filtros()
+            return {}
+
+
+    def aplicar_filtros(self):
+        domains=[]
+        if len(self.city)!=0:
+            domains.append(('city.id','=',str(self.city.id)))
+
+        if len(self.country)!=0:
+            domains.append(('city.countrys.id','=',str(self.country.id)))
+
+        if self.beds:
+            domains.append(('listRooms.beds','=',str(self.beds)))
+
+        if self.precios != 0:
+            domains.append(('listRooms.price','=',self.precios))
+
+        if self.estrellasMin!=0:
+            domains.append(('valorations','>=',self.estrellasMin))
+
+        if self.estrellasMax!=0:
+            domains.append(('valorations','<=',self.estrellasMax))
+
+        
+        
+
+        # print(domains)
+        # listaTMPHotel=self.env['reserva_hoteles.hotels'].search(domains)
+
+        # if len(self.servicis)>0:
+        #     servicios=self.servicis
+        #     listaTMPHotel=listaTMPHotel.filtered(lambda r:len(r.listServices & servicios) == len(servicios))
+
+        # self.hotel=listaTMPHotel
+
+        # if(self.fechaInicio and self.fechaFinal):
+        #     self.rooms=self.env['reserva_hoteles.rooms'].search([('hotel.name','in',self.hotel.name)])
+
+
+        # print(domains)
+        # listaTMPHotel=self.env['reserva_hoteles.hotels'].search(domains)
+        # self.rooms=self.hotel.mapped('listRooms').ids
+
+        # if len(self.servicis)>0:
+        #     servicios=self.servicis
+        #     listaTMPHotel=listaTMPHotel.filtered(lambda r:len(r.listServices & servicios) == len(servicios))
+
+        # self.hotel=listaTMPHotel
+
+        # print(self.hotel)
+
+        # if self.fechaInicio and self.fechaFinal:
+        #     habitacionesLibres=self.rooms.search([('avaible','=','Libre')])
+        #     if self.beds != '0':
+        #         habitacionesLibres=habitacionesLibres.filtered(lambda r:r.beds==self.beds)
+        #     self.hotel=habitacionesLibres.mapped('hotel').sorted(key=lambda r: r.valorations,reverse=True).ids
+
+        #     if self.precios != 0:
+        #         habitacionesLibres=habitacionesLibres.filtered(lambda r:r.price <= self.precios)
+        #     self.rooms=habitacionesLibres
+
+
+    @api.multi
+    def siguiente_paso(self):
+        if (self.state == "localizacion") :
+            self.state = "habitacion"
+            return {"type": "ir.actions.do_nothing", }
+
+        elif(self.state == "habitacion"):
+            self.state="reserva"
+            return {"type": "ir.actions.do_nothing", }
+        elif(self.state=="reserva"):
+            self.state="fin"
+            return {"type": "ir.actions.do_nothing", }
+
+
+
+

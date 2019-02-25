@@ -269,9 +269,16 @@
 											</kanban>
 										</field>
 									</page>
+									
 								</notebook>
 							</group>
-							
+							<div class="col-md-6">
+                                 		<field name="grafic" widget="gauge" style="width:350px;height:310px;" options="{'levelcolors':['#a9d70b','#f9c802','#ff0000'],'action_jump':'357'}" string="Grafico ocupacion">grafico ocupacion</field>
+									</div>
+									 <div class="col-md-6">
+										<h4>Grafico Ocupación Semanal</h4>
+										<field name="ocupacionsemanal" widget="dashboard_graph" graph_type="bar"></field>
+									</div>
 							<notebook>
 								<page string="Reservas Pasadas">
 									<field name="oldreserve"></field>
@@ -287,6 +294,7 @@
 									<field name="futurereserve"></field>
 								</page>
 							</notebook>
+
 						</sheet>
 					</form>
 				</field>
@@ -424,6 +432,91 @@
 				<field name="view_mode">tree,form</field>
 			</record>
 
+
+			<!--Wizard Reservas -->
+			<record model="ir.ui.view" id="reserva_hoteles.reserve_wizard">
+            <field name="name">Wizard Reserva</field>
+            <field name="model">reserva_hoteles.reserve_wizard</field>
+            <field name="arch" type="xml">
+		    <form>
+	             <header>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+
+                <group states="localizacion">
+                    <h4 style="text-align:center;">Localizacion</h4><hr/>
+                    <group>
+			             <field name="clientes"/>
+                         <field name="city"></field>
+                        <field name="estrellasMax"></field>
+                        <field name="estrellasMin"></field>
+		            </group>
+                    <group>
+                        <field name="countries" invisible="1"></field>
+                        <field name="country" domain="[('id','in',countries)]"></field>
+                    </group>
+                </group>
+
+                <group states="hotel">
+                        <group>
+                            <h4 style="text-align:center;">Hotel</h4><hr/>
+                            <field name="descripcion" readonly="1"></field>
+                            <field name="beds"></field>
+                            <field name="precios"></field>
+                        </group>
+                        <group>
+                              <field name="fotoprincipalhotel" widget="image"></field>
+                        </group>
+
+
+                    <div class="row" style="width:900px;padding:20px;margin-left:10px;">
+                            <field name="servicis">
+                                <tree>
+                                    <field name="photo" widget="image"></field>
+                                    <field name="name"></field>
+                                </tree>
+                            </field>
+                    </div>
+
+
+                </group>
+
+                <group states="habitacion">
+                    <field name="rooms" ></field>
+                    <field name="fechaInicio"></field>
+                    <field name="fechaFinal"></field>
+                </group>
+
+                    <field name="hotel" style="width:900px;padding:20px;margin-left:10px;" >
+                        <tree>
+                            <field name="photomainhotel" widget="image" style="height:64px;width:64px;"></field>
+                            <field name="name"></field>
+                            <field name="valorations"></field>
+                            <field name="valorations"></field>
+                        </tree>
+                    </field>
+
+
+                    <footer>
+			     <button name="siguiente_paso" type="object" string="Siguiente paso" class="btn btn-info oe_read_only" />
+                        or
+                        <button special="cancel" string="Cancel"/>
+                    </footer>
+
+                </form>
+            </field>
+        </record>
+
+        <act_window id="reserva_hoteles.reserve_wizard_act"
+                    name="Crear Reserva"
+                    src_model="reserva_hoteles.reserve"
+                    res_model="reserva_hoteles.reserve_wizard"
+                    view_mode="form"
+                    target="new"
+					key2="client_action_multi"/>
+
+
+
 			<!-- Rservas -->
 			<record model="ir.ui.view" id="reserva_hoteles.reserve_form">
 				<field name="name">Reservas</field>
@@ -456,6 +549,8 @@
 								</page>
 							</notebook>
 							<button name="crear_venta" type="object" string="Crear venta de esta reserva" class="btn btn-info oe_read_only" />
+							<button name="%(reserva_hoteles.reserve_wizard_act)d" type="action" string="Seleccionar reservas" class="btn btn-light oe_read_only" />
+
 						</sheet>
 					</form>
 				</field>
@@ -493,6 +588,45 @@
 				<field name="res_model">reserva_hoteles.reserve</field>
 				<field name="view_mode">tree,form,calendar</field>
 			</record>
+
+			<!--Wizard -->
+			<record model="ir.ui.view" id="reserva_hoteles.selection_wizard">
+            <field name="name">Selecciona reservas a facturar</field>
+            <field name="model">reserva_hoteles.selection_wizard</field>
+            <field name="arch" type="xml">
+                <form string="Selecciona reserva">
+                    <group>
+                        <field name="cli"></field>
+                    </group>
+
+                     <field name="cliReservasPendientesMany" widget="many2many">
+                         <tree create="true" delete="true">
+                             <field name="name"></field>
+                             <field name="datestart"></field>
+                             <field name="dateend"></field>
+                             <field name="days"></field>
+                         </tree>
+
+                        </field>
+                    <footer>
+                        <button name="launch" type="object"
+                                string="Launch" class="oe_highlight"/>
+                        or
+                        <button special="cancel" string="Cancel"/>
+                    </footer>
+
+                </form>
+            </field>
+        </record>
+
+        <act_window id="launch_selection_wizard"
+                    name="Seleccionar reserva"
+                    src_model="res.partner"
+                    res_model="reserva_hoteles.selection_wizard"
+                    view_mode="form"
+                    target="new"
+					key2="client_action_multi"/>
+
 
 			<!-- Clientes -->
 			<record id="reserva_hoteles.my_clients_tree" model="ir.ui.view">
@@ -544,6 +678,7 @@
 								</tree>
                             </field>
 							<button name="crear_venta_todos" type="object" string="Crear venta de todas las reservas del cliente" class="btn btn-success oe_read_only" />
+							<!-- <button name="%(launch_selection_wizard)d" type="action" string="Seleccionar reservas" class="btn btn-light oe_read_only" /> -->
 						</page>
 						<page string="Comentarios">
 							<field name="comments"></field>
@@ -582,127 +717,7 @@
 				<field name="act_window_id" ref="reserva_hoteles.action_my_clients_window" />
 			</record>
 
-	<!--Wizard -->
-			<record model="ir.ui.view" id="wizard_seleccion_reserva">
-            <field name="name">Selecciona reservas a facturar</field>
-            <field name="model">reserva_hoteles.selection_wizard</field>
-            <field name="arch" type="xml">
-                <form string="Selecciona reserva">
-                    <group>
-                        <field name="cli"></field>
-                    </group>
-
-                     <field name="cliReservasPendientesMany" widget="many2many">
-                         <tree create="true" delete="true">
-                             <field name="name"></field>
-                             <field name="datestart"></field>
-                             <field name="dateend"></field>
-                             <field name="days"></field>
-                         </tree>
-
-                        </field>
-                    <footer>
-                        <button name="launch" type="object"
-                                string="Launch" class="oe_highlight"/>
-                        or
-                        <button special="cancel" string="Cancel"/>
-                    </footer>
-
-                </form>
-            </field>
-        </record>
-
-        <act_window id="launch_seleccion_wizard"
-                    name="Seleccionar reserva"
-                    src_model="res.partner"
-                    res_model="reserva_hoteles.selection_reserve_wizard"
-                    view_mode="form"
-                    target="new"
-key2="client_action_multi"/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
 			<!-- Lineas de Venta -->
 			<record id="reserva_hoteles.sale_order_line_inherit_tree" model="ir.ui.view">
 				<field name="name">Linea de Venta</field>
@@ -884,11 +899,12 @@ key2="client_action_multi"/>
 			<menuitem name="Hoteles" id="reserva_hoteles.menu_2_hotels_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_hotels_window" />
 			<menuitem name="Habitaciones" id="reserva_hoteles.menu_3_rooms_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_rooms_window" />
 			<menuitem name="Reservas" id="reserva_hoteles.menu_4_reserves_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_reserve_window" />
+			<menuitem name="Wizrd Reservas" id="reserva_hoteles.menu_4_1_reserves_list" parent="reserva_hoteles.menu_4_reserves_list" action="reserva_hoteles.reserve_wizard_act"/>
 			<menuitem name="Servicios" id="reserva_hoteles.menu_5_reserves_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_service_window" />
 			<menuitem name="Galeria de Fotos del hotel" id="reserva_hoteles.menu_7_reserves_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_hotelgallery_window" />
 			<menuitem name="Galeria de Fotos de las Habitaciones" id="reserva_hoteles.menu_6_reserves_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_photogallery_window" />
 			<menuitem name="Commentarios" id="reserva_hoteles.menu_8_reserves_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_comments_window" />
 			<menuitem name="Clientes" id="reserva_hoteles.menu_9_reserves_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_my_clients_window" />
-			<menuitem name="Lineas de venta" id="reserva_hoteles.menu_11_reserves_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_sale_lines_window" />
+			<!-- <menuitem name="Lineas de venta" id="reserva_hoteles.menu_11_reserves_list" parent="reserva_hoteles.menu_1_list" action="reserva_hoteles.action_sale_lines_window" /> -->
 	</data>
 </odoo>
